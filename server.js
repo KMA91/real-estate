@@ -4,7 +4,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 let session = require('express-session');
 var AWS = require('aws-sdk');
-AWS.config.loadFromPath('./s3_config.json');
+AWS.config.loadFromPath('./config.json');
 var sessionInfomation = {
   secret:'theMostSecureSecretKeyEver',
   resave:false,

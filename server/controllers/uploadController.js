@@ -1,8 +1,11 @@
 let mongoose = require('mongoose')
+var Listing = mongoose.model('Listing');
+
+// USED TO UPLOAD IMAGES INTO s3 BUCKET
 var multer = require('multer');
 var multers3 = require('multer-s3');
 var AWS = require('aws-sdk');
-AWS.config.loadFromPath('./s3_config.json');
+AWS.config.loadFromPath('./config.json');
 var s3 = new AWS.S3();
 
 var upload = multer({
@@ -25,5 +28,27 @@ module.exports = {
           }
           return res.json(req.file);
       });
+  },
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  addListing: (req, res) => {
+    var listing = new Listing(req.body);
+    listing.save((err, listing) => {
+      if(err){
+        res.status(500).send("Make sure to add an address, Tony!")
+      }else{
+        return;
+      }
+    })
+  },
+
+  removeImage: (req, res) => {
+    var params = { Bucket: 'mean-realestate', Key: req.body.key};
+    s3.deleteObject(params, function (err, data) {
+      if(data){
+      }else{
+      }
+    })
+    return;
   }
 }
