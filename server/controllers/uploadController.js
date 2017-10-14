@@ -12,6 +12,7 @@ var upload = multer({
     storage: multers3({
         s3: s3,
         bucket: 'mean-realestate',
+        contentType: multers3.AUTO_CONTENT_TYPE,
         key: function (req, file, cb) {
             cb(null, Date.now() + file.originalname);
         }
