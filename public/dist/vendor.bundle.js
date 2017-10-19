@@ -71,7 +71,7 @@ AppComponent = __decorate([
 /***/ "../../../../angular4-carousel/src/app/components/app.template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\r\n  <carousel [sources]=\"imageSources\" [config]=\"config\"></carousel>\r\n</div>\r\n"
+module.exports = "<div class=\"wrapper\">\n  <carousel [sources]=\"imageSources\" [config]=\"config\"></carousel>\n</div>\n"
 
 /***/ }),
 
@@ -145,7 +145,7 @@ var _a;
 /***/ "../../../../angular4-carousel/src/app/components/carousel/arrows/arrows.template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"carousel-nav\">\r\n  <div (click)=\"onChangeSlide('prev')\"\r\n       [class.carousel-nav__btn--disabled]=\"disableElement\">\r\n    <div class=\"carousel-nav__clickable-area carousel-nav__clickable-area--left\">\r\n      <i class=\"fa fa-angle-left carousel-nav__btn carousel-nav__btn--left\" aria-hidden=\"true\"></i>\r\n    </div>\r\n  </div>\r\n  <div (click)=\"onChangeSlide('next')\"\r\n       [class.carousel-nav__btn--disabled]=\"disableElement\">\r\n    <div class=\"carousel-nav__clickable-area carousel-nav__clickable-area--right\">\r\n      <i class=\"fa fa-angle-right carousel-nav__btn carousel-nav__btn--right\" aria-hidden=\"true\"></i>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"carousel-nav\">\n  <div (click)=\"onChangeSlide('prev')\"\n       [class.carousel-nav__btn--disabled]=\"disableElement\">\n    <div class=\"carousel-nav__clickable-area carousel-nav__clickable-area--left\">\n      <i class=\"fa fa-angle-left carousel-nav__btn carousel-nav__btn--left\" aria-hidden=\"true\"></i>\n    </div>\n  </div>\n  <div (click)=\"onChangeSlide('next')\"\n       [class.carousel-nav__btn--disabled]=\"disableElement\">\n    <div class=\"carousel-nav__clickable-area carousel-nav__clickable-area--right\">\n      <i class=\"fa fa-angle-right carousel-nav__btn carousel-nav__btn--right\" aria-hidden=\"true\"></i>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -341,7 +341,7 @@ var _a, _b, _c, _d, _e, _f;
 /***/ "../../../../angular4-carousel/src/app/components/carousel/carousel.template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"carousel-wrapper\" appCarouselHandler (handleAutoplay)=\"onHandleAutoplay($event)\">\r\n  <carousel-slide\r\n       *ngFor=\"let img of loadedImages; let i = index\"\r\n       [src]=\"img\"\r\n       [slideNo]=\"i\"\r\n       [isHidden]=\"i !== 0\">\r\n  </carousel-slide>\r\n\r\n  <carousel-pins\r\n    *ngIf=\"galleryLength > 1\"\r\n    [images]=\"loadedImages\"\r\n    [currentSlide]=\"currentSlide\"\r\n    (changeSlide)=\"onChangeSlideIndex($event);\">\r\n  </carousel-pins>\r\n\r\n  <carousel-arrows\r\n    *ngIf=\"galleryLength > 1\"\r\n    (changeSlide)=\"onChangeSlide($event);\"></carousel-arrows>\r\n</div>\r\n"
+module.exports = "<div class=\"carousel-wrapper\" appCarouselHandler (handleAutoplay)=\"onHandleAutoplay($event)\">\n  <carousel-slide\n       *ngFor=\"let img of loadedImages; let i = index\"\n       [src]=\"img\"\n       [slideNo]=\"i\"\n       [isHidden]=\"i !== 0\">\n  </carousel-slide>\n\n  <carousel-pins\n    *ngIf=\"galleryLength > 1\"\n    [images]=\"loadedImages\"\n    [currentSlide]=\"currentSlide\"\n    (changeSlide)=\"onChangeSlideIndex($event);\">\n  </carousel-pins>\n\n  <carousel-arrows\n    *ngIf=\"galleryLength > 1\"\n    (changeSlide)=\"onChangeSlide($event);\"></carousel-arrows>\n</div>\n"
 
 /***/ }),
 
@@ -456,7 +456,7 @@ var _a;
 /***/ "../../../../angular4-carousel/src/app/components/carousel/pins/pins.template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"carousel-nav-list\">\r\n  <li class=\"carousel-nav-list__item\"\r\n      *ngFor=\"let counter of images; let i = index\"\r\n      (click)=\"onChangeSlide(i)\"\r\n      [class.carousel-nav-list__item--current]=\"currentSlide === i\"\r\n      [class.carousel-nav-list__item--disabled]=\"disableElement\">\r\n  </li>\r\n</ul>\r\n"
+module.exports = "<ul class=\"carousel-nav-list\">\n  <li class=\"carousel-nav-list__item\"\n      *ngFor=\"let counter of images; let i = index\"\n      (click)=\"onChangeSlide(i)\"\n      [class.carousel-nav-list__item--current]=\"currentSlide === i\"\n      [class.carousel-nav-list__item--disabled]=\"disableElement\">\n  </li>\n</ul>\n"
 
 /***/ }),
 
@@ -539,7 +539,7 @@ SlideComponent = __decorate([
 /***/ "../../../../angular4-carousel/src/app/components/carousel/slide/slide.template.html":
 /***/ (function(module, exports) {
 
-module.exports = "<img class=\"slide\" [src]=\"src\"\r\n     [class.slide--hidden-initial]=\"isHidden\"\r\n     [attr.data-slide]=\"slideNo\">\r\n"
+module.exports = "<img class=\"slide\" [src]=\"src\"\n     [class.slide--hidden-initial]=\"isHidden\"\n     [attr.data-slide]=\"slideNo\">\n"
 
 /***/ }),
 

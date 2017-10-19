@@ -23,12 +23,13 @@ app.use(express.static(path.join(__dirname, 'public', "dist")));
 require('./server/config/mongoose.js');
 
 // //////////////////////////////////////////
-app.use(function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-  res.setHeader('Access-Control-Allow-Credentials', true);
-  next();
+app.use(function(req, res, next) {
+//set headers to allow cross origin request.
+    res.header("Access-Control-Allow-Credentials: true");
+    res.header("Access-Control-Allow-Origin", "http://http://13.56.181.169/");
+    res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    next();
 });
 
 var route = require('./server/config/routes.js')(app)

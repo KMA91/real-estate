@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FileUploader } from 'ng2-file-upload';
 import { UploadService } from './upload.service';
 
-const URL = 'http://localhost:6789/api/upload';
+const URL = '/api/upload';
 
 @Component({
   selector: 'app-upload',
@@ -29,10 +29,9 @@ export class UploadComponent implements OnInit {
     this.files = [];
     this.files_path = [];
     this.uploader.onCompleteItem = (item:any, response:any, status:any, headers:any) => {
-      response = JSON.parse(response)
+      response = JSON.parse(response);
       this.files.push(response);
       this.files_path.push(response.location);
-      console.log(this.files);
     }
   }
 

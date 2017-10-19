@@ -63,11 +63,13 @@
         <th>Name</th>
         <th>Image</th>
         <th>Action</th>
+	<div *ngIf = "files">
         <div *ngFor = "let file of files">
           <td>{{ file.originalname }}</td>
           <td><img src="{{ file.location }}" width="25%"></td>
           <button type="button" (click)="deleteListing(file.key)">Delete</button>
         </div>
+	</div>
       </table>
     </div>
     <button>Hello</button>
