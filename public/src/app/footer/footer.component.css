@@ -1,0 +1,49 @@
+p{
+  text-align: center;
+  font-family: 'Arial Black';
+}
+
+img{
+  max-width: 4%;
+  margin: 0 0.3%;
+}
+
+a{
+  width: 25%;
+  max-width: 1%;
+}
+
+.trulia{
+  vertical-align: top;
+}
+
+.linkedin{
+  vertical-align: top;
+}
+
+.remax {
+  vertical-align: top;
+  margin-top: 0.1%;
+  max-width: 3%;
+}
+
+.social{
+  text-align: center;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 414px) {
+  *{
+    font-size: 0.75em;
+  }
+
+  img{
+    max-width: 13%;
+    margin: 1%;
+  }
+
+  .remax{
+    margin: 1%;
+    max-width: 9%;
+  }
+}

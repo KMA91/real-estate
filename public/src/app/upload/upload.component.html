@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div *ngIf = "error">
+      {{error}}
+    </div>
+    <form (submit)="addListing(formData)" #formData="ngForm">
+      Address: <input type="text" name="address" ngModel>
+      Sold? <input type="checkbox" name="sold" ngModel>
+    <div class="">
+      <div ng2FileDrop
+      [ngClass]="{'nv-file-over': hasBaseDropZoneOver}"
+      (fileOver)="fileOverBase($event)"
+      [uploader]="uploader"
+      class="well my-drop-zone">
+      Base drop zone
+    </div>
+    </div>
+
+    <h3>Select files</h3>
+
+    <div class="">
+      Multiple
+      <input type="file" ng2FileSelect [uploader]="uploader" multiple  /><br/>
+      Single
+      <input type="file" ng2FileSelect [uploader]="uploader" />
+      <h3>Upload queue</h3>
+      <p>Queue length: {{ uploader?.queue?.length }}</p>
+    </div>
+
+    <div class="">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of uploader.queue">
+            <td><strong>{{ item?.file?.name }}</strong></td>
+            <td>
+              <button (click)="item.upload()" [disabled]="item.isReady || item.isUploading || item.isSuccess">Upload</button>
+              <button (click)="item.remove()">Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="">
+      <button type="button" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">Upload all</button>
+      <button type="button" (click)="uploader.cancelAll()" [disabled]="!uploader.isUploading">Cancel all</button>
+      <button type="button" (click)="uploader.clearQueue()" [disabled]="!uploader.queue.length">Clear Queue</button>
+    </div>
+
+    <div class="">
+      <table>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Action</th>
+        <div *ngFor = "let file of files">
+          <td>{{ file.originalname }}</td>
+          <td><img src="{{ file.location }}" width="25%"></td>
+          <button type="button" (click)="deleteListing(file.key)">Delete</button>
+        </div>
+      </table>
+    </div>
+    <button>Hello</button>
+  </form>
+
+  </body>
+</html>

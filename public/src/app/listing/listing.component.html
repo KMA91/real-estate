@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <section class="search">
+    <h3>Search By:</h3>
+    <button (click)="getActive()">Active</button>
+    <button (click)="getSold()">Sold</button>
+  </section>
+
+  <section>
+    <h1 *ngIf="active">Active Properties</h1>
+    <h1 *ngIf="!active">Sold Properties</h1>
+
+    <div *ngFor="let listing of listings" class="listings">
+      <a routerLink="/show/{{ listing._id }}"><img src="{{ listing.paths[0] }}"></a>
+      <a href="#" class="moreinfo">More info</a>
+    </div>
+  </section>
+</div>
