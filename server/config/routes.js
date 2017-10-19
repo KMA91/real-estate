@@ -7,4 +7,6 @@ module.exports = (app) => {
   app.post("/api/addlisting", upload.addListing);
   app.post("/api/removeImage", upload.removeImage);
   app.get("/api/getThreeListings", listing.getThreeListings);
+  app.get("/api/getActive", listing.getActive);
+  app.get("/api/getSold", listing.getSold);
 }

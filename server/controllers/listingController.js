@@ -31,6 +31,26 @@ module.exports = {
       }
     })
     return;
+  },
+
+  getActive: (req, res) => {
+    Listing.find({sold: false}, (err, listings) =>{
+      if(err){
+        console.log(err);
+      }else{
+        return res.json(listings);
+      }
+    })
+  },
+
+  getSold: (req, res) => {
+    Listing.find({sold: true}, (err, listings) =>{
+      if(err){
+        console.log(err);
+      }else{
+        return res.json(listings);
+      }
+    })
   }
 
 }
