@@ -24,12 +24,10 @@ module.exports = {
   uploadImage: (req, res) => {
     upload(req,res,function(err){
           if(err){
-		return res.json({error_code:1,err_desc:err});
+            return res.json({error_code:1,err_desc:err});
           }else{
-		console.log(req.file);
-		console.log("**********************");
-          	return res.json(req.file);
-	  }
+            return res.json(req.file);
+          }
       });
   },
 

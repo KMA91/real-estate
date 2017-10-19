@@ -9,4 +9,5 @@ module.exports = (app) => {
   app.get("/api/getThreeListings", listing.getThreeListings);
   app.get("/api/getActive", listing.getActive);
   app.get("/api/getSold", listing.getSold);
+  app.get("/api/getListing/:id", listing.getListing);
 }

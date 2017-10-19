@@ -51,6 +51,16 @@ module.exports = {
         return res.json(listings);
       }
     })
-  }
+  },
+
+  getListing: (req, res) => {
+    Listing.findOne({_id: req.params.id}, (err, listing) => {
+      if(err){
+          return res.sendStatus(500);
+      } else {
+          return res.json(listing);
+      }
+    })
+  },
 
 }
