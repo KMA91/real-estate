@@ -8,7 +8,7 @@ import { ICarouselConfig, AnimationConfig } from 'angular4-carousel';
 })
 export class ListingShowComponent implements OnInit {
 
-  public imageSources = [];
+  public imageSources = [""];
   public config: ICarouselConfig = {
   verifyBeforeLoad: true,
   log: false,
