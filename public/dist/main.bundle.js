@@ -21,7 +21,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\n  margin: 0;\n  padding: 0;\n  font-family: 'Arial';\n}\n\n/* MOBILE */\n@media only screen and (min-width: 415px) {\n  .wrapper{\n    width: 90%;\n    margin: 0 auto;\n  }\n\n  section{\n    padding: 3%;\n  }\n\n  .top{\n    display: inline-block;\n  }\n\n  .top img{\n    width: 22%;\n    display: inline-block;\n  }\n\n  .top h1{\n    width: 70%;\n    display: inline-block;\n    text-align: center;\n    vertical-align: top;\n    margin-top: 1%;\n    padding: 3%;\n  }\n\n  .testimonials{\n    text-align: center;\n    margin: 2%;\n  }\n\n  .testimonials h2, p{\n    padding: 2%;\n  }\n\n  p{\n    font-size: 1.5em;\n  }\n}\n\n/* MOBILE */\n@media only screen and (max-width: 414px) {\n  .wrapper{\n    margin: 0 auto;\n    text-align: center;\n    max-width: 90%;\n  }\n\n  section{\n    padding: 3%;\n  }\n\n  .top h1{\n    margin-top: 9%;\n    font-size: 1.33em;\n  }\n\n  h2, p, button{\n    margin: 5% 0;\n  }\n\n  h2{\n    font-size: 1.33em;\n    text-decoration: red underline;\n  }\n}\n", ""]);
+exports.push([module.i, "*{\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Arial';\r\n}\r\n\r\n/* Tablet/Desktop */\r\n@media only screen and (min-width: 415px) {\r\n  .wrapper{\r\n    width: 90%;\r\n    margin: 0 auto;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top{\r\n    display: inline-block;\r\n  }\r\n\r\n  .top img{\r\n    width: 22%;\r\n    display: inline-block;\r\n  }\r\n\r\n  .top h3{\r\n    width: 70%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    vertical-align: top;\r\n    margin-top: 1%;\r\n    padding: 3%;\r\n    font-size: 1em;\r\n  }\r\n\r\n  .testimonials{\r\n    text-align: center;\r\n    margin: 2%;\r\n  }\r\n\r\n  .testimonials h3, p{\r\n    padding: 2%;\r\n  }\r\n\r\n  p{\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  .wrapper{\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    max-width: 90%;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top h3{\r\n    margin-top: 9%;\r\n    font-size: 1.33em;\r\n  }\r\n\r\n  h2, p, button{\r\n    margin: 5% 0;\r\n  }\r\n\r\n  .test{\r\n    font-size: 1.33em;\r\n    text-decoration: red underline;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n\n  <section>\n    <div class=\"top\">\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\n      <h1>\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\" - Tony Ma</h1>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"testimonials\">\n      <h2>Testimonials</h2>\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\n    </div>\n  </section>\n\n</div>\n"
+module.exports = "<div class=\"wrapper\">\n\n  <section>\n    <div class=\"top\">\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\n      <h3>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</h3>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"testimonials\">\n      <h2>Testimonials</h2>\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\n    </div>\n  </section>\n\n</div>\n"
 
 /***/ }),
 
@@ -130,7 +130,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "* {\n  margin : 0;\n  padding: 0;\n}\n", ""]);
+exports.push([module.i, "* {\r\n  margin : 0;\r\n  padding: 0;\r\n}\r\n", ""]);
 
 // exports
 
@@ -187,19 +187,18 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload__ = __webpack_require__("../../../../ng2-file-upload/ng2-file-upload.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular4_carousel__ = __webpack_require__("../../../../angular4-carousel/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__upload_upload_component__ = __webpack_require__("../../../../../src/app/upload/upload.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__upload_upload_service__ = __webpack_require__("../../../../../src/app/upload/upload.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__listing_listing_component__ = __webpack_require__("../../../../../src/app/listing/listing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__landing_landing_component__ = __webpack_require__("../../../../../src/app/landing/landing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__listing_listing_show_listing_show_component__ = __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__upload_upload_component__ = __webpack_require__("../../../../../src/app/upload/upload.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__upload_upload_service__ = __webpack_require__("../../../../../src/app/upload/upload.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__listing_listing_component__ = __webpack_require__("../../../../../src/app/listing/listing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__landing_landing_component__ = __webpack_require__("../../../../../src/app/landing/landing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__listing_listing_show_listing_show_component__ = __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -207,7 +206,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -232,26 +230,25 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload__["FileSelectDirective"],
             __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload__["FileDropDirective"],
-            __WEBPACK_IMPORTED_MODULE_8__upload_upload_component__["a" /* UploadComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__about_about_component__["a" /* AboutComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__listing_listing_component__["a" /* ListingComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__landing_landing_component__["a" /* LandingComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */]
+            __WEBPACK_IMPORTED_MODULE_7__upload_upload_component__["a" /* UploadComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__listing_listing_component__["a" /* ListingComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__landing_landing_component__["a" /* LandingComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_6__angular_http__["a" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_4_angular4_carousel__["a" /* CarouselModule */]
+            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* HttpModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_9__upload_upload_service__["a" /* UploadService */], __WEBPACK_IMPORTED_MODULE_12__listing_listing_service__["a" /* ListingService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_8__upload_upload_service__["a" /* UploadService */], __WEBPACK_IMPORTED_MODULE_11__listing_listing_service__["a" /* ListingService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -267,7 +264,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "p{\n  text-align: center;\n  font-family: 'Arial Black';\n}\n\nimg{\n  max-width: 4%;\n  margin: 0 0.3%;\n}\n\na{\n  width: 25%;\n  max-width: 1%;\n}\n\n.trulia{\n  vertical-align: top;\n}\n\n.linkedin{\n  vertical-align: top;\n}\n\n.remax {\n  vertical-align: top;\n  margin-top: 0.1%;\n  max-width: 3%;\n}\n\n.social{\n  text-align: center;\n}\n\n/* MOBILE */\n@media only screen and (max-width: 414px) {\n  *{\n    font-size: 0.75em;\n  }\n\n  img{\n    max-width: 13%;\n    margin: 1%;\n  }\n\n  .remax{\n    margin: 1%;\n    max-width: 9%;\n  }\n}\n", ""]);
+exports.push([module.i, "p{\r\n  text-align: center;\r\n  font-family: 'Arial Black';\r\n}\r\n\r\nimg{\r\n  max-width: 4%;\r\n  margin: 0 0.3%;\r\n}\r\n\r\na{\r\n  width: 25%;\r\n  max-width: 1%;\r\n}\r\n\r\n.trulia{\r\n  vertical-align: top;\r\n}\r\n\r\n.linkedin{\r\n  vertical-align: top;\r\n}\r\n\r\n.remax {\r\n  vertical-align: top;\r\n  margin-top: 0.1%;\r\n  max-width: 3%;\r\n}\r\n\r\n.social{\r\n  text-align: center;\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  *{\r\n    font-size: 0.75em;\r\n  }\r\n\r\n  img{\r\n    max-width: 13%;\r\n    margin: 1%;\r\n  }\r\n\r\n  .remax{\r\n    margin: 1%;\r\n    max-width: 9%;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -280,7 +277,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>tony@tony-ma.com | (626)759-4812 | CalBRE #01931357</p>\n<div class=\"social\">\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\n</div>\n"
+module.exports = "<p>tony@tony-ma.com | (626)759-4812 | CalBRE #01931357</p>\n<div class=\"social\">\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\n</div>\n"
 
 /***/ }),
 
@@ -328,7 +325,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "* {\n  margin : 0;\n  padding: 0;\n  font-family: 'Fjalla One', sans-serif;\n}\n\nhtml, body {\n  margin: 0;\n  padding: 0;\n}\n\n#wrapper {\n  max-width: 100%;\n  margin: 0 auto;\n  padding: 20px;\n  background-color: rgba(255, 235, 219, 0.73);\n}\n\n.top{\n  width: 100%;\n}\n\n.slide1,.slide2,.slide3{\n  position: absolute;\n  width: 85%;\n  height: 100%;\n}\n\n/*DESKTOP/TABLET*/\n@media only screen and (min-width: 768px) {\n  .slider {\n    max-width: 100%;\n    height: 600px;\n    position: relative;\n  }\n  .slide1 {\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg)no-repeat center;\n    background-size: cover;\n    animation:fade 8s infinite;\n    -webkit-animation:fade 6s infinite;\n  }\n  .slide2 {\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house3.jpeg)no-repeat center;\n    background-size: cover;\n    animation:fade2 8s infinite;\n    -webkit-animation:fade2 6s infinite;\n  }\n  .slide3 {\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house1.jpeg)no-repeat center;\n    background-size: cover;\n    animation:fade3 8s infinite;\n    -webkit-animation:fade3 6s infinite;\n  }\n  @-webkit-keyframes fade\n  {\n    0%   {opacity:1}\n    33.333% { opacity: 0}\n    66.666% { opacity: 0}\n    100% { opacity: 1}\n  }\n  @keyframes fade\n  {\n    0%   {opacity:1}\n    33.333% { opacity: 0}\n    66.666% { opacity: 0}\n    100% { opacity: 1}\n  }\n  @-webkit-keyframes fade2\n  {\n    0%   {opacity:0}\n    33.333% { opacity: 1}\n    66.666% { opacity: 0 }\n    100% { opacity: 0}\n  }\n  @keyframes fade2\n  {\n    0%   {opacity:0}\n    33.333% { opacity: 1}\n    66.666% { opacity: 0 }\n    100% { opacity: 0}\n  }\n  @-webkit-keyframes fade3\n  {\n    0%   {opacity:0}\n    33.333% { opacity: 0}\n    66.666% { opacity: 1}\n    100% { opacity: 0}\n  }\n  @keyframes fade3\n  {\n    0%   {opacity:0}\n    33.333% { opacity: 0}\n    66.666% { opacity: 1}\n    100% { opacity: 0}\n  }\n\n  .slide1, .slide2, .slide3{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n  }\n\n  .slide1 h3{\n    color: transparent;\n  }\n\n  .router{\n    color: black;\n    border: 2px solid #dadada;\n    font-size: 1.25rem;\n    padding: .5em 1.85em;\n    text-decoration: none;\n  }\n}\n\n/* MOBILE */\n@media only screen and (max-width: 767px) {\n\n  section{\n    text-align: center;\n  }\n\n  .slide1, .slide2, .slide3{\n    width: 100%;\n  }\n\n  .slider {\n    border: 2px solid green;\n    max-width: 100%;\n    height: 400px;\n    position: relative;\n  }\n  .slide1 {\n    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg);\n    background-position: center;\n    background-size: cover;\n    height: 100%;\n  }\n\n  .slide1 h3{\n    font-size: 1.75em;\n    color: white;\n    position: relative;\n    top: 40%;\n  }\n\n  .router{\n    color: black;\n    border: 2px solid #dadada;\n    font-size: 1rem;\n    padding: .5em 1.85em;\n    text-decoration: none;\n  }\n}\n", ""]);
+exports.push([module.i, "* {\r\n  margin : 0;\r\n  padding: 0;\r\n  font-family: 'Fjalla One', sans-serif;\r\n}\r\n\r\nhtml, body {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n#wrapper {\r\n  max-width: 100%;\r\n  margin: 0 auto;\r\n  padding: 20px;\r\n  background-color: rgba(255, 235, 219, 0.73);\r\n}\r\n\r\n.top{\r\n  width: 100%;\r\n}\r\n\r\n.slide1,.slide2,.slide3{\r\n  position: absolute;\r\n  width: 85%;\r\n  height: 100%;\r\n}\r\n\r\n/*DESKTOP/TABLET*/\r\n@media only screen and (min-width: 768px) {\r\n  .slider {\r\n    max-width: 100%;\r\n    height: 600px;\r\n    position: relative;\r\n  }\r\n  .slide1 {\r\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg)no-repeat center;\r\n    background-size: cover;\r\n    animation:fade 8s infinite;\r\n    -webkit-animation:fade 6s infinite;\r\n  }\r\n  .slide2 {\r\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house3.jpeg)no-repeat center;\r\n    background-size: cover;\r\n    animation:fade2 8s infinite;\r\n    -webkit-animation:fade2 6s infinite;\r\n  }\r\n  .slide3 {\r\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house1.jpeg)no-repeat center;\r\n    background-size: cover;\r\n    animation:fade3 8s infinite;\r\n    -webkit-animation:fade3 6s infinite;\r\n  }\r\n  @-webkit-keyframes fade\r\n  {\r\n    0%   {opacity:1}\r\n    33.333% { opacity: 0}\r\n    66.666% { opacity: 0}\r\n    100% { opacity: 1}\r\n  }\r\n  @keyframes fade\r\n  {\r\n    0%   {opacity:1}\r\n    33.333% { opacity: 0}\r\n    66.666% { opacity: 0}\r\n    100% { opacity: 1}\r\n  }\r\n  @-webkit-keyframes fade2\r\n  {\r\n    0%   {opacity:0}\r\n    33.333% { opacity: 1}\r\n    66.666% { opacity: 0 }\r\n    100% { opacity: 0}\r\n  }\r\n  @keyframes fade2\r\n  {\r\n    0%   {opacity:0}\r\n    33.333% { opacity: 1}\r\n    66.666% { opacity: 0 }\r\n    100% { opacity: 0}\r\n  }\r\n  @-webkit-keyframes fade3\r\n  {\r\n    0%   {opacity:0}\r\n    33.333% { opacity: 0}\r\n    66.666% { opacity: 1}\r\n    100% { opacity: 0}\r\n  }\r\n  @keyframes fade3\r\n  {\r\n    0%   {opacity:0}\r\n    33.333% { opacity: 0}\r\n    66.666% { opacity: 1}\r\n    100% { opacity: 0}\r\n  }\r\n\r\n  .slide1, .slide2, .slide3{\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n  }\r\n\r\n  .slide1 h3{\r\n    color: transparent;\r\n  }\r\n\r\n  .router{\r\n    color: black;\r\n    border: 2px solid #dadada;\r\n    font-size: 1.25rem;\r\n    padding: .5em 1.85em;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 767px) {\r\n\r\n  section{\r\n    text-align: center;\r\n  }\r\n\r\n  .slide1, .slide2, .slide3{\r\n    width: 100%;\r\n  }\r\n\r\n  .slider {\r\n    border: 2px solid green;\r\n    max-width: 100%;\r\n    height: 400px;\r\n    position: relative;\r\n  }\r\n  .slide1 {\r\n    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg);\r\n    background-position: center;\r\n    background-size: cover;\r\n    height: 100%;\r\n  }\r\n\r\n  .slide1 h3{\r\n    font-size: 1.75em;\r\n    color: white;\r\n    position: relative;\r\n    top: 40%;\r\n  }\r\n\r\n  .router{\r\n    color: black;\r\n    border: 2px solid #dadada;\r\n    font-size: 1rem;\r\n    padding: .5em 1.85em;\r\n    text-decoration: none;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -341,7 +338,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/landing/landing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "    <section class=\"top\">\n      <div class=\"slider\">\n        <div class=\"slide1\"><h3>\"Make your dream home a reality\"</h3></div>\n        <div class=\"slide2\"></div>\n        <div class=\"slide3\"></div>\n      </div>\n    </section>\n<!-- <div *ngIf=\"imageSources.length == 3\">\n  <div style=\"width: 800px; height: 400px\">\n    <carousel [sources]=\"imageSources\" [config]=\"config\">\n    </carousel>\n  </div>\n</div> -->\n"
+module.exports = "    <section class=\"top\">\n      <div class=\"slider\">\n        <div class=\"slide1\"><h3>\"Make your dream home a reality\"</h3></div>\n        <div class=\"slide2\"></div>\n        <div class=\"slide3\"></div>\n      </div>\n    </section>\n"
 
 /***/ }),
 
@@ -351,7 +348,6 @@ module.exports = "    <section class=\"top\">\n      <div class=\"slider\">\n   
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular4_carousel__ = __webpack_require__("../../../../angular4-carousel/index.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LandingComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -364,36 +360,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 var LandingComponent = (function () {
     function LandingComponent(_listingService) {
         this._listingService = _listingService;
-        this.threelisting = [];
-        this.testimonial = "\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen";
-        this.imageSources = [];
-        this.config = {
-            verifyBeforeLoad: false,
-            log: false,
-            animation: true,
-            animationType: __WEBPACK_IMPORTED_MODULE_2_angular4_carousel__["b" /* AnimationConfig */].SLIDE,
-            autoplay: false,
-            autoplayDelay: 500,
-            stopAutoplayMinWidth: 768
-        };
     }
     LandingComponent.prototype.ngOnInit = function () {
-        this.getThree();
-    };
-    LandingComponent.prototype.getThree = function () {
-        var _this = this;
-        this._listingService.getThreeListings()
-            .then(function (listings) {
-            _this.threelisting = listings;
-            for (var i = 0; i < _this.threelisting.length; i++) {
-                _this.imageSources.push(_this.threelisting[i].paths[0]);
-            }
-        })
-            .catch();
     };
     return LandingComponent;
 }());
@@ -419,7 +390,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "*{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\nimg{\r\n  width: 80%;\r\n  height: auto;\r\n  margin-bottom: 3%;\r\n}\r\n\r\np{\r\n  display: inline-block;\r\n}\r\n\r\n.right {\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg);\r\n}\r\n\r\n.left {\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg);\r\n}\r\n\r\n.address {\r\n  margin: auto 0;\r\n  text-align: center;\r\n}\r\n\r\n/*Desktop*/\r\n@media only screen and (min-width: 1025px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 25px;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n@media (min-width: 415px) and (max-width: 1024px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 20px;\r\n  }\r\n}\r\n\r\n/*Mobile*/\r\n@media only screen and (max-width: 414px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 8px;\r\n  }\r\n\r\n  h3{\r\n    font-size: 1em;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -432,7 +403,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/listing/listing-show/listing-show.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"width: 800px; height: 400px\">\n  <carousel [sources]=\"imageSources\" [config]=\"config\"></carousel>\n</div>\n"
+module.exports = "<div *ngIf=\"imageSources.length > 0\">\r\n  <p (click)=\"previousImage()\"><i class=\"left\"></i></p>\r\n  <img (click)=\"nextImage()\" src=\"{{ image }}\">\r\n  <p (click)=\"nextImage()\"><i class=\"right\"></i></p>\r\n</div>\r\n<div *ngIf=\"listing\">\r\n  <h3 class=\"address\" >{{ listing.address }}</h3>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -441,7 +412,8 @@ module.exports = "<div style=\"width: 800px; height: 400px\">\n  <carousel [sour
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular4_carousel__ = __webpack_require__("../../../../angular4-carousel/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListingShowComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -454,20 +426,50 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var ListingShowComponent = (function () {
-    function ListingShowComponent() {
-        this.imageSources = [""];
-        this.config = {
-            verifyBeforeLoad: true,
-            log: false,
-            animation: true,
-            animationType: __WEBPACK_IMPORTED_MODULE_1_angular4_carousel__["b" /* AnimationConfig */].SLIDE,
-            autoplay: false,
-            autoplayDelay: 2000,
-            stopAutoplayMinWidth: 768
-        };
+    function ListingShowComponent(_activatedRoute, _listingService) {
+        this._activatedRoute = _activatedRoute;
+        this._listingService = _listingService;
+        this.imageSources = [];
+        this.imageindex = 0;
     }
     ListingShowComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._activatedRoute.params.subscribe(function (param) { return _this.listingid = param.id; });
+        this.getListing(this.listingid);
+    };
+    ListingShowComponent.prototype.getListing = function (listing) {
+        var _this = this;
+        this._listingService.getListing(listing)
+            .then(function (listing) {
+            _this.listing = listing;
+            for (var i = 0; i < _this.listing.paths.length; i++) {
+                _this.imageSources.push(_this.listing.paths[i]);
+            }
+            _this.image = _this.listing.paths[0];
+        })
+            .catch();
+    };
+    ListingShowComponent.prototype.nextImage = function () {
+        if (this.listing.paths[this.imageindex + 1]) {
+            this.image = this.listing.paths[this.imageindex + 1];
+            this.imageindex++;
+        }
+        else {
+            this.image = this.listing.paths[0];
+            this.imageindex = 0;
+        }
+    };
+    ListingShowComponent.prototype.previousImage = function () {
+        if (this.listing.paths[this.imageindex - 1]) {
+            this.image = this.listing.paths[this.imageindex - 1];
+            this.imageindex--;
+        }
+        else {
+            this.image = this.listing.paths[this.listing.paths.length - 1];
+            this.imageindex = this.listing.paths.length - 1;
+        }
     };
     return ListingShowComponent;
 }());
@@ -477,9 +479,10 @@ ListingShowComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.html"),
         styles: [__webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__listing_service__["a" /* ListingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__listing_service__["a" /* ListingService */]) === "function" && _b || Object])
 ], ListingShowComponent);
 
+var _a, _b;
 //# sourceMappingURL=listing-show.component.js.map
 
 /***/ }),
@@ -492,7 +495,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\n  font-family: 'Arial';\n  text-align: center;\n}\n\n.wrapper{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.moreinfo{\n  display: block;\n  text-transform: uppercase;\n}\n\n.listings a{\n  text-decoration: none;\n}\n\n/*Mobile*/\n@media only screen and (max-width: 414px) {\n  img{\n    max-width: 85%;\n  }\n\n  .moreinfo{\n    display: block;\n    color: white;\n    font-size: 0.9em;\n    width: 20%;\n    margin: -13% auto 23%;\n  }\n}\n\n/* Mid Size Desktop */\n@media (min-width: 415px) and (max-width: 767px){\n  img{\n    max-width: 55%;\n  }\n\n  button{\n    font-size: 2em;\n  }\n\n  .listings img{\n    margin-bottom: -8%;\n  }\n\n  .moreinfo{\n    font-size: 1.75em;\n    width: 12%;\n    margin: 0 auto 8%;\n    color: white;\n    outline: 2px solid white;\n  }\n}\n\n/*Tablet*/\n@media (min-width: 768px) and (max-width: 1024px){\n  .search{\n    font-size: 2em;\n  }\n\n  button{\n    font-size: 1.5em;\n  }\n\n  h1{\n    font-size: 4em;\n  }\n\n  .listings img{\n    margin-bottom: -10%;\n  }\n\n  .moreinfo{\n    margin: 0 auto 4%;\n    color: white;\n    outline: 2px solid white;\n  }\n}\n\n@media only screen and (min-width: 1025px){\n\n  img{\n    max-width: 55%;\n  }\n\n  .moreinfo{\n    display: none;\n  }\n\n  .listings img:hover{\n    opacity: 0.5;\n  }\n}\n", ""]);
+exports.push([module.i, "*{\r\n  font-family: 'Arial';\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\n.moreinfo{\r\n  display: block;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.listings a{\r\n  text-decoration: none;\r\n}\r\n\r\n/*Mobile*/\r\n@media only screen and (max-width: 414px) {\r\n  img{\r\n    max-width: 85%;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: block;\r\n    color: white;\r\n    font-size: 0.9em;\r\n    width: 20%;\r\n    margin: -13% auto 23%;\r\n  }\r\n}\r\n\r\n/* Mid Size Desktop */\r\n@media (min-width: 415px) and (max-width: 767px){\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  button{\r\n    font-size: 2em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -8%;\r\n  }\r\n\r\n  .moreinfo{\r\n    font-size: 1.75em;\r\n    width: 12%;\r\n    margin: 0 auto 8%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n@media (min-width: 768px) and (max-width: 1024px){\r\n  .search{\r\n    font-size: 2em;\r\n  }\r\n\r\n  button{\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  h1{\r\n    font-size: 4em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -10%;\r\n  }\r\n\r\n  .moreinfo{\r\n    margin: 0 auto 4%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 1025px){\r\n\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: none;\r\n  }\r\n\r\n  .listings img:hover{\r\n    opacity: 0.5;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -603,6 +606,11 @@ var ListingService = (function () {
             .map(function (data) { return data.json(); })
             .toPromise();
     };
+    ListingService.prototype.getListing = function (listing) {
+        return this._http.get("/api/getListing/" + listing)
+            .map(function (data) { return data.json(); })
+            .toPromise();
+    };
     return ListingService;
 }());
 ListingService = __decorate([
@@ -623,7 +631,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\n  text-align: center;\n}\n\n.wrapper{\n  text-align: center;\n  padding: 3%;\n}\n\n.logo{\n  font-size: 5em;\n  color: black;\n  text-decoration: none;\n}\n\n/* Add a black background color to the top navigation */\n.topnav {\n    background-color: white;\n    overflow: hidden;\n}\n\n/* Style the links inside the navigation bar */\n.topnav a {\n    color: black;\n    font-size: 1.75em;\n    text-decoration: none;\n    font-family: 'Arial';\n}\n\nspan{\n  font-size: 1.75em;\n}\n\n/* Change the color of links on hover */\n.topnav a:hover {\n  color: black;\n  text-decoration: red underline;\n}\n\n/* Add a color to the active/current link */\n.topnav a.active {\n    background-color: #4CAF50;\n    color: white;\n}\n\n.topnav img{\n  width: 17%;\n  padding: 1% 0.85%;\n}\n\nspan{\n  vertical-align: top;\n}\n\n/* MOBILE */\n@media only screen and (max-width: 414px) {\n  *{\n    font-size: 0.75em;\n  }\n\n  img{\n    max-width: 95%;\n  }\n\n  .topnav a{\n    text-decoration: red underline;\n  }\n\n  figcaption{\n    position: relative;\n    border: 2px solid black;\n  }\n}\n", ""]);
+exports.push([module.i, "*{\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  text-align: center;\r\n  padding: 3%;\r\n}\r\n\r\n.logo{\r\n  font-size: 5em;\r\n  color: black;\r\n  text-decoration: none;\r\n}\r\n\r\n/* Add a black background color to the top navigation */\r\n.topnav {\r\n    background-color: white;\r\n    overflow: hidden;\r\n}\r\n\r\n/* Style the links inside the navigation bar */\r\n.topnav a {\r\n    color: black;\r\n    font-size: 1.75em;\r\n    text-decoration: none;\r\n    font-family: 'Arial';\r\n}\r\n\r\nspan{\r\n  font-size: 1.75em;\r\n}\r\n\r\n/* Change the color of links on hover */\r\n.topnav a:hover {\r\n  color: black;\r\n  text-decoration: red underline;\r\n}\r\n\r\n/* Add a color to the active/current link */\r\n.topnav a.active {\r\n    background-color: #4CAF50;\r\n    color: white;\r\n}\r\n\r\n.topnav img{\r\n  width: 17%;\r\n  padding: 1% 0.85%;\r\n}\r\n\r\nspan{\r\n  vertical-align: top;\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  *{\r\n    font-size: 0.75em;\r\n  }\r\n\r\n  img{\r\n    max-width: 95%;\r\n  }\r\n\r\n  .topnav a{\r\n    text-decoration: red underline;\r\n  }\r\n\r\n  figcaption{\r\n    position: relative;\r\n    border: 2px solid black;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -697,7 +705,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/upload/upload.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title></title>\n  </head>\n  <body>\n    <div *ngIf = \"error\">\n      {{error}}\n    </div>\n    <form (submit)=\"addListing(formData)\" #formData=\"ngForm\">\n      Address: <input type=\"text\" name=\"address\" ngModel>\n      Sold? <input type=\"checkbox\" name=\"sold\" ngModel>\n    <div class=\"\">\n      <div ng2FileDrop\n      [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\"\n      (fileOver)=\"fileOverBase($event)\"\n      [uploader]=\"uploader\"\n      class=\"well my-drop-zone\">\n      Base drop zone\n    </div>\n    </div>\n\n    <h3>Select files</h3>\n\n    <div class=\"\">\n      Multiple\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple  /><br/>\n      Single\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" />\n      <h3>Upload queue</h3>\n      <p>Queue length: {{ uploader?.queue?.length }}</p>\n    </div>\n\n    <div class=\"\">\n      <table>\n        <thead>\n          <tr>\n            <th>Name</th>\n            <th>Actions</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let item of uploader.queue\">\n            <td><strong>{{ item?.file?.name }}</strong></td>\n            <td>\n              <button (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">Upload</button>\n              <button (click)=\"item.remove()\">Remove</button>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n\n    <div class=\"\">\n      <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload all</button>\n      <button type=\"button\" (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">Cancel all</button>\n      <button type=\"button\" (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">Clear Queue</button>\n    </div>\n\n    <div class=\"\">\n      <table>\n        <th>Name</th>\n        <th>Image</th>\n        <th>Action</th>\n\t<div *ngIf = \"files\">\n        <div *ngFor = \"let file of files\">\n          <td>{{ file.originalname }}</td>\n          <td><img src=\"{{ file.location }}\" width=\"25%\"></td>\n          <button type=\"button\" (click)=\"deleteListing(file.key)\">Delete</button>\n        </div>\n\t</div>\n      </table>\n    </div>\n    <button>Hello</button>\n  </form>\n\n  </body>\n</html>\n"
+module.exports = "<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <title></title>\r\n  </head>\r\n  <body>\r\n    <div *ngIf = \"error\">\r\n      {{error}}\r\n    </div>\r\n    <form (submit)=\"addListing(formData)\" #formData=\"ngForm\">\r\n      Address: <input type=\"text\" name=\"address\" ngModel>\r\n      Sold? <input type=\"checkbox\" name=\"sold\" ngModel>\r\n    <div class=\"\">\r\n      <div ng2FileDrop\r\n      [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\"\r\n      (fileOver)=\"fileOverBase($event)\"\r\n      [uploader]=\"uploader\"\r\n      class=\"well my-drop-zone\">\r\n      Base drop zone\r\n    </div>\r\n    </div>\r\n\r\n    <h3>Select files</h3>\r\n\r\n    <div class=\"\">\r\n      Multiple\r\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple  /><br/>\r\n      Single\r\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" />\r\n      <h3>Upload queue</h3>\r\n      <p>Queue length: {{ uploader?.queue?.length }}</p>\r\n    </div>\r\n\r\n    <div class=\"\">\r\n      <table>\r\n        <thead>\r\n          <tr>\r\n            <th>Name</th>\r\n            <th>Actions</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr *ngFor=\"let item of uploader.queue\">\r\n            <td><strong>{{ item?.file?.name }}</strong></td>\r\n            <td>\r\n              <button (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">Upload</button>\r\n              <button (click)=\"item.remove()\">Remove</button>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n\r\n    <div class=\"\">\r\n      <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload all</button>\r\n      <button type=\"button\" (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">Cancel all</button>\r\n      <button type=\"button\" (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">Clear Queue</button>\r\n    </div>\r\n\r\n    <div class=\"\">\r\n      <table>\r\n        <th>Name</th>\r\n        <th>Image</th>\r\n        <th>Action</th>\r\n\t<div *ngIf = \"files\">\r\n        <div *ngFor = \"let file of files\">\r\n          <td>{{ file.originalname }}</td>\r\n          <td><img src=\"{{ file.location }}\" width=\"25%\"></td>\r\n          <button type=\"button\" (click)=\"deleteListing(file.key)\">Delete</button>\r\n        </div>\r\n\t</div>\r\n      </table>\r\n    </div>\r\n    <button>Add Listing</button>\r\n  </form>\r\n\r\n  </body>\r\n</html>\r\n"
 
 /***/ }),
 

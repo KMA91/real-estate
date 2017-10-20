@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-upload';
-import { CarouselModule } from 'angular4-carousel';
 import { FormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
@@ -33,8 +32,7 @@ import { ListingShowComponent } from './listing//listing-show/listing-show.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule,
-    CarouselModule
+    HttpModule
   ],
   providers: [UploadService, ListingService],
   bootstrap: [AppComponent]
