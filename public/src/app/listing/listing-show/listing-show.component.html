@@ -1,8 +1,10 @@
-<div *ngIf="imageSources.length > 0">
-  <p (click)="previousImage()"><i class="left"></i></p>
-  <img (click)="nextImage()" src="{{ image }}">
-  <p (click)="nextImage()"><i class="right"></i></p>
-</div>
-<div *ngIf="listing">
-  <h3 class="address" >{{ listing.address }}</h3>
+<div [@fadeInAnimation]>
+  <div *ngIf="imageSources.length > 0">
+    <p (click)="previousImage()"><i class="left"></i></p>
+    <img (click)="nextImage()" src="{{ image }}">
+    <p (click)="nextImage()"><i class="right"></i></p>
+  </div>
+  <div *ngIf="listing">
+    <h3 class="address" >{{ listing.address }}</h3>
+  </div>
 </div>

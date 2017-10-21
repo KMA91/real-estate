@@ -17,21 +17,21 @@
 
   .top{
     display: inline-block;
+    position: relative;
   }
 
   .top img{
-    width: 22%;
+    width: 25%;
     display: inline-block;
   }
 
   .top h3{
-    width: 70%;
+    width: 60%;
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    margin-top: 1%;
+    position: relative;
     padding: 3%;
-    font-size: 1em;
   }
 
   .testimonials{

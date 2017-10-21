@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ListingService } from './../listing/listing.service';
+import { fadeInAnimation } from '../_animations/index';
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.css']
+  styleUrls: ['./landing.component.css'],
+  animations: [fadeInAnimation],
+  host: { '[@fadeInAnimation]': '' }
 })
 export class LandingComponent implements OnInit {
 

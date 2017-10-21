@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ListingService } from './../listing.service';
+import { fadeInAnimation } from '../../_animations/index';
 
 @Component({
   selector: 'app-listing-show',
   templateUrl: './listing-show.component.html',
-  styleUrls: ['./listing-show.component.css']
+  styleUrls: ['./listing-show.component.css'],
+  animations: [fadeInAnimation],
+  host: { '[@fadeInAnimation]': '' }
+
 })
 export class ListingShowComponent implements OnInit {
 

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-upload';
 import { FormsModule }   from '@angular/forms';
@@ -14,6 +15,8 @@ import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListingShowComponent } from './listing//listing-show/listing-show.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +29,16 @@ import { ListingShowComponent } from './listing//listing-show/listing-show.compo
     LandingComponent,
     NavbarComponent,
     FooterComponent,
-    ListingShowComponent
+    ListingShowComponent,
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule
   ],
   providers: [UploadService, ListingService],
   bootstrap: [AppComponent]

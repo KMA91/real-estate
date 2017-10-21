@@ -13,6 +13,40 @@ webpackEmptyContext.id = "../../../../../src async recursive";
 
 /***/ }),
 
+/***/ "../../../../../src/app/_animations/fade-in.animation.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__("../../../animations/@angular/animations.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return fadeInAnimation; });
+// import the required animation functions from the angular animations module
+
+var fadeInAnimation = 
+// trigger name for attaching this animation to an element using the [@triggerName] syntax
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["i" /* trigger */])('fadeInAnimation', [
+    // route 'enter' transition
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["j" /* transition */])(':enter', [
+        // css styles at start of transition
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({ opacity: 0 }),
+        // animation and styles at end of transition
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["k" /* animate */])('0.7s', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({ opacity: 1 }))
+    ]),
+]);
+//# sourceMappingURL=fade-in.animation.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/_animations/index.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__ = __webpack_require__("../../../../../src/app/_animations/fade-in.animation.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__["a"]; });
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/about/about.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21,7 +55,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Arial';\r\n}\r\n\r\n/* Tablet/Desktop */\r\n@media only screen and (min-width: 415px) {\r\n  .wrapper{\r\n    width: 90%;\r\n    margin: 0 auto;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top{\r\n    display: inline-block;\r\n  }\r\n\r\n  .top img{\r\n    width: 22%;\r\n    display: inline-block;\r\n  }\r\n\r\n  .top h3{\r\n    width: 70%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    vertical-align: top;\r\n    margin-top: 1%;\r\n    padding: 3%;\r\n    font-size: 1em;\r\n  }\r\n\r\n  .testimonials{\r\n    text-align: center;\r\n    margin: 2%;\r\n  }\r\n\r\n  .testimonials h3, p{\r\n    padding: 2%;\r\n  }\r\n\r\n  p{\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  .wrapper{\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    max-width: 90%;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top h3{\r\n    margin-top: 9%;\r\n    font-size: 1.33em;\r\n  }\r\n\r\n  h2, p, button{\r\n    margin: 5% 0;\r\n  }\r\n\r\n  .test{\r\n    font-size: 1.33em;\r\n    text-decoration: red underline;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "*{\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Arial';\r\n}\r\n\r\n/* Tablet/Desktop */\r\n@media only screen and (min-width: 415px) {\r\n  .wrapper{\r\n    width: 90%;\r\n    margin: 0 auto;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top{\r\n    display: inline-block;\r\n    position: relative;\r\n  }\r\n\r\n  .top img{\r\n    width: 25%;\r\n    display: inline-block;\r\n  }\r\n\r\n  .top h3{\r\n    width: 60%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    vertical-align: top;\r\n    position: relative;\r\n    padding: 3%;\r\n  }\r\n\r\n  .testimonials{\r\n    text-align: center;\r\n    margin: 2%;\r\n  }\r\n\r\n  .testimonials h3, p{\r\n    padding: 2%;\r\n  }\r\n\r\n  p{\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  .wrapper{\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    max-width: 90%;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top h3{\r\n    margin-top: 9%;\r\n    font-size: 1.33em;\r\n  }\r\n\r\n  h2, p, button{\r\n    margin: 5% 0;\r\n  }\r\n\r\n  .test{\r\n    font-size: 1.33em;\r\n    text-decoration: red underline;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -34,7 +68,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n\n  <section>\n    <div class=\"top\">\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\n      <h3>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</h3>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"testimonials\">\n      <h2>Testimonials</h2>\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\n    </div>\n  </section>\n\n</div>\n"
+module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n\r\n  <section>\r\n    <div class=\"top\">\r\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\r\n      <h3>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</h3>\r\n    </div>\r\n  </section>\r\n\r\n  <section>\r\n    <div class=\"testimonials\">\r\n      <h2>Testimonials</h2>\r\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\r\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\r\n    </div>\r\n  </section>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -43,6 +77,7 @@ module.exports = "<div class=\"wrapper\">\n\n  <section>\n    <div class=\"top\"
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animations_index__ = __webpack_require__("../../../../../src/app/_animations/index.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -53,6 +88,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 var AboutComponent = (function () {
     function AboutComponent() {
@@ -65,7 +101,9 @@ AboutComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-about',
         template: __webpack_require__("../../../../../src/app/about/about.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/about/about.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/about/about.component.css")],
+        animations: [__WEBPACK_IMPORTED_MODULE_1__animations_index__["a" /* fadeInAnimation */]],
+        host: { '[@fadeInAnimation]': '' }
     }),
     __metadata("design:paramtypes", [])
 ], AboutComponent);
@@ -85,6 +123,8 @@ AboutComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__listing_listing_component__ = __webpack_require__("../../../../../src/app/listing/listing.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__listing_listing_show_listing_show_component__ = __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -99,12 +139,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var routes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_3__landing_landing_component__["a" /* LandingComponent */] },
     { path: 'upload', component: __WEBPACK_IMPORTED_MODULE_2__upload_upload_component__["a" /* UploadComponent */] },
     { path: 'properties', component: __WEBPACK_IMPORTED_MODULE_4__listing_listing_component__["a" /* ListingComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_5__about_about_component__["a" /* AboutComponent */] },
-    { path: 'show/:id', component: __WEBPACK_IMPORTED_MODULE_6__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */] }
+    { path: 'show/:id', component: __WEBPACK_IMPORTED_MODULE_6__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */] },
+    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */] },
+    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_8__login_login_component__["a" /* LoginComponent */] },
+    { path: '**', redirectTo: '' }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -143,7 +188,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n<app-footer></app-footer>\n"
+module.exports = "<app-navbar></app-navbar>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>\r\n"
 
 /***/ }),
 
@@ -184,21 +229,24 @@ AppComponent = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload__ = __webpack_require__("../../../../ng2-file-upload/ng2-file-upload.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__upload_upload_component__ = __webpack_require__("../../../../../src/app/upload/upload.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__upload_upload_service__ = __webpack_require__("../../../../../src/app/upload/upload.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__listing_listing_component__ = __webpack_require__("../../../../../src/app/listing/listing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__landing_landing_component__ = __webpack_require__("../../../../../src/app/landing/landing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__listing_listing_show_listing_show_component__ = __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_file_upload_ng2_file_upload__ = __webpack_require__("../../../../ng2-file-upload/ng2-file-upload.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_file_upload_ng2_file_upload___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_file_upload_ng2_file_upload__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__upload_upload_component__ = __webpack_require__("../../../../../src/app/upload/upload.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__upload_upload_service__ = __webpack_require__("../../../../../src/app/upload/upload.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__listing_listing_component__ = __webpack_require__("../../../../../src/app/listing/listing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__landing_landing_component__ = __webpack_require__("../../../../../src/app/landing/landing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__listing_listing_show_listing_show_component__ = __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -206,6 +254,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -230,29 +281,97 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload__["FileSelectDirective"],
-            __WEBPACK_IMPORTED_MODULE_3_ng2_file_upload_ng2_file_upload__["FileDropDirective"],
-            __WEBPACK_IMPORTED_MODULE_7__upload_upload_component__["a" /* UploadComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__about_about_component__["a" /* AboutComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__listing_listing_component__["a" /* ListingComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__landing_landing_component__["a" /* LandingComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__footer_footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */]
+            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_4_ng2_file_upload_ng2_file_upload__["FileSelectDirective"],
+            __WEBPACK_IMPORTED_MODULE_4_ng2_file_upload_ng2_file_upload__["FileDropDirective"],
+            __WEBPACK_IMPORTED_MODULE_8__upload_upload_component__["a" /* UploadComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__listing_listing_component__["a" /* ListingComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__landing_landing_component__["a" /* LandingComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__contact_contact_component__["a" /* ContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__login_login_component__["a" /* LoginComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_http__["a" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_3__app_routing_module__["a" /* AppRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_6__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_8__upload_upload_service__["a" /* UploadService */], __WEBPACK_IMPORTED_MODULE_11__listing_listing_service__["a" /* ListingService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_9__upload_upload_service__["a" /* UploadService */], __WEBPACK_IMPORTED_MODULE_12__listing_listing_service__["a" /* ListingService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/contact/contact.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "*{\r\n  text-align: center;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/contact/contact.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\n  CONTACT ME\n  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/contact/contact.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animations_index__ = __webpack_require__("../../../../../src/app/_animations/index.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactComponent = (function () {
+    function ContactComponent() {
+    }
+    ContactComponent.prototype.ngOnInit = function () {
+    };
+    return ContactComponent;
+}());
+ContactComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-contact',
+        template: __webpack_require__("../../../../../src/app/contact/contact.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/contact/contact.component.css")],
+        animations: [__WEBPACK_IMPORTED_MODULE_1__animations_index__["a" /* fadeInAnimation */]],
+        host: { '[@fadeInAnimation]': '' }
+    }),
+    __metadata("design:paramtypes", [])
+], ContactComponent);
+
+//# sourceMappingURL=contact.component.js.map
 
 /***/ }),
 
@@ -277,7 +396,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>tony@tony-ma.com | (626)759-4812 | CalBRE #01931357</p>\n<div class=\"social\">\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\n</div>\n"
+module.exports = "<p>brokertonyma@gmail.com | (626)759-4812 | CalBRE #01931357</p>\r\n<div class=\"social\">\r\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\r\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\r\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\r\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\r\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -338,7 +457,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/landing/landing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "    <section class=\"top\">\n      <div class=\"slider\">\n        <div class=\"slide1\"><h3>\"Make your dream home a reality\"</h3></div>\n        <div class=\"slide2\"></div>\n        <div class=\"slide3\"></div>\n      </div>\n    </section>\n"
+module.exports = "    <section class=\"top\" [@fadeInAnimation]>\r\n      <div class=\"slider\">\r\n        <div class=\"slide1\"><h3>\"Make your dream home a reality\"</h3></div>\r\n        <div class=\"slide2\"></div>\r\n        <div class=\"slide3\"></div>\r\n      </div>\r\n    </section>\r\n"
 
 /***/ }),
 
@@ -348,6 +467,7 @@ module.exports = "    <section class=\"top\">\n      <div class=\"slider\">\n   
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations_index__ = __webpack_require__("../../../../../src/app/_animations/index.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LandingComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -358,6 +478,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 var LandingComponent = (function () {
@@ -372,7 +493,9 @@ LandingComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-landing',
         template: __webpack_require__("../../../../../src/app/landing/landing.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/landing/landing.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/landing/landing.component.css")],
+        animations: [__WEBPACK_IMPORTED_MODULE_2__animations_index__["a" /* fadeInAnimation */]],
+        host: { '[@fadeInAnimation]': '' }
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__["a" /* ListingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__["a" /* ListingService */]) === "function" && _a || Object])
 ], LandingComponent);
@@ -390,7 +513,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\nimg{\r\n  width: 80%;\r\n  height: auto;\r\n  margin-bottom: 3%;\r\n}\r\n\r\np{\r\n  display: inline-block;\r\n}\r\n\r\n.right {\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg);\r\n}\r\n\r\n.left {\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg);\r\n}\r\n\r\n.address {\r\n  margin: auto 0;\r\n  text-align: center;\r\n}\r\n\r\n/*Desktop*/\r\n@media only screen and (min-width: 1025px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 25px;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n@media (min-width: 415px) and (max-width: 1024px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 20px;\r\n  }\r\n}\r\n\r\n/*Mobile*/\r\n@media only screen and (max-width: 414px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 8px;\r\n  }\r\n\r\n  h3{\r\n    font-size: 1em;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "*{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  vertical-align: top;\r\n}\r\n\r\nimg{\r\n  width: 80%;\r\n  height: auto;\r\n  margin-bottom: 3%;\r\n  display: inline-block;\r\n}\r\n\r\np{\r\n  margin-top: 25%;\r\n  display: inline-block;\r\n}\r\n\r\n.right {\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg);\r\n}\r\n\r\n.left {\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg);\r\n}\r\n\r\n.address {\r\n  margin: auto 0;\r\n  text-align: center;\r\n}\r\n\r\n/*Desktop*/\r\n@media only screen and (min-width: 1025px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 25px;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n@media (min-width: 415px) and (max-width: 1024px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 20px;\r\n  }\r\n}\r\n\r\n/*Mobile*/\r\n@media only screen and (max-width: 414px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 8px;\r\n  }\r\n\r\n  h3{\r\n    font-size: 1em;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -403,7 +526,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/listing/listing-show/listing-show.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"imageSources.length > 0\">\r\n  <p (click)=\"previousImage()\"><i class=\"left\"></i></p>\r\n  <img (click)=\"nextImage()\" src=\"{{ image }}\">\r\n  <p (click)=\"nextImage()\"><i class=\"right\"></i></p>\r\n</div>\r\n<div *ngIf=\"listing\">\r\n  <h3 class=\"address\" >{{ listing.address }}</h3>\r\n</div>\r\n"
+module.exports = "<div [@fadeInAnimation]>\r\n  <div *ngIf=\"imageSources.length > 0\">\r\n    <p (click)=\"previousImage()\"><i class=\"left\"></i></p>\r\n    <img (click)=\"nextImage()\" src=\"{{ image }}\">\r\n    <p (click)=\"nextImage()\"><i class=\"right\"></i></p>\r\n  </div>\r\n  <div *ngIf=\"listing\">\r\n    <h3 class=\"address\" >{{ listing.address }}</h3>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -414,6 +537,7 @@ module.exports = "<div *ngIf=\"imageSources.length > 0\">\r\n  <p (click)=\"prev
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animations_index__ = __webpack_require__("../../../../../src/app/_animations/index.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListingShowComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -424,6 +548,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -477,7 +602,9 @@ ListingShowComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-listing-show',
         template: __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.css")],
+        animations: [__WEBPACK_IMPORTED_MODULE_3__animations_index__["a" /* fadeInAnimation */]],
+        host: { '[@fadeInAnimation]': '' }
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__listing_service__["a" /* ListingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__listing_service__["a" /* ListingService */]) === "function" && _b || Object])
 ], ListingShowComponent);
@@ -495,7 +622,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  font-family: 'Arial';\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\n.moreinfo{\r\n  display: block;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.listings a{\r\n  text-decoration: none;\r\n}\r\n\r\n/*Mobile*/\r\n@media only screen and (max-width: 414px) {\r\n  img{\r\n    max-width: 85%;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: block;\r\n    color: white;\r\n    font-size: 0.9em;\r\n    width: 20%;\r\n    margin: -13% auto 23%;\r\n  }\r\n}\r\n\r\n/* Mid Size Desktop */\r\n@media (min-width: 415px) and (max-width: 767px){\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  button{\r\n    font-size: 2em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -8%;\r\n  }\r\n\r\n  .moreinfo{\r\n    font-size: 1.75em;\r\n    width: 12%;\r\n    margin: 0 auto 8%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n@media (min-width: 768px) and (max-width: 1024px){\r\n  .search{\r\n    font-size: 2em;\r\n  }\r\n\r\n  button{\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  h1{\r\n    font-size: 4em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -10%;\r\n  }\r\n\r\n  .moreinfo{\r\n    margin: 0 auto 4%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 1025px){\r\n\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: none;\r\n  }\r\n\r\n  .listings img:hover{\r\n    opacity: 0.5;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "*{\r\n  font-family: 'Arial';\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\n.moreinfo{\r\n  display: block;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.listings a{\r\n  text-decoration: none;\r\n}\r\n\r\n/*Mobile*/\r\n@media only screen and (max-width: 414px) {\r\n  img{\r\n    max-width: 85%;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: block;\r\n    color: white;\r\n    font-size: 0.9em;\r\n    width: 20%;\r\n    margin: -13% auto 23%;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n/* Mid Size Desktop */\r\n@media (min-width: 415px) and (max-width: 767px){\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  button{\r\n    font-size: 2em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -8%;\r\n  }\r\n\r\n  .moreinfo{\r\n    font-size: 1.75em;\r\n    width: 12%;\r\n    margin: 0 auto 8%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n@media (min-width: 768px) and (max-width: 1024px){\r\n  .search{\r\n    font-size: 2em;\r\n  }\r\n\r\n  img{\r\n    max-width: 85%;\r\n  }\r\n\r\n  button{\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  h1{\r\n    font-size: 4em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -10%;\r\n  }\r\n\r\n  .moreinfo{\r\n    font-size: 1.75em;\r\n    width: 12%;\r\n    margin: 0 auto 4%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 1025px){\r\n\r\n  button{\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  img:hover {\r\n    border: 5px solid red;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: none;\r\n  }\r\n\r\n  .listings img:hover{\r\n    opacity: 0.5;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -508,7 +635,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/listing/listing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n  <section class=\"search\">\n    <h3>Search By:</h3>\n    <button (click)=\"getActive()\">Active</button>\n    <button (click)=\"getSold()\">Sold</button>\n  </section>\n\n  <section>\n    <h1 *ngIf=\"active\">Active Properties</h1>\n    <h1 *ngIf=\"!active\">Sold Properties</h1>\n\n    <div *ngFor=\"let listing of listings\" class=\"listings\">\n      <a routerLink=\"/show/{{ listing._id }}\"><img src=\"{{ listing.paths[0] }}\"></a>\n      <a href=\"#\" class=\"moreinfo\">More info</a>\n    </div>\n  </section>\n</div>\n"
+module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n  <section class=\"search\">\r\n    <h3>Search By:</h3>\r\n    <button (click)=\"getActive()\">Active</button>\r\n    <button (click)=\"getSold()\">Sold</button>\r\n  </section>\r\n\r\n  <section>\r\n    <h1 *ngIf=\"active\">Active Properties</h1>\r\n    <h1 *ngIf=\"!active\">Sold Properties</h1>\r\n\r\n    <div *ngFor=\"let listing of listings\" class=\"listings\">\r\n      <a routerLink=\"/show/{{ listing._id }}\"><img src=\"{{ listing.paths[0] }}\"></a>\r\n      <a href=\"#\" class=\"moreinfo\">More info</a>\r\n    </div>\r\n  </section>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -518,6 +645,7 @@ module.exports = "<div class=\"wrapper\">\n  <section class=\"search\">\n    <h3
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations_index__ = __webpack_require__("../../../../../src/app/_animations/index.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListingComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -528,6 +656,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 var ListingComponent = (function () {
@@ -556,7 +685,9 @@ ListingComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-listing',
         template: __webpack_require__("../../../../../src/app/listing/listing.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/listing/listing.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/listing/listing.component.css")],
+        animations: [__WEBPACK_IMPORTED_MODULE_2__animations_index__["a" /* fadeInAnimation */]],
+        host: { '[@fadeInAnimation]': '' }
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__listing_service__["a" /* ListingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__listing_service__["a" /* ListingService */]) === "function" && _a || Object])
 ], ListingComponent);
@@ -623,6 +754,67 @@ var _a;
 
 /***/ }),
 
+/***/ "../../../../../src/app/login/login.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/login/login.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  login works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/login/login.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LoginComponent = (function () {
+    function LoginComponent() {
+    }
+    LoginComponent.prototype.ngOnInit = function () {
+    };
+    return LoginComponent;
+}());
+LoginComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-login',
+        template: __webpack_require__("../../../../../src/app/login/login.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/login/login.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], LoginComponent);
+
+//# sourceMappingURL=login.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/navbar/navbar.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -631,7 +823,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  text-align: center;\r\n  padding: 3%;\r\n}\r\n\r\n.logo{\r\n  font-size: 5em;\r\n  color: black;\r\n  text-decoration: none;\r\n}\r\n\r\n/* Add a black background color to the top navigation */\r\n.topnav {\r\n    background-color: white;\r\n    overflow: hidden;\r\n}\r\n\r\n/* Style the links inside the navigation bar */\r\n.topnav a {\r\n    color: black;\r\n    font-size: 1.75em;\r\n    text-decoration: none;\r\n    font-family: 'Arial';\r\n}\r\n\r\nspan{\r\n  font-size: 1.75em;\r\n}\r\n\r\n/* Change the color of links on hover */\r\n.topnav a:hover {\r\n  color: black;\r\n  text-decoration: red underline;\r\n}\r\n\r\n/* Add a color to the active/current link */\r\n.topnav a.active {\r\n    background-color: #4CAF50;\r\n    color: white;\r\n}\r\n\r\n.topnav img{\r\n  width: 17%;\r\n  padding: 1% 0.85%;\r\n}\r\n\r\nspan{\r\n  vertical-align: top;\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  *{\r\n    font-size: 0.75em;\r\n  }\r\n\r\n  img{\r\n    max-width: 95%;\r\n  }\r\n\r\n  .topnav a{\r\n    text-decoration: red underline;\r\n  }\r\n\r\n  figcaption{\r\n    position: relative;\r\n    border: 2px solid black;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "*{\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  text-align: center;\r\n  padding: 3%;\r\n}\r\n\r\n.logo{\r\n  color: black;\r\n  text-decoration: none;\r\n}\r\n\r\n/* Add a black background color to the top navigation */\r\n.topnav {\r\n    background-color: white;\r\n    overflow: hidden;\r\n}\r\n\r\n/* Style the links inside the navigation bar */\r\n.topnav a {\r\n    color: black;\r\n    font-size: 1.75em;\r\n    text-decoration: none;\r\n    font-family: 'Arial';\r\n}\r\n\r\nspan{\r\n  font-size: 1.75em;\r\n}\r\n\r\n/* Change the color of links on hover */\r\n.topnav a:hover {\r\n  color: black;\r\n  text-decoration: red underline;\r\n}\r\n\r\n/* Add a color to the active/current link */\r\n.topnav a.active {\r\n    background-color: #4CAF50;\r\n    color: white;\r\n}\r\n\r\n.topnav img{\r\n  width: 3%;\r\n  padding: 1% 0.85%;\r\n}\r\n\r\nspan{\r\n  vertical-align: top;\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  *{\r\n    font-size: 0.75em;\r\n  }\r\n\r\n  img{\r\n    max-width: 95%;\r\n  }\r\n\r\n  .topnav a{\r\n    text-decoration: red underline;\r\n  }\r\n\r\n  figcaption{\r\n    position: relative;\r\n    border: 2px solid black;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 415px){\r\n  img{\r\n    max-width: 30%;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 
@@ -644,7 +836,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n  <a routerLink=\"/\" class=\"logo\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remaxelite.png\"></a>\n  <div class=\"topnav\" id=\"myTopnav\">\n    <a routerLink=\"/properties\">Properties</a><span class=\"divider\"> |</span>\n    <a routerLink=\"/about\">About</a><span class=\"divider\"> |</span>\n    <a routerLink=\"/contact\">Contact</a>\n  </div>\n</div>\n"
+module.exports = "<div class=\"wrapper\">\r\n  <a routerLink=\"/\" class=\"logo\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remaxelite.png\"></a>\r\n  <div class=\"topnav\" id=\"myTopnav\">\r\n    <a routerLink=\"/properties\">Properties</a><span class=\"divider\"> |</span>\r\n    <a routerLink=\"/about\">About</a><span class=\"divider\"> |</span>\r\n    <a routerLink=\"/contact\">Contact</a>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
