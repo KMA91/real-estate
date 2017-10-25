@@ -125,6 +125,7 @@ AboutComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__listing_listing_show_listing_show_component__ = __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__auth_guard__ = __webpack_require__("../../../../../src/app/auth.guard.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -141,9 +142,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_3__landing_landing_component__["a" /* LandingComponent */] },
-    { path: 'upload', component: __WEBPACK_IMPORTED_MODULE_2__upload_upload_component__["a" /* UploadComponent */] },
+    { path: 'upload', canActivate: [__WEBPACK_IMPORTED_MODULE_9__auth_guard__["a" /* AuthGuard */]], component: __WEBPACK_IMPORTED_MODULE_2__upload_upload_component__["a" /* UploadComponent */] },
     { path: 'properties', component: __WEBPACK_IMPORTED_MODULE_4__listing_listing_component__["a" /* ListingComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_5__about_about_component__["a" /* AboutComponent */] },
     { path: 'show/:id', component: __WEBPACK_IMPORTED_MODULE_6__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */] },
@@ -158,8 +160,8 @@ var AppRoutingModule = (function () {
 }());
 AppRoutingModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(routes)],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot(routes)],
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
     })
 ], AppRoutingModule);
 
@@ -237,16 +239,18 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__upload_upload_component__ = __webpack_require__("../../../../../src/app/upload/upload.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__upload_upload_service__ = __webpack_require__("../../../../../src/app/upload/upload.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__listing_listing_component__ = __webpack_require__("../../../../../src/app/listing/listing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__landing_landing_component__ = __webpack_require__("../../../../../src/app/landing/landing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__listing_listing_show_listing_show_component__ = __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__listing_listing_component__ = __webpack_require__("../../../../../src/app/listing/listing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__landing_landing_component__ = __webpack_require__("../../../../../src/app/landing/landing.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__navbar_navbar_component__ = __webpack_require__("../../../../../src/app/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__listing_listing_show_listing_show_component__ = __webpack_require__("../../../../../src/app/listing/listing-show/listing-show.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__login_login_service__ = __webpack_require__("../../../../../src/app/login/login.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__upload_upload_service__ = __webpack_require__("../../../../../src/app/upload/upload.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__auth_guard__ = __webpack_require__("../../../../../src/app/auth.guard.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -254,6 +258,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -285,14 +291,14 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_4_ng2_file_upload_ng2_file_upload__["FileSelectDirective"],
             __WEBPACK_IMPORTED_MODULE_4_ng2_file_upload_ng2_file_upload__["FileDropDirective"],
             __WEBPACK_IMPORTED_MODULE_8__upload_upload_component__["a" /* UploadComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__about_about_component__["a" /* AboutComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__listing_listing_component__["a" /* ListingComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__landing_landing_component__["a" /* LandingComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__footer_footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__contact_contact_component__["a" /* ContactComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__login_login_component__["a" /* LoginComponent */]
+            __WEBPACK_IMPORTED_MODULE_9__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__listing_listing_component__["a" /* ListingComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__landing_landing_component__["a" /* LandingComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__listing_listing_show_listing_show_component__["a" /* ListingShowComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__["a" /* ContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__login_login_component__["a" /* LoginComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -301,12 +307,58 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_6__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_9__upload_upload_service__["a" /* UploadService */], __WEBPACK_IMPORTED_MODULE_12__listing_listing_service__["a" /* ListingService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_18__upload_upload_service__["a" /* UploadService */], __WEBPACK_IMPORTED_MODULE_19__listing_listing_service__["a" /* ListingService */], __WEBPACK_IMPORTED_MODULE_17__login_login_service__["a" /* LoginService */], __WEBPACK_IMPORTED_MODULE_20__auth_guard__["a" /* AuthGuard */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/auth.guard.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login_service__ = __webpack_require__("../../../../../src/app/login/login.service.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuard; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AuthGuard = (function () {
+    function AuthGuard(_loginService, _router) {
+        this._loginService = _loginService;
+        this._router = _router;
+    }
+    AuthGuard.prototype.canActivate = function (next, state) {
+        if (this._loginService.getUserLoggedIn()) {
+            return true;
+        }
+        else {
+            this._router.navigate(['/']);
+            return false;
+        }
+    };
+    return AuthGuard;
+}());
+AuthGuard = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__login_login_service__["a" /* LoginService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__login_login_service__["a" /* LoginService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _b || Object])
+], AuthGuard);
+
+var _a, _b;
+//# sourceMappingURL=auth.guard.js.map
 
 /***/ }),
 
@@ -318,7 +370,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  text-align: center;\r\n}\r\n", ""]);
+exports.push([module.i, "*{\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  padding: 5% 5% 7%;\r\n}\r\n", ""]);
 
 // exports
 
@@ -331,7 +383,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\n  CONTACT ME\n  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n</div>\n"
+module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n  <h2>Let's get in touch</h2>\r\n  <div class=\"contact\">\r\n    <p>E-mail : <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a></p>\r\n    <p>Phone # : <a href=\"tel:1-626-759-4812\">(626) 759-4812</a></p>\r\n    <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -396,7 +448,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>brokertonyma@gmail.com | (626)759-4812 | CalBRE #01931357</p>\r\n<div class=\"social\">\r\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\r\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\r\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\r\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\r\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\r\n</div>\r\n"
+module.exports = "<p><a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> | <a href=\"tel:1-626-759-4812\">(626) 759-4812</a> | CalBRE #01931357</p>\r\n<div class=\"social\">\r\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\r\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\r\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\r\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\r\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -606,7 +658,7 @@ ListingShowComponent = __decorate([
         animations: [__WEBPACK_IMPORTED_MODULE_3__animations_index__["a" /* fadeInAnimation */]],
         host: { '[@fadeInAnimation]': '' }
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__listing_service__["a" /* ListingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__listing_service__["a" /* ListingService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__listing_service__["a" /* ListingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__listing_service__["a" /* ListingService */]) === "function" && _b || Object])
 ], ListingShowComponent);
 
 var _a, _b;
@@ -775,7 +827,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  login works!\r\n</p>\r\n"
+module.exports = "<form (submit)=\"login(formData)\" #formData=\"ngForm\">\r\n  <h2>Login</h2>\r\n  <label>Username: <input type=\"text\" name=\"username\" ngModel></label>\r\n  <label>Password: <input type=\"password\" name=\"password\" ngModel></label>\r\n  <button>Login</button>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -784,6 +836,8 @@ module.exports = "<p>\r\n  login works!\r\n</p>\r\n"
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_service__ = __webpack_require__("../../../../../src/app/login/login.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -795,10 +849,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var LoginComponent = (function () {
-    function LoginComponent() {
+    function LoginComponent(_loginService, _router) {
+        this._loginService = _loginService;
+        this._router = _router;
     }
     LoginComponent.prototype.ngOnInit = function () {
+    };
+    LoginComponent.prototype.login = function (info) {
+        var _this = this;
+        this._loginService.login(info.value)
+            .then(function (success) { _this._loginService.setUserLoggedIn(); _this._router.navigate(['/upload']); })
+            .catch(function (err) { return info.resetForm(); });
     };
     return LoginComponent;
 }());
@@ -808,10 +872,61 @@ LoginComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/login/login.component.html"),
         styles: [__webpack_require__("../../../../../src/app/login/login.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__login_service__["a" /* LoginService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__login_service__["a" /* LoginService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _b || Object])
 ], LoginComponent);
 
+var _a, _b;
 //# sourceMappingURL=login.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/login/login.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__("../../../../rxjs/Rx.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var LoginService = (function () {
+    function LoginService(_http) {
+        this._http = _http;
+        this.isUserLoggedIn = false;
+    }
+    LoginService.prototype.login = function (info) {
+        return this._http.post('/api/login', info)
+            .map(function (data) { return data.json(); })
+            .toPromise();
+    };
+    LoginService.prototype.getUserLoggedIn = function () {
+        return this.isUserLoggedIn;
+    };
+    LoginService.prototype.setUserLoggedIn = function () {
+        this.isUserLoggedIn = true;
+        this.username = 'admin';
+    };
+    return LoginService;
+}());
+LoginService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], LoginService);
+
+var _a;
+//# sourceMappingURL=login.service.js.map
 
 /***/ }),
 
@@ -823,7 +938,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  text-align: center;\r\n  padding: 3%;\r\n}\r\n\r\n.logo{\r\n  color: black;\r\n  text-decoration: none;\r\n}\r\n\r\n/* Add a black background color to the top navigation */\r\n.topnav {\r\n    background-color: white;\r\n    overflow: hidden;\r\n}\r\n\r\n/* Style the links inside the navigation bar */\r\n.topnav a {\r\n    color: black;\r\n    font-size: 1.75em;\r\n    text-decoration: none;\r\n    font-family: 'Arial';\r\n}\r\n\r\nspan{\r\n  font-size: 1.75em;\r\n}\r\n\r\n/* Change the color of links on hover */\r\n.topnav a:hover {\r\n  color: black;\r\n  text-decoration: red underline;\r\n}\r\n\r\n/* Add a color to the active/current link */\r\n.topnav a.active {\r\n    background-color: #4CAF50;\r\n    color: white;\r\n}\r\n\r\n.topnav img{\r\n  width: 3%;\r\n  padding: 1% 0.85%;\r\n}\r\n\r\nspan{\r\n  vertical-align: top;\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  *{\r\n    font-size: 0.75em;\r\n  }\r\n\r\n  img{\r\n    max-width: 95%;\r\n  }\r\n\r\n  .topnav a{\r\n    text-decoration: red underline;\r\n  }\r\n\r\n  figcaption{\r\n    position: relative;\r\n    border: 2px solid black;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 415px){\r\n  img{\r\n    max-width: 30%;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "*{\r\n  text-align: center;\r\n  font-family: 'Josefin Sans', sans-serif;\r\n  font-weight: 600;\r\n}\r\n\r\n.wrapper{\r\n  text-align: center;\r\n  padding: 3%;\r\n}\r\n\r\n.logo{\r\n  color: black;\r\n  text-decoration: none;\r\n}\r\n\r\n/* Add a black background color to the top navigation */\r\n.topnav {\r\n    background-color: white;\r\n    overflow: hidden;\r\n}\r\n\r\n/* Style the links inside the navigation bar */\r\n.topnav a {\r\n    color: black;\r\n    font-size: 1.75em;\r\n    text-decoration: none;\r\n    font-family: 'Arial';\r\n}\r\n\r\nspan{\r\n  font-size: 1.75em;\r\n}\r\n\r\n/* Change the color of links on hover */\r\n.topnav a:hover {\r\n  color: black;\r\n  text-decoration: red underline;\r\n}\r\n\r\n/* Add a color to the active/current link */\r\n.topnav a.active {\r\n    background-color: #4CAF50;\r\n    color: white;\r\n}\r\n\r\n.topnav img{\r\n  width: 3%;\r\n  padding: 1% 0.85%;\r\n}\r\n\r\n.topnav{\r\n  margin-bottom: -2.5%;\r\n}\r\n\r\nspan{\r\n  vertical-align: top;\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  *{\r\n    font-size: 0.75em;\r\n  }\r\n\r\n  img{\r\n    max-width: 95%;\r\n  }\r\n\r\n  .topnav a{\r\n    text-decoration: red underline;\r\n  }\r\n\r\n  figcaption{\r\n    position: relative;\r\n    border: 2px solid black;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 415px){\r\n  img{\r\n    max-width: 30%;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 

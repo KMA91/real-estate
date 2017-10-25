@@ -7,10 +7,11 @@ import { AboutComponent } from './about/about.component';
 import { ListingShowComponent } from './listing//listing-show/listing-show.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {path: '', component: LandingComponent},
-  {path: 'upload', component: UploadComponent},
+  {path: 'upload', canActivate: [AuthGuard], component: UploadComponent},
   {path: 'properties', component: ListingComponent},
   {path: 'about', component: AboutComponent},
   {path: 'show/:id', component: ListingShowComponent},

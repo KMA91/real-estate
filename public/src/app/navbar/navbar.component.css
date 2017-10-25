@@ -1,5 +1,7 @@
 *{
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
 }
 
 .wrapper{
@@ -45,6 +47,10 @@ span{
 .topnav img{
   width: 3%;
   padding: 1% 0.85%;
+}
+
+.topnav{
+  margin-bottom: -2.5%;
 }
 
 span{

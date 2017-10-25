@@ -7,16 +7,18 @@ import { FormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { UploadComponent } from './upload/upload.component';
-import { UploadService } from './upload/upload.service';
 import { AboutComponent } from './about/about.component';
 import { ListingComponent } from './listing/listing.component';
-import { ListingService } from './listing/listing.service';
 import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListingShowComponent } from './listing//listing-show/listing-show.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { LoginService } from './login/login.service';
+import { UploadService } from './upload/upload.service';
+import { ListingService } from './listing/listing.service';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,7 @@ import { LoginComponent } from './login/login.component';
     HttpModule,
     BrowserAnimationsModule
   ],
-  providers: [UploadService, ListingService],
+  providers: [UploadService, ListingService, LoginService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
