@@ -37,6 +37,9 @@ MongoDB, Express.js, Node.js, Angular, AWS (Deployment), AWS(SDK), Custom Css, F
 - 10/16/17 - Started mobile/tablet/desktop landing page
 - 10/17/17 - Finished mobile/tablet/desktop landing page
 - 10/18/17 - Refactored mobile/tablet/desktop landing page per client's request
+- 10/19/17 - Added content for about/listing pages
+- 10/20/17 - Added animations on page transitions
+- 10/21/17 - Added content for contact page
 
 ## Contributors
 [Kevin Ma](https://github.com/KMA91)
