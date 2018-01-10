@@ -23,16 +23,6 @@ module.exports = {
     return;
   },
 
-  getThreeListings: (req, res) => {
-    Listing.find({}).sort('-createdAt').limit(3).exec((err, listing) => {
-      if(err){
-      }else{
-        return res.json(listing);
-      }
-    })
-    return;
-  },
-
   getActive: (req, res) => {
     Listing.find({sold: false}, (err, listings) =>{
       if(err){
