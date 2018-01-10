@@ -22,6 +22,9 @@ import { ListingService } from './listing/listing.service';
 import { AuthGuard } from './auth.guard';
 import { ListingEditAddImagesComponent } from './listing/listing-edit/listing-edit-add-images/listing-edit-add-images.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
+import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { TopNavbarComponent } from './top-navbar/top-navbar.component';
     AppRoutingModule,
     FormsModule,
     HttpModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxCarouselModule
   ],
   providers: [UploadService, ListingService, LoginService, AuthGuard],
   bootstrap: [AppComponent]

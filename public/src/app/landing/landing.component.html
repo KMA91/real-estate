@@ -30,9 +30,16 @@
 </div>
 <div class="properties">
   <h3>Properties</h3>
-  <h5>For Sale</h5>
-  <img src="asd" alt="">
-  <h5>Sold</h5>
-  <img src="asd" alt="">
+
+  <ngx-carousel [inputs]="carouselTile">
+      <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems; let i = index;">
+          <div class="tile" [style.background]="'url(' + tile + ')'">
+          </div>
+      </ngx-tile>
+      <button NgxCarouselPrev class="leftRs">&lt;</button>
+      <button NgxCarouselNext class="rightRs">&gt;</button>
+  </ngx-carousel>
+
+
 </div>
 </section>
