@@ -2,18 +2,12 @@
   margin : 0;
   padding: 0;
   font-family: 'Fjalla One', sans-serif;
+  box-sizing: border-box;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-}
-
-#wrapper {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(255, 235, 219, 0.73);
 }
 
 .top{
@@ -22,8 +16,68 @@ html, body {
 
 .slide1,.slide2,.slide3{
   position: absolute;
-  width: 85%;
+  width: 100%;
   height: 100%;
+  letter-spacing: 5px;
+}
+
+.description, .testimonials, .properties {
+  padding: 10%;
+  width: 100%;
+  height: 550px;
+}
+
+.description div{
+  height: 33%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.description h3 {
+  width: 40%;
+  margin: 0 auto 60px;
+  font-weight: 200;
+  background: #080a58;
+  color: white;
+}
+
+.description h5 {
+  color: #080a58;
+}
+
+.description img {
+  max-width: 13%;
+}
+
+.testimonials {
+  background: #ffebd5;
+  color: #080a58;
+}
+
+.testimonials h3, .testimonials h4, .description h3, .properties h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.testimonials p {
+  margin: 20px 0;
+  line-height: 1.2;
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.testimonials img{
+  max-width: 18%;
+  margin: 10px 7px;
+}
+
+.properties h3 {
+  width: 50%;
+  margin: 0 auto 60px;
+  font-weight: 200;
+  background: #080a58;
+  color: white;
 }
 
 /*DESKTOP/TABLET*/
@@ -36,20 +90,20 @@ html, body {
   .slide1 {
     background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg)no-repeat center;
     background-size: cover;
-    animation:fade 8s infinite;
-    -webkit-animation:fade 6s infinite;
+    animation:fade 16s infinite;
+    -webkit-animation:fade 12s infinite;
   }
   .slide2 {
     background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house3.jpeg)no-repeat center;
     background-size: cover;
-    animation:fade2 8s infinite;
-    -webkit-animation:fade2 6s infinite;
+    animation:fade2 16s infinite;
+    -webkit-animation:fade2 12s infinite;
   }
   .slide3 {
     background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house1.jpeg)no-repeat center;
     background-size: cover;
-    animation:fade3 8s infinite;
-    -webkit-animation:fade3 6s infinite;
+    animation:fade3 16s infinite;
+    -webkit-animation:fade3 12s infinite;
   }
   @keyframes fade
   {
@@ -105,7 +159,6 @@ html, body {
   }
 
   .slider {
-    border: 2px solid green;
     max-width: 100%;
     height: 400px;
     position: relative;

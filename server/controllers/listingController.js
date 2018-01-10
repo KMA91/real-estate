@@ -1,5 +1,6 @@
-let mongoose = require('mongoose')
-var Listing = mongoose.model('Listing');
+const mongoose = require('mongoose')
+const Listing = mongoose.model('Listing');
+const s3 = require('../config/multer');
 
 module.exports = {
   addListing: (req, res) => {
@@ -8,7 +9,7 @@ module.exports = {
       if(err){
         res.status(500).send("Make sure to add an address, Tony!")
       }else{
-        return;
+        return res.json(listing);
       }
     })
   },
@@ -53,4 +54,63 @@ module.exports = {
     })
   },
 
+  getAllListings: (req, res) => {
+    Listing.find({}, (err, listings) => {
+      if(err){
+        return res.sendStatus(500);
+      }else{
+        return res.json(listings);
+      }
+    })
+  },
+
+  changeSoldStatus: async (req, res) => {
+    var listing = await Listing.findOne({_id: req.body.id})
+    if(listing.sold){
+      listing.sold = false;
+    }else{
+      listing.sold = true;
+    }
+    listing = await listing.save();
+    return res.json(listing);
+  },
+
+  deleteImage: async (req, res) => {
+    // console.log(req.body.path);
+    var listing = await Listing.findOne({_id: req.body.id })
+    for(var i = 0; i < listing.paths.length; i++){
+      if(listing.paths[i] === req.body.path){
+        await s3.remove(req.body.path);
+        listing.paths.splice(i, 1);
+      }
+      listing = await listing.save()
+    }
+    res.json(listing);
+  },
+
+  deleteListing: async (req, res) => {
+    var listing = await Listing.findOne({_id: req.body.id})
+    for(var i = 0 ; i < listing.paths.length; i++){
+      await s3.remove(listing.paths[i]);
+    }
+    listing = await Listing.remove({_id: req.body.id})
+    res.json({ done: true });
+  },
+
+  addMoreImages: async (req, res) => {
+    var listing = await Listing.findOne({_id: req.body.id});
+    req.body.paths.forEach((path) => {
+      listing.paths.push(path);
+    });
+    console.log(listing);
+    await listing.save();
+    res.json(listing);
+  },
+
+  changeAddress: async (req, res) => {
+    var listing = await Listing.findOne({_id: req.body.id});
+    listing.address = req.body.address;
+    await listing.save();
+    res.json(listing);
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ListingService } from './../listing/listing.service';
 import { fadeInAnimation } from '../_animations/index';
 
@@ -17,5 +17,10 @@ export class LandingComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  // @HostListener('window:scroll', ['$event']) onScrollEvent($event){
+  //   console.log($event);
+  //   console.log("scrolling");
+  // }
 
 }

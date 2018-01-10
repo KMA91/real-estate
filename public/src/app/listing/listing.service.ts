@@ -32,4 +32,46 @@ export class ListingService {
     .map(data => data.json())
     .toPromise()
   }
+
+  getAllListings(){
+    return this._http.get("/api/getAllListings")
+    .map(data => data.json())
+    .toPromise()
+  }
+
+  changeSoldStatus(id){
+    return this._http.post("/api/changeStatus", id)
+    .map(data => data.json())
+    .toPromise()
+  }
+
+  deleteImage(info){
+    return this._http.post("/api/deleteImage", info)
+    .map(data => data.json())
+    .toPromise()
+  }
+
+  deleteListing(id){
+    return this._http.post("/api/deleteListing", id)
+    .map(data => data.json())
+    .toPromise()
+  }
+
+  addListing(address){
+    return this._http.post('/api/addlisting', address)
+    .map(data => data.json())
+    .toPromise()
+  }
+
+  addMoreImages(info){
+    return this._http.post('/api/addMoreImages', info)
+    .map(data => data.json())
+    .toPromise()
+  }
+
+  changeAddress(info){
+    return this._http.post('/api/changeAddress', info)
+    .map(data => data.json())
+    .toPromise()
+  }
 }
