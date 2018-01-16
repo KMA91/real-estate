@@ -24,13 +24,19 @@ export class ListingComponent implements OnInit {
 
   getActive(){
     this._listingService.getAllActiveListings()
-      .then((listings) => {this.listings = listings; this.active = true;})
+      .then((listings) => {
+        this.listings = listings;
+        this.active = true;
+      })
       .catch()
   }
 
   getSold(){
     this._listingService.getAllSoldListings()
-      .then((listings) => {this.listings = listings; this.active = false;})
+      .then((listings) => {
+        this.listings = listings;
+        this.active = false;
+      })
       .catch()
   }
 }

@@ -1,0 +1,34 @@
+.nav {
+  text-align: right;
+  width: 100%;
+  height: 35px;
+  background: #080a58;
+  text-transform: uppercase;
+  font-family: 'Ropa Sans', sans-serif;
+  color: white;
+}
+
+.nav-content {
+  width: 85%;
+  margin: 0 auto;
+  transform: translate(0, 50%);
+}
+
+.nav:not(first-child) {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-content div {
+  display: inline-block;
+}
+
+@media (max-width: 1024px) {
+  .nav-content {
+    text-align: center;
+  }
+}

@@ -5,6 +5,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ListingComponent } from './listing/listing.component';
 import { AboutComponent } from './about/about.component';
 import { ListingShowComponent } from './listing//listing-show/listing-show.component';
+import { ListingEditComponent } from './listing/listing-edit/listing-edit.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'show/:id', component: ListingShowComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'editlisting', component: ListingEditComponent},
   {path: '**', redirectTo: ''}
 ];
 

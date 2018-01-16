@@ -1,16 +1,24 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import "rxjs";
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class LoginService {
 
-  private isUserLoggedIn = false;
-  public username;
+  public loggedIn = new BehaviorSubject<boolean>(this.hasToken());
+  /**
+   * if we have token the user is loggedIn
+   * @returns {boolean}
+   */
 
   constructor(
     private _http: Http
   ) {}
+
+  private hasToken() : boolean {
+    return !!localStorage.getItem('token');
+  }
 
   login(info){
     return this._http.post('/api/login', info)
@@ -18,12 +26,17 @@ export class LoginService {
     .toPromise()
   }
 
-  getUserLoggedIn(){
-    return this.isUserLoggedIn;
+  setLoggedIn(){
+    localStorage.setItem('token', 'JWT');
+    this.loggedIn.next(true);
   }
 
-  setUserLoggedIn(){
-    this.isUserLoggedIn = true;
-    this.username = 'admin';
+  logOut(){
+    localStorage.removeItem('token');
+    this.loggedIn.next(false);
+  }
+
+  isLoggedIn(){
+    return this.loggedIn.asObservable();
   }
 }

@@ -13,12 +13,18 @@ import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListingShowComponent } from './listing//listing-show/listing-show.component';
+import { ListingEditComponent } from './listing/listing-edit/listing-edit.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { LoginService } from './login/login.service';
 import { UploadService } from './upload/upload.service';
 import { ListingService } from './listing/listing.service';
 import { AuthGuard } from './auth.guard';
+import { ListingEditAddImagesComponent } from './listing/listing-edit/listing-edit-add-images/listing-edit-add-images.component';
+import { TopNavbarComponent } from './top-navbar/top-navbar.component';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
+import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
 
 @NgModule({
   declarations: [
@@ -33,14 +39,18 @@ import { AuthGuard } from './auth.guard';
     FooterComponent,
     ListingShowComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    ListingEditComponent,
+    ListingEditAddImagesComponent,
+    TopNavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxCarouselModule
   ],
   providers: [UploadService, ListingService, LoginService, AuthGuard],
   bootstrap: [AppComponent]

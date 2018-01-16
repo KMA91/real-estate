@@ -1,11 +1,16 @@
 {
   "name": "public",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "proxy": {
+    "/api/upload": {
+      "target": "http://localhost:6789"
+    }
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build -w",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -24,7 +29,9 @@
     "@angular/router": "^4.4.6",
     "angular4-carousel": "^3.1.8",
     "core-js": "^2.4.1",
+    "ng2-bootstrap-modal": "^1.0.1",
     "ng2-file-upload": "^1.2.1",
+    "normalize.css": "^7.0.0",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.14"
   },

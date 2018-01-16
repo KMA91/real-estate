@@ -1,84 +1,78 @@
-*{
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
+* {
+  font-family: 'Ropa Sans', sans-serif;
   font-weight: 600;
 }
 
-.wrapper{
-  text-align: center;
-  padding: 3%;
+.container {
+  width: 85%;
+  margin: 0 auto;
 }
 
-.logo{
-  color: black;
-  text-decoration: none;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: white;
-    overflow: hidden;
+.logo img {
+  margin: 12px 0;
+  width: 50%;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: black;
-    font-size: 1.75em;
+    display: block;
+    padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Arial';
-}
-
-span{
-  font-size: 1.75em;
+    font-size: 17px;
+    color: #080a58
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  color: black;
-  text-decoration: red underline;
+    /* color: #f28109; */
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
+.topnav a:visited {
+  color: #080a58;
+}
+
+/* Add an active class to highlight the current page */
+.active {
     background-color: #4CAF50;
     color: white;
 }
 
-.topnav img{
-  width: 3%;
-  padding: 1% 0.85%;
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
 }
 
-.topnav{
-  margin-bottom: -2.5%;
-}
-
-span{
-  vertical-align: top;
-}
-
-/* MOBILE */
-@media only screen and (max-width: 414px) {
-  *{
-    font-size: 0.75em;
-  }
-
-  img{
-    max-width: 95%;
-  }
-
-  .topnav a{
-    text-decoration: red underline;
-  }
-
-  figcaption{
-    position: relative;
-    border: 2px solid black;
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .logo img {display: block;}
+  .topnav {display: inline-block;}
+  .topnav a {display: none;}
+  .topnav a.icon {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    display: block;
   }
 }
 
-@media only screen and (min-width: 415px){
-  img{
-    max-width: 30%;
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+  }
+
+  .responsive {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .topnav.responsive a {
+    display: inline-block;
+  }
+  .topnav-cont a {
+    border: 0.5px solid #080a58b0;
+    margin-bottom: 10px;
   }
 }

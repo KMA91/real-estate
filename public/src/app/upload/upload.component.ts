@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FileUploader } from 'ng2-file-upload';
 import { UploadService } from './upload.service';
+import { ListingService } from '../listing/listing.service';
 
 const URL = '/api/upload';
 
@@ -12,18 +13,23 @@ const URL = '/api/upload';
 export class UploadComponent implements OnInit {
   public uploader:FileUploader = new FileUploader({url: URL});
   public hasBaseDropZoneOver:boolean = false;
-  public hasAnotherDropZoneOver:boolean = false;
   public files:any;
   public files_path: any;
   public error: String;
+  public showButton: boolean = false;
 
   public fileOverBase(e:any):void {
     this.hasBaseDropZoneOver = e;
   }
 
   constructor(
-    public _uploadService: UploadService
+    public _uploadService: UploadService,
+    public _listingService: ListingService
   ) { }
+
+  ngDoCheck(){
+    this.uploader.queue.length == this.files.length? this.showButton = true : this.showButton = false;
+  }
 
   ngOnInit() {
     this.files = [];
@@ -36,26 +42,55 @@ export class UploadComponent implements OnInit {
   }
 
   addListing(address){
+
     address.value["paths"] = this.files_path;
-    this._uploadService.addListing(address.value)
-    .then()
-    .catch((err) => this.error = err._body)
-    console.log(this.error);
-    this.uploader.clearQueue();
-    address.resetForm();
-    this.files = [];
-    this.files_path = [];
+
+    if(address.value.sold === ''){
+      address.value.sold = false;
+    }
+
+    this._listingService.addListing(address.value)
+    .then(()=> {
+      this.uploader.clearQueue();
+      address.resetForm();
+      this.files = [];
+      this.files_path = [];
+    })
+    .catch((err) =>
+    this.error = err._body
+    )
+
   }
 
-  deleteListing(key){
+  deleteListingImage(originalName, size, s3Name){
+
     for(var i = 0; i < this.files.length; i++){
-      if(this.files[i].key == key){
+      if(this.files[i].key == s3Name){
         this.files.splice(i, 1)
       }
     }
-    key = {key : key}
-    this._uploadService.removeImage(key)
+
+    for(var i = 0; i < this.uploader.queue.length; i++){
+      if(this.uploader.queue[i]._file.name == originalName && this.uploader.queue[i]._file.size == size){
+        this.uploader.queue.splice(i, 1);
+        break;
+      }
+    }
+
+    s3Name = {s3Name}
+
+    this._uploadService.removeImage(s3Name)
     .then()
     .catch()
   }
+
+  cancel(){
+
+    this.files_path.forEach( async (s3Name) => {
+      await this._uploadService.removeImage({s3Name})
+    })
+
+    location.reload();
+  }
+
 }
