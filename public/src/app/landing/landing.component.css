@@ -5,71 +5,100 @@
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-.top{
+.container {
   width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.slide1,.slide2,.slide3{
+.slide1, .slide2, .slide3 {
   position: absolute;
   width: 100%;
   height: 100%;
   letter-spacing: 5px;
 }
 
-.description, .testimonials, .properties {
-  padding: 10%;
+.values, .testimonials, .properties {
+  padding: 9%;
   width: 100%;
-  height: 550px;
 }
 
-.description div{
+.values {
+  height: 700px;
+}
+
+
+.values div {
   height: 33%;
   text-transform: uppercase;
+}
+
+.values h3 {
+  width: 39%;
+  margin: 0 auto 32px;
+  background: #080a58;
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
   letter-spacing: 2px;
 }
 
-.description h3 {
-  width: 40%;
-  margin: 0 auto 60px;
-  font-weight: 200;
-  background: #080a58;
-  color: white;
-}
-
-.description h5 {
+.values h5 {
   color: #080a58;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.description img {
+.values p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  color: #000000d4;
+}
+
+.values img {
   max-width: 13%;
 }
 
 .testimonials {
+  height: 700px;
   background: #ffebd5;
   color: #080a58;
 }
 
-.testimonials h3, .testimonials h4, .description h3, .properties h3 {
+.testimonials h3, .testimonials h4, .values h3, .properties h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.testimonials h3 {
+  font-size: 25px;
 }
 
 .testimonials p {
-  margin: 20px 0;
+  margin: 40px 0;
   line-height: 1.2;
-  border: 3px solid white;
+  letter-spacing: 1px;
+  border: 4px solid white;
   padding: 10px;
   border-radius: 10px;
+  font-size: 16px;
 }
 
-.testimonials img{
+.testimonials img {
   max-width: 16%;
   margin: 10px 7px;
+}
+
+.testimonials h4 {
+  margin-bottom: 40px;
+}
+
+.properties {
+  height: 550px;
 }
 
 .properties h3 {
@@ -78,6 +107,7 @@ html, body {
   font-weight: 200;
   background: #080a58;
   color: white;
+  font-size: 25px;
 }
 
 .leftRs {
@@ -105,27 +135,31 @@ html, body {
 }
 
 .tile {
+    margin-top: 45px;
     min-height: 350px;
     background-color: #ccc;
     background-size: cover !important;
 }
 
-.tile h1 {
-    text-align: center;
-    line-height: 200px;
-    background: rgba(0, 0, 0, 0.32);
-    color: white;
-    margin: 0;
+.browse {
+  padding: 7px;
+  font-size: 1em;
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: white;
+  background: #f28202;
+  border: #f28202;
+  border-radius: 5px;
 }
 
+.browse:hover {
+  background: #ce6e00;
+  border: #ce6e00;
+}
 
+/*DESKTOP*/
 
-
-
-
-
-/*DESKTOP/TABLET*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .slider {
     max-width: 100%;
     height: 600px;
@@ -178,23 +212,88 @@ html, body {
     transform: translate(-50%, -50%);
   }
 
-  .slide1 h3{
+  .slide1 h3 {
     color: transparent;
   }
 
-  .router{
-    color: black;
-    border: 2px solid #dadada;
-    font-size: 1.25rem;
-    padding: .5em 1.85em;
-    text-decoration: none;
+  .values {
+    padding: 5%;
   }
+
+  .values h3 {
+    width: 55%;
+    margin-bottom: 10%;
+    font-size: 2em;
+  }
+
+  .values div {
+    display: inline-block;
+    width: 33%;
+  }
+
+  .values p {
+    width: 90%;
+    text-align: center;
+    margin: 13px auto;
+    font-size: 1em;
+  }
+
+  .testimonials {
+    height: 900px;
+    padding: 5%;
+  }
+
+  .testimonials h3 {
+    margin-bottom: 5%;
+    font-size: 2em;
+  }
+
+  .testimonials p {
+    display: inline-block !important;
+    width: 45%;
+    margin: 40px 10px 83px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    border: 6px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .testimonials h4 {
+    margin-bottom: 40px;
+    font-size: 1.5em;
+  }
+
+  .testimonials img {
+    max-width: 8%;
+    margin: 10px 40px;
+  }
+
+  .trulia {
+    margin-top: 0px !important;
+  }
+
+  .properties {
+    height: 1000px;
+  }
+
+  .properties h3 {
+    font-size: 2em;
+  }
+
+  .browse {
+    padding: 10px;
+    font-size: 1.25em;
+    text-transform: uppercase;
+  }
+
 }
 
-/* MOBILE */
-@media only screen and (max-width: 767px) {
+/* MOBILE/TABLET */
+@media only screen and (max-width: 1024px) {
 
-  section{
+  .container {
     text-align: center;
   }
 
@@ -204,7 +303,7 @@ html, body {
 
   .slider {
     max-width: 100%;
-    height: 400px;
+    height: 450px;
     position: relative;
   }
   .slide1 {
@@ -214,22 +313,24 @@ html, body {
     height: 100%;
   }
 
-  .slide1 h3{
+  .slide1 h3 {
     font-size: 1.75em;
     color: white;
     position: relative;
     top: 40%;
-  }
-
-  .router{
-    color: black;
-    border: 2px solid #dadada;
-    font-size: 1rem;
-    padding: .5em 1.85em;
-    text-decoration: none;
+    line-height: 1.1;
   }
 
   .tile {
-      min-height: 200px;
+    min-height: 200px;
   }
+
+  .values {
+    height: 750px;
+  }
+
+  .properties h3 {
+    width: 60%;
+  }
+
 }

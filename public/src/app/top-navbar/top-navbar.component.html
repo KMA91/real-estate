@@ -1,4 +1,5 @@
 <div class="nav">
+
   <div class="nav-content">
     <a href="tel:1-626-759-4812">(626) 759-4812</a> |
     <a href="mailto:brokertonyma@gmail.com">brokertonyma@gmail.com</a> |
@@ -9,10 +10,12 @@
       <a (click)="logout()">Logout</a>
     </div>
   </div>
+
   <div class="nav" *ngIf="loggedIn">
     <div class="nav-content">
       <a routerLink="/upload">Add Listing</a> |
-      <a routerLink="/editlisting">Edit Listing</a> |
+      <a routerLink="/editlisting">Edit Listing</a>
     </div>
   </div>
+
 </div>

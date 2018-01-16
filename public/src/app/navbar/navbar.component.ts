@@ -13,8 +13,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  myFunction(){
-    var x = document.getElementById("myTopnav");
+  changeResponsive(){
+    var x = document.getElementById("Nav");
     var y = document.getElementById("icon");
     if (x.className === "topnav") {
         x.className += " responsive";
@@ -25,8 +25,8 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  close(){
-    var x = document.getElementById("myTopnav");
+  closeMenu(){
+    var x = document.getElementById("Nav");
     var y = document.getElementById("icon");
     x.className = "topnav";
     y.innerHTML = "&#9776";

@@ -15,15 +15,18 @@ export class TopNavbarComponent implements OnInit {
   constructor(
     private _loginService: LoginService
   ) {
-    this.subscription = this._loginService.isLoggedIn().subscribe(loggedin => {this.loggedIn = loggedin})
+    this.subscription = this._loginService.isLoggedIn()
+    .subscribe(loggedin => {
+      this.loggedIn = loggedin
+    })
   }
 
   ngOnInit() {
     this.getLoggedIn()
-    console.log(this.loggedIn);
   }
 
   getLoggedIn(){
+
     if(localStorage.getItem('token')){
       this.loggedIn = true;
     }else{

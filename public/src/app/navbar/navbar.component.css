@@ -1,6 +1,7 @@
 * {
   font-family: 'Ropa Sans', sans-serif;
   font-weight: 600;
+  box-sizing: border-box;
 }
 
 .container {
@@ -9,54 +10,62 @@
 }
 
 .logo img {
-  margin: 12px 0;
+  margin: 14px 0;
   width: 50%;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    color: #080a58
+.topnav {
+  text-transform: uppercase;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    /* color: #f28109; */
+.topnav a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #080a58
 }
 
 .topnav a:visited {
   color: #080a58;
 }
 
-/* Add an active class to highlight the current page */
+.topnav a:hover {
+  color: #f28109;
+}
+
 .active {
     background-color: #4CAF50;
     color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .logo img {display: block;}
-  .topnav {display: inline-block;}
-  .topnav a {display: none;}
+/* mobile device */
+@media screen and (max-width: 414px) {
+
+  .logo img {
+    display: block;
+  }
+
+  .topnav {
+    display: inline-block;
+  }
+
+  .topnav a {
+    display: none;
+    padding: 10px 12px;
+  }
+
   .topnav a.icon {
     position: absolute;
     right: 5%;
-    top: 8%;
+    top: 9%;
     display: block;
   }
-}
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
   .topnav.responsive a.icon {
     position: absolute;
     right: 5%;
@@ -68,11 +77,37 @@
     margin: 0 auto;
     text-align: center;
   }
+
   .topnav.responsive a {
     display: inline-block;
   }
+
   .topnav-cont a {
     border: 0.5px solid #080a58b0;
     margin-bottom: 10px;
+  }
+}
+
+/* tablet/desktop */
+@media screen and (min-width: 415px) {
+
+  .logo img {
+    width: 25%;
+    margin: -15px 0 0;
+  }
+
+  .topnav, .topnav a {
+    display: inline-block;
+    font-size: 1.1em;
+  }
+
+  .topnav {
+    width: 74.5%;
+    text-align: right;
+    vertical-align: middle;
+  }
+
+  .topnav a:last-child {
+    padding-right: 0;
   }
 }
