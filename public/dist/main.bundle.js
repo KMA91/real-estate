@@ -1,5 +1,6 @@
 webpackJsonp([1],{
 
+<<<<<<< HEAD
 /***/ "../../../../../../node_modules/hammerjs/hammer.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2651,6 +2652,8 @@ if (true) {
 
 /***/ }),
 
+=======
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 /***/ "../../../../../src async recursive":
 /***/ (function(module, exports) {
 
@@ -2706,7 +2709,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "*{\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Arial';\r\n}\r\n\r\n/* Tablet/Desktop */\r\n@media only screen and (min-width: 415px) {\r\n  .wrapper{\r\n    width: 90%;\r\n    margin: 0 auto;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top{\r\n    display: inline-block;\r\n    position: relative;\r\n  }\r\n\r\n  .top img{\r\n    width: 25%;\r\n    display: inline-block;\r\n  }\r\n\r\n  .top h3{\r\n    width: 60%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    vertical-align: top;\r\n    position: relative;\r\n    padding: 3%;\r\n  }\r\n\r\n  .testimonials{\r\n    text-align: center;\r\n    margin: 2%;\r\n  }\r\n\r\n  .testimonials h3, p{\r\n    padding: 2%;\r\n  }\r\n\r\n  p{\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n  .wrapper{\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    max-width: 90%;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top h3{\r\n    margin-top: 9%;\r\n    font-size: 1.33em;\r\n  }\r\n\r\n  h2, p, button{\r\n    margin: 5% 0;\r\n  }\r\n\r\n  .test{\r\n    font-size: 1.33em;\r\n    text-decoration: red underline;\r\n  }\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "*{\n  margin: 0;\n  padding: 0;\n  font-family: 'Arial';\n}\n\n/* Tablet/Desktop */\n@media only screen and (min-width: 415px) {\n  .wrapper{\n    width: 90%;\n    margin: 0 auto;\n  }\n\n  section{\n    padding: 3%;\n  }\n\n  .top{\n    display: inline-block;\n    position: relative;\n  }\n\n  .top img{\n    width: 25%;\n    display: inline-block;\n  }\n\n  .top h3{\n    width: 60%;\n    display: inline-block;\n    text-align: center;\n    vertical-align: top;\n    position: relative;\n    padding: 3%;\n  }\n\n  .testimonials{\n    text-align: center;\n    margin: 2%;\n  }\n\n  .testimonials h3, p{\n    padding: 2%;\n  }\n\n  p{\n    font-size: 1.5em;\n  }\n}\n\n/* MOBILE */\n@media only screen and (max-width: 414px) {\n  .wrapper{\n    margin: 0 auto;\n    text-align: center;\n    max-width: 90%;\n  }\n\n  section{\n    padding: 3%;\n  }\n\n  .top h3{\n    margin-top: 9%;\n    font-size: 1.33em;\n  }\n\n  h2, p, button{\n    margin: 5% 0;\n  }\n\n  .test{\n    font-size: 1.33em;\n    text-decoration: red underline;\n  }\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -2719,7 +2726,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n\r\n  <section>\r\n    <div class=\"top\">\r\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\r\n      <h3>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</h3>\r\n    </div>\r\n  </section>\r\n\r\n  <section>\r\n    <div class=\"testimonials\">\r\n      <h2>Testimonials</h2>\r\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\r\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\r\n    </div>\r\n  </section>\r\n\r\n</div>\r\n"
+=======
+module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\n\n  <section>\n    <div class=\"top\">\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\n      <h3>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</h3>\n    </div>\n  </section>\n\n  <section>\n    <div class=\"testimonials\">\n      <h2>Testimonials</h2>\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\n    </div>\n  </section>\n\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -2831,7 +2842,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0 auto;\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.container {\n  width: 100%;\n  height: 100%;\n  margin: 0 auto;\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -2844,7 +2859,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"container\">\r\n  <app-top-navbar></app-top-navbar>\r\n  <app-navbar></app-navbar>\r\n  <router-outlet></router-outlet>\r\n  <app-footer></app-footer>\r\n</div>\r\n"
+=======
+module.exports = "<div class=\"container\">\n  <app-top-navbar></app-top-navbar>\n  <app-navbar></app-navbar>\n  <router-outlet></router-outlet>\n  <app-footer></app-footer>\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -2909,9 +2928,14 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__listing_listing_edit_listing_edit_add_images_listing_edit_add_images_component__ = __webpack_require__("../../../../../src/app/listing/listing-edit/listing-edit-add-images/listing-edit-add-images.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__top_navbar_top_navbar_component__ = __webpack_require__("../../../../../src/app/top-navbar/top-navbar.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_ngx_carousel__ = __webpack_require__("../../../../ngx-carousel/index.js");
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_hammerjs__ = __webpack_require__("../../../../../../node_modules/hammerjs/hammer.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25_hammerjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26_ng2_device_detector__ = __webpack_require__("../../../../ng2-device-detector/index.js");
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_hammerjs__ = __webpack_require__("../../../../hammerjs/hammer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25_hammerjs__);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2945,7 +2969,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 var AppModule = (function () {
     function AppModule() {
     }
@@ -2976,8 +3003,12 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+<<<<<<< HEAD
             __WEBPACK_IMPORTED_MODULE_24_ngx_carousel__["a" /* NgxCarouselModule */],
             __WEBPACK_IMPORTED_MODULE_26_ng2_device_detector__["a" /* Ng2DeviceDetectorModule */].forRoot()
+=======
+            __WEBPACK_IMPORTED_MODULE_24_ngx_carousel__["a" /* NgxCarouselModule */]
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
         ],
         providers: [__WEBPACK_IMPORTED_MODULE_19__upload_upload_service__["a" /* UploadService */], __WEBPACK_IMPORTED_MODULE_20__listing_listing_service__["a" /* ListingService */], __WEBPACK_IMPORTED_MODULE_18__login_login_service__["a" /* LoginService */], __WEBPACK_IMPORTED_MODULE_21__auth_guard__["a" /* AuthGuard */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
@@ -3048,7 +3079,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "*{\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  padding: 5% 5% 7%;\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "*{\n  text-align: center;\n}\n\n.wrapper{\n  padding: 5% 5% 7%;\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -3061,7 +3096,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n  <h2>Let's get in touch</h2>\r\n  <div class=\"contact\">\r\n    <p>E-mail : <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a></p>\r\n    <p>Phone # : <a href=\"tel:1-626-759-4812\">(626) 759-4812</a></p>\r\n    <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>\r\n  </div>\r\n</div>\r\n"
+=======
+module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\n  <h2>Let's get in touch</h2>\n  <div class=\"contact\">\n    <p>E-mail : <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a></p>\n    <p>Phone # : <a href=\"tel:1-626-759-4812\">(626) 759-4812</a></p>\n    <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>\n  </div>\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -3113,7 +3152,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "p {\r\n  text-align: center;\r\n  font-family: 'Arial Black';\r\n  background: blue;\r\n}\r\n\r\nimg {\r\n  max-width: 4%;\r\n  margin: 0 0.3%;\r\n}\r\n\r\n.social a {\r\n  width: 25%;\r\n  max-width: 1%;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n\r\n.nav {\r\n  text-align: right;\r\n  width: 100%;\r\n  height: 35px;\r\n  background: #090a4c;\r\n  text-transform: uppercase;\r\n  font-family: 'Ropa Sans', sans-serif;\r\n  color: white;\r\n  font-size: 0.85em;\r\n}\r\n\r\n.nav-content {\r\n  width: 85%;\r\n  margin: 0 auto;\r\n  -webkit-transform: translate(0, 60%);\r\n          transform: translate(0, 60%);\r\n}\r\n\r\n.trulia{\r\n  vertical-align: top;\r\n}\r\n\r\n.linkedin{\r\n  vertical-align: top;\r\n}\r\n\r\n.remax {\r\n  vertical-align: top;\r\n  margin-top: 0.1%;\r\n  max-width: 3%;\r\n}\r\n\r\n.social{\r\n  text-align: center;\r\n}\r\n\r\n/* DESKTOP */\r\n\r\n@media only screen and (min-width: 1025px) {\r\n  .nav-content {\r\n    font-size: 1.5em;\r\n    -webkit-transform: translate(0, 30%);\r\n            transform: translate(0, 30%);\r\n  }\r\n}\r\n\r\n/* MOBILE */\r\n@media only screen and (max-width: 414px) {\r\n\r\n  .nav-content {\r\n    text-align: center;\r\n  }\r\n\r\n  img{\r\n    max-width: 13%;\r\n    margin: 1%;\r\n  }\r\n\r\n  .remax{\r\n    margin: 1%;\r\n    max-width: 9%;\r\n  }\r\n}\r\n\r\n/* Smaller mobiles */\r\n@media only screen and (max-width: 375px) {\r\n  .nav-content {\r\n    font-size: 0.9em;\r\n  }\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "p{\n  text-align: center;\n  font-family: 'Arial Black';\n}\n\nimg{\n  max-width: 4%;\n  margin: 0 0.3%;\n}\n\na{\n  width: 25%;\n  max-width: 1%;\n}\n\n.trulia{\n  vertical-align: top;\n}\n\n.linkedin{\n  vertical-align: top;\n}\n\n.remax {\n  vertical-align: top;\n  margin-top: 0.1%;\n  max-width: 3%;\n}\n\n.social{\n  text-align: center;\n}\n\n/* MOBILE */\n@media only screen and (max-width: 414px) {\n  *{\n    font-size: 0.75em;\n  }\n\n  img{\n    max-width: 13%;\n    margin: 1%;\n  }\n\n  .remax{\n    margin: 1%;\n    max-width: 9%;\n  }\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -3126,7 +3169,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"social\">\r\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\r\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\r\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\r\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\r\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\r\n</div>\r\n<!-- <p><a href=\"tel:1-626-759-4812\">(626) 759-4812</a> | <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> | CalBRE #01931357</p> -->\r\n\r\n<div class=\"nav\">\r\n  <div class=\"nav-content\">\r\n    <a href=\"tel:1-626-759-4812\">(626) 759-4812</a> |\r\n    <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> |\r\n    <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\">CalBRE #01931357</a>\r\n  </div>\r\n</div>\r\n"
+=======
+module.exports = "<p><a href=\"tel:1-626-759-4812\">(626) 759-4812</a> | <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> | CalBRE #01931357</p>\n<div class=\"social\">\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -3174,7 +3221,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "* {\r\n  margin : 0;\r\n  padding: 0;\r\n  font-family: 'Fjalla One', sans-serif;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\n.slide1, .slide2, .slide3 {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  letter-spacing: 5px;\r\n}\r\n\r\n.values, .testimonials, .properties {\r\n  padding: 9%;\r\n  width: 100%;\r\n}\r\n\r\n.values {\r\n  height: 700px;\r\n}\r\n\r\n\r\n.values div {\r\n  height: 33%;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.values h3 {\r\n  width: 39%;\r\n  margin: 0 auto 32px;\r\n  background: #080a58;\r\n  color: white;\r\n  font-weight: 600;\r\n  font-size: 25px;\r\n  letter-spacing: 2px;\r\n}\r\n\r\n.values h5 {\r\n  color: #080a58;\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n}\r\n\r\n.values p {\r\n  margin-top: 10px;\r\n  font-size: 14px;\r\n  line-height: 1.25;\r\n  letter-spacing: 1px;\r\n  color: #000000d4;\r\n}\r\n\r\n.values img {\r\n  max-width: 13%;\r\n}\r\n\r\n.testimonials {\r\n  height: 700px;\r\n  background: #ffebd5;\r\n  color: #080a58;\r\n}\r\n\r\n.testimonials h3, .testimonials h4, .values h3, .properties h3 {\r\n  text-transform: uppercase;\r\n  letter-spacing: 3px;\r\n  font-weight: 600;\r\n  border-radius: 3px;\r\n}\r\n\r\n.testimonials h3 {\r\n  font-size: 25px;\r\n}\r\n\r\n.testimonials p {\r\n  margin: 40px 0;\r\n  line-height: 1.2;\r\n  letter-spacing: 1px;\r\n  border: 4px solid white;\r\n  padding: 10px;\r\n  border-radius: 10px;\r\n  font-size: 16px;\r\n}\r\n\r\n.testimonials img {\r\n  max-width: 16%;\r\n  margin: 10px 7px;\r\n}\r\n\r\n.testimonials h4 {\r\n  margin-bottom: 40px;\r\n}\r\n\r\n.properties {\r\n  height: 550px;\r\n}\r\n\r\n.properties h3 {\r\n  width: 50%;\r\n  margin: 0 auto 60px;\r\n  font-weight: 200;\r\n  background: #080a58;\r\n  color: white;\r\n  font-size: 25px;\r\n}\r\n\r\n.leftRs {\r\n    position: absolute;\r\n    margin: auto;\r\n    top: 0;\r\n    bottom: 0;\r\n    width: 50px;\r\n    height: 50px;\r\n    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);\r\n    border-radius: 999px;\r\n    left: 0;\r\n}\r\n\r\n.rightRs {\r\n    position: absolute;\r\n    margin: auto;\r\n    top: 0;\r\n    bottom: 0;\r\n    width: 50px;\r\n    height: 50px;\r\n    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);\r\n    border-radius: 999px;\r\n    right: 0;\r\n}\r\n\r\n.tile {\r\n    margin-top: 45px;\r\n    min-height: 350px;\r\n    background-color: #ccc;\r\n    background-size: cover !important;\r\n}\r\n\r\n.browse {\r\n  padding: 7px;\r\n  font-size: 1em;\r\n  margin-top: 40px;\r\n  text-transform: uppercase;\r\n  color: white;\r\n  background: #f28202;\r\n  border: #f28202;\r\n  border-radius: 5px;\r\n}\r\n\r\n.browse:hover {\r\n  background: #ce6e00;\r\n  border: #ce6e00;\r\n}\r\n\r\n/*DESKTOP*/\r\n\r\n@media only screen and (min-width: 1025px) {\r\n  .slider {\r\n    max-width: 100%;\r\n    height: 600px;\r\n    position: relative;\r\n  }\r\n  .slide1 {\r\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg)no-repeat center;\r\n    background-size: cover;\r\n    animation:fade 16s infinite;\r\n    -webkit-animation:fade 12s infinite;\r\n  }\r\n  .slide2 {\r\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house3.jpeg)no-repeat center;\r\n    background-size: cover;\r\n    animation:fade2 16s infinite;\r\n    -webkit-animation:fade2 12s infinite;\r\n  }\r\n  .slide3 {\r\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house1.jpeg)no-repeat center;\r\n    background-size: cover;\r\n    animation:fade3 16s infinite;\r\n    -webkit-animation:fade3 12s infinite;\r\n  }\r\n  @-webkit-keyframes fade\r\n  {\r\n    0%   {opacity:1}\r\n    33.333% { opacity: 0}\r\n    66.666% { opacity: 0}\r\n    100% { opacity: 1}\r\n  }\r\n  @keyframes fade\r\n  {\r\n    0%   {opacity:1}\r\n    33.333% { opacity: 0}\r\n    66.666% { opacity: 0}\r\n    100% { opacity: 1}\r\n  }\r\n  @-webkit-keyframes fade2\r\n  {\r\n    0%   {opacity:0}\r\n    33.333% { opacity: 1}\r\n    66.666% { opacity: 0 }\r\n    100% { opacity: 0}\r\n  }\r\n  @keyframes fade2\r\n  {\r\n    0%   {opacity:0}\r\n    33.333% { opacity: 1}\r\n    66.666% { opacity: 0 }\r\n    100% { opacity: 0}\r\n  }\r\n  @-webkit-keyframes fade3\r\n  {\r\n    0%   {opacity:0}\r\n    33.333% { opacity: 0}\r\n    66.666% { opacity: 1}\r\n    100% { opacity: 0}\r\n  }\r\n  @keyframes fade3\r\n  {\r\n    0%   {opacity:0}\r\n    33.333% { opacity: 0}\r\n    66.666% { opacity: 1}\r\n    100% { opacity: 0}\r\n  }\r\n\r\n  .slide1, .slide2, .slide3{\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n            transform: translate(-50%, -50%);\r\n  }\r\n\r\n  .slide1 h3 {\r\n    color: transparent;\r\n  }\r\n\r\n  .values {\r\n    padding: 5%;\r\n  }\r\n\r\n  .values h3 {\r\n    width: 55%;\r\n    margin-bottom: 10%;\r\n    font-size: 2em;\r\n  }\r\n\r\n  .values div {\r\n    display: inline-block;\r\n    width: 33%;\r\n  }\r\n\r\n  .values p {\r\n    width: 90%;\r\n    text-align: center;\r\n    margin: 13px auto;\r\n    font-size: 1em;\r\n  }\r\n\r\n  .testimonials {\r\n    height: 900px;\r\n    padding: 5%;\r\n  }\r\n\r\n  .testimonials h3 {\r\n    margin-bottom: 5%;\r\n    font-size: 2em;\r\n  }\r\n\r\n  .testimonials p {\r\n    display: inline-block !important;\r\n    width: 45%;\r\n    margin: 40px 10px 83px;\r\n    line-height: 1.2;\r\n    letter-spacing: 2px;\r\n    border: 6px solid white;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    font-size: 20px;\r\n  }\r\n\r\n  .testimonials h4 {\r\n    margin-bottom: 40px;\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  .testimonials img {\r\n    max-width: 8%;\r\n    margin: 10px 40px;\r\n  }\r\n\r\n  .trulia {\r\n    margin-top: 0px !important;\r\n  }\r\n\r\n  .properties {\r\n    height: 1000px;\r\n  }\r\n\r\n  .properties h3 {\r\n    font-size: 2em;\r\n  }\r\n\r\n  .browse {\r\n    padding: 10px;\r\n    font-size: 1.25em;\r\n    text-transform: uppercase;\r\n  }\r\n\r\n}\r\n\r\n/* MOBILE/TABLET */\r\n@media only screen and (max-width: 1024px) {\r\n\r\n  .container {\r\n    text-align: center;\r\n  }\r\n\r\n  .slide1, .slide2, .slide3{\r\n    width: 100%;\r\n  }\r\n\r\n  .slider {\r\n    max-width: 100%;\r\n    height: 450px;\r\n    position: relative;\r\n  }\r\n  .slide1 {\r\n    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg);\r\n    background-position: center;\r\n    background-size: cover;\r\n    height: 100%;\r\n  }\r\n\r\n  .slide1 h3 {\r\n    font-size: 1.75em;\r\n    color: white;\r\n    position: relative;\r\n    top: 40%;\r\n    line-height: 1.1;\r\n  }\r\n\r\n  .tile {\r\n    min-height: 200px;\r\n  }\r\n\r\n  .values {\r\n    height: 750px;\r\n  }\r\n\r\n  .properties h3 {\r\n    width: 60%;\r\n  }\r\n\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "* {\n  margin : 0;\n  padding: 0;\n  font-family: 'Fjalla One', sans-serif;\n  box-sizing: border-box;\n}\n\nhtml, body {\n  margin: 0;\n  padding: 0;\n}\n\n.top{\n  width: 100%;\n}\n\n.slide1,.slide2,.slide3{\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  letter-spacing: 5px;\n}\n\n.description, .testimonials, .properties {\n  padding: 10%;\n  width: 100%;\n  height: 550px;\n}\n\n.description div{\n  height: 33%;\n  text-transform: uppercase;\n  letter-spacing: 2px;\n}\n\n.description h3 {\n  width: 40%;\n  margin: 0 auto 60px;\n  font-weight: 200;\n  background: #080a58;\n  color: white;\n}\n\n.description h5 {\n  color: #080a58;\n}\n\n.description img {\n  max-width: 13%;\n}\n\n.testimonials {\n  background: #ffebd5;\n  color: #080a58;\n}\n\n.testimonials h3, .testimonials h4, .description h3, .properties h3 {\n  text-transform: uppercase;\n  letter-spacing: 3px;\n}\n\n.testimonials p {\n  margin: 20px 0;\n  line-height: 1.2;\n  border: 3px solid white;\n  padding: 10px;\n  border-radius: 10px;\n}\n\n.testimonials img{\n  max-width: 16%;\n  margin: 10px 7px;\n}\n\n.properties h3 {\n  width: 50%;\n  margin: 0 auto 60px;\n  font-weight: 200;\n  background: #080a58;\n  color: white;\n}\n\n.leftRs {\n    position: absolute;\n    margin: auto;\n    top: 0;\n    bottom: 0;\n    width: 50px;\n    height: 50px;\n    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);\n    border-radius: 999px;\n    left: 0;\n}\n\n.rightRs {\n    position: absolute;\n    margin: auto;\n    top: 0;\n    bottom: 0;\n    width: 50px;\n    height: 50px;\n    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);\n    border-radius: 999px;\n    right: 0;\n}\n\n.tile {\n    min-height: 350px;\n    background-color: #ccc;\n    background-size: cover !important;\n}\n\n.tile h1 {\n    text-align: center;\n    line-height: 200px;\n    background: rgba(0, 0, 0, 0.32);\n    color: white;\n    margin: 0;\n}\n\n\n\n\n\n\n\n/*DESKTOP/TABLET*/\n@media only screen and (min-width: 768px) {\n  .slider {\n    max-width: 100%;\n    height: 600px;\n    position: relative;\n  }\n  .slide1 {\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg)no-repeat center;\n    background-size: cover;\n    animation:fade 16s infinite;\n    -webkit-animation:fade 12s infinite;\n  }\n  .slide2 {\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house3.jpeg)no-repeat center;\n    background-size: cover;\n    animation:fade2 16s infinite;\n    -webkit-animation:fade2 12s infinite;\n  }\n  .slide3 {\n    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house1.jpeg)no-repeat center;\n    background-size: cover;\n    animation:fade3 16s infinite;\n    -webkit-animation:fade3 12s infinite;\n  }\n  @-webkit-keyframes fade\n  {\n    0%   {opacity:1}\n    33.333% { opacity: 0}\n    66.666% { opacity: 0}\n    100% { opacity: 1}\n  }\n  @keyframes fade\n  {\n    0%   {opacity:1}\n    33.333% { opacity: 0}\n    66.666% { opacity: 0}\n    100% { opacity: 1}\n  }\n  @-webkit-keyframes fade2\n  {\n    0%   {opacity:0}\n    33.333% { opacity: 1}\n    66.666% { opacity: 0 }\n    100% { opacity: 0}\n  }\n  @keyframes fade2\n  {\n    0%   {opacity:0}\n    33.333% { opacity: 1}\n    66.666% { opacity: 0 }\n    100% { opacity: 0}\n  }\n  @-webkit-keyframes fade3\n  {\n    0%   {opacity:0}\n    33.333% { opacity: 0}\n    66.666% { opacity: 1}\n    100% { opacity: 0}\n  }\n  @keyframes fade3\n  {\n    0%   {opacity:0}\n    33.333% { opacity: 0}\n    66.666% { opacity: 1}\n    100% { opacity: 0}\n  }\n\n  .slide1, .slide2, .slide3{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n  }\n\n  .slide1 h3{\n    color: transparent;\n  }\n\n  .router{\n    color: black;\n    border: 2px solid #dadada;\n    font-size: 1.25rem;\n    padding: .5em 1.85em;\n    text-decoration: none;\n  }\n}\n\n/* MOBILE */\n@media only screen and (max-width: 767px) {\n\n  section{\n    text-align: center;\n  }\n\n  .slide1, .slide2, .slide3{\n    width: 100%;\n  }\n\n  .slider {\n    max-width: 100%;\n    height: 400px;\n    position: relative;\n  }\n  .slide1 {\n    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg);\n    background-position: center;\n    background-size: cover;\n    height: 100%;\n  }\n\n  .slide1 h3{\n    font-size: 1.75em;\n    color: white;\n    position: relative;\n    top: 40%;\n  }\n\n  .router{\n    color: black;\n    border: 2px solid #dadada;\n    font-size: 1rem;\n    padding: .5em 1.85em;\n    text-decoration: none;\n  }\n\n  .tile {\n      min-height: 200px;\n  }\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -3187,7 +3238,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/landing/landing.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"container\" [@fadeInAnimation]>\r\n\r\n    <div class=\"slider\">\r\n\r\n      <div class=\"slide1\"><h3>FOR ALL YOUR REAL ESTATE NEEDS</h3></div>\r\n      <div class=\"slide2\"></div>\r\n      <div class=\"slide3\"></div>\r\n\r\n    </div>\r\n\r\n    <div class=\"values\">\r\n\r\n\r\n      <h3>Core Values</h3>\r\n      <div>\r\n        <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyknowledge.png\">\r\n        <h5>knowledge</h5>\r\n        <p>Strives with years of constant research, growth and understanding of the market </p>\r\n      </div>\r\n\r\n      <div>\r\n        <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyfriendly.png\">\r\n        <h5>empathy</h5>\r\n        <p>Understands that every individual has different wants, needs, and expectations  </p>\r\n      </div>\r\n\r\n      <div>\r\n        <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrust.png\">\r\n        <h5>trust</h5>\r\n        <p>Promotes a lifestyle and workflow with strong moral with an emphasis on ethics and zeal</p>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div class=\"testimonials\">\r\n\r\n      <h3>Testimonials</h3>\r\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate...\" - Sally Zhen</p>\r\n      <p>\"...As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home...\" - Cassie Curtin\"</p>\r\n      <h4>See what others are saying about Tony</h4>\r\n      <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillowoj.png\"></a>\r\n      <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img class=\"trulia\" src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/truliaoj.png\"></a>\r\n      <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/googleoj.png\"></a>\r\n\r\n    </div>\r\n\r\n    <div class=\"properties\">\r\n\r\n      <h3>Properties</h3>\r\n      <ngx-carousel [inputs]=\"carouselTile\">\r\n          <ngx-tile NgxCarouselItem *ngFor=\"let tile of carouselTileItems; let i = index;\">\r\n              <div class=\"tile\" [style.background]=\"'url(' + tile + ')'\">\r\n              </div>\r\n          </ngx-tile>\r\n          <button NgxCarouselPrev class=\"leftRs\">&lt;</button>\r\n          <button NgxCarouselNext class=\"rightRs\">&gt;</button>\r\n      </ngx-carousel>\r\n\r\n      <button class=\"browse\" routerLink=\"/properties\">Browse More</button>\r\n\r\n    </div>\r\n\r\n</div>\r\n"
+=======
+module.exports = "<section class=\"top\" [@fadeInAnimation]>\n<div class=\"slider\">\n  <div class=\"slide1\"><h3>FOR ALL YOUR REAL ESTATE NEEDS</h3></div>\n  <div class=\"slide2\"></div>\n  <div class=\"slide3\"></div>\n</div>\n<div class=\"description\">\n  <h3>Tony is</h3>\n  <div>\n    <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyknowledge.png\">\n    <h5>knowledgeable</h5>\n  </div>\n  <div>\n    <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyfriendly.png\">\n    <h5>friendly</h5>\n  </div>\n  <div>\n    <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrust.png\">\n    <h5>trustworthy</h5>\n  </div>\n</div>\n<div class=\"testimonials\">\n  <h3>Testimonials</h3>\n  <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate...\" - Sally Zhen</p>\n  <p>\"...As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home...\" - Cassie Curtin\"</p>\n  <h4>See what others are saying about Tony</h4>\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillowoj.png\"></a>\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/truliaoj.png\"></a>\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/googleoj.png\"></a>\n</div>\n<div class=\"properties\">\n  <h3>Properties</h3>\n\n  <ngx-carousel [inputs]=\"carouselTile\">\n      <ngx-tile NgxCarouselItem *ngFor=\"let tile of carouselTileItems; let i = index;\">\n          <div class=\"tile\" [style.background]=\"'url(' + tile + ')'\">\n          </div>\n      </ngx-tile>\n      <button NgxCarouselPrev class=\"leftRs\">&lt;</button>\n      <button NgxCarouselNext class=\"rightRs\">&gt;</button>\n  </ngx-carousel>\n\n\n</div>\n</section>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -3198,8 +3253,11 @@ module.exports = "<div class=\"container\" [@fadeInAnimation]>\r\n\r\n    <div c
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__ = __webpack_require__("../../../../../src/app/listing/listing.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations_index__ = __webpack_require__("../../../../../src/app/_animations/index.ts");
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_device_detector__ = __webpack_require__("../../../../ng2-device-detector/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+=======
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LandingComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3213,6 +3271,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+<<<<<<< HEAD
 
 
 var LandingComponent = (function () {
@@ -3228,6 +3287,17 @@ var LandingComponent = (function () {
         this.getPropCarouselImgs();
         this.carouselTile = {
             grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
+=======
+var LandingComponent = (function () {
+    function LandingComponent(_listingService) {
+        this._listingService = _listingService;
+        this.carouselTileItems = [];
+    }
+    LandingComponent.prototype.ngOnInit = function () {
+        this.getActive();
+        this.carouselTile = {
+            grid: { xs: 2, sm: 2, md: 2, lg: 2, all: 0 },
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
             speed: 600,
             interval: 3000,
             point: {
@@ -3237,12 +3307,17 @@ var LandingComponent = (function () {
             load: 1,
             touch: true
         };
+<<<<<<< HEAD
         if (this.deviceInfo == "unknown") {
             this.carouselTile.grid = { xs: 2, sm: 2, md: 2, lg: 2, all: 0 };
         }
         ;
     };
     LandingComponent.prototype.getPropCarouselImgs = function () {
+=======
+    };
+    LandingComponent.prototype.getActive = function () {
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
         var _this = this;
         this._listingService.getAllActiveListings()
             .then(function (listings) {
@@ -3252,10 +3327,13 @@ var LandingComponent = (function () {
         })
             .catch();
     };
+<<<<<<< HEAD
     LandingComponent.prototype.checkDevice = function () {
         this.deviceInfo = this.deviceService.getDeviceInfo().device;
         console.log(this.deviceInfo);
     };
+=======
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
     return LandingComponent;
 }());
 LandingComponent = __decorate([
@@ -3266,10 +3344,17 @@ LandingComponent = __decorate([
         animations: [__WEBPACK_IMPORTED_MODULE_2__animations_index__["a" /* fadeInAnimation */]],
         host: { '[@fadeInAnimation]': '' }
     }),
+<<<<<<< HEAD
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__["a" /* ListingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__["a" /* ListingService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_device_detector__["b" /* Ng2DeviceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ng2_device_detector__["b" /* Ng2DeviceService */]) === "function" && _c || Object])
 ], LandingComponent);
 
 var _a, _b, _c;
+=======
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__["a" /* ListingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__listing_listing_service__["a" /* ListingService */]) === "function" && _a || Object])
+], LandingComponent);
+
+var _a;
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 //# sourceMappingURL=landing.component.js.map
 
 /***/ }),
@@ -3434,7 +3519,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, ".listings{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  width: 50%;\r\n}\r\n\r\nimg{\r\n  max-width: 100%;\r\n}\r\n", ""]);
+=======
+exports.push([module.i, ".listings{\n  margin: 0 auto;\n  text-align: center;\n  width: 50%;\n}\n\nimg{\n  max-width: 100%;\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -3447,7 +3536,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/listing/listing-edit/listing-edit.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"wrapper\" *ngIf=\"!showAdd\">\r\n  <div *ngIf='listings' class='listings'>\r\n    <h3 *ngIf='listings.length == 0'>Add Listings to get started</h3>\r\n    <table *ngIf='listings.length > 0'>\r\n      <tr>\r\n        <th>Address</th>\r\n        <th>Sold</th>\r\n        <th>Images</th>\r\n        <th>Add Image</th>\r\n        <th>Action</th>\r\n      </tr>\r\n      <tr *ngFor='let listing of listings'>\r\n        <td (click)=\"showAddressForm()\" *ngIf='!showAddress'>{{ listing.address }}</td>\r\n        <td *ngIf='showAddress'>\r\n          <form (submit)='changeAddress(formData, listing._id)' #formData=\"ngForm\">\r\n            <textarea name=\"address\" rows=\"3\" cols=\"20\" value='listing.address' ngModel>asdfg</textarea>\r\n            <button>Apply</button>\r\n          </form>\r\n          <button (click)='showAddressForm()'>Cancel</button>\r\n        </td>\r\n        <td (click)=\"changeSoldStatus(listing._id)\"><button>{{ listing.sold }}</button></td>\r\n        <td *ngFor='let path of listing.paths'><a (click)=\"deleteImage(listing._id, path)\"><img src=\"{{ path }}\"></a></td>\r\n        <td><button (click)='toggleShow(listing._id)'>Add Image</button></td>\r\n        <td><button (click)=\"deleteListing(listing._id)\">Delete</button></td>\r\n      </tr>\r\n    </table>\r\n  </div>\r\n</div>\r\n\r\n<app-listing-edit-add-images *ngIf=\"showAdd\" (showAdd)='toggleShow($event)' [showAddID]='showAddID'></app-listing-edit-add-images>\r\n"
+=======
+module.exports = "<div class=\"wrapper\" *ngIf=\"!showAdd\">\n  <div *ngIf='listings' class='listings'>\n    <h3 *ngIf='listings.length == 0'>Add Listings to get started</h3>\n    <table *ngIf='listings.length > 0'>\n      <tr>\n        <th>Address</th>\n        <th>Sold</th>\n        <th>Images</th>\n        <th>Add Image</th>\n        <th>Action</th>\n      </tr>\n      <tr *ngFor='let listing of listings'>\n        <td (click)=\"showAddressForm()\" *ngIf='!showAddress'>{{ listing.address }}</td>\n        <td *ngIf='showAddress'>\n          <form (submit)='changeAddress(formData, listing._id)' #formData=\"ngForm\">\n            <textarea name=\"address\" rows=\"3\" cols=\"20\" value='listing.address' ngModel>asdfg</textarea>\n            <button>Apply</button>\n          </form>\n          <button (click)='showAddressForm()'>Cancel</button>\n        </td>\n        <td (click)=\"changeSoldStatus(listing._id)\"><button>{{ listing.sold }}</button></td>\n        <td *ngFor='let path of listing.paths'><a (click)=\"deleteImage(listing._id, path)\"><img src=\"{{ path }}\"></a></td>\n        <td><button (click)='toggleShow(listing._id)'>Add Image</button></td>\n        <td><button (click)=\"deleteListing(listing._id)\">Delete</button></td>\n      </tr>\n    </table>\n  </div>\n</div>\n\n<app-listing-edit-add-images *ngIf=\"showAdd\" (showAdd)='toggleShow($event)' [showAddID]='showAddID'></app-listing-edit-add-images>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -3561,7 +3654,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "*{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  vertical-align: top;\r\n}\r\n\r\nimg{\r\n  width: 80%;\r\n  height: auto;\r\n  margin-bottom: 3%;\r\n  display: inline-block;\r\n}\r\n\r\np{\r\n  margin-top: 25%;\r\n  display: inline-block;\r\n}\r\n\r\n.right {\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg);\r\n}\r\n\r\n.left {\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg);\r\n}\r\n\r\n.address {\r\n  margin: auto 0;\r\n  text-align: center;\r\n}\r\n\r\n/*Desktop*/\r\n@media only screen and (min-width: 1025px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 25px;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n@media (min-width: 415px) and (max-width: 1024px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 20px;\r\n  }\r\n}\r\n\r\n/*Mobile*/\r\n@media only screen and (max-width: 414px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 8px;\r\n  }\r\n\r\n  h3{\r\n    font-size: 1em;\r\n  }\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "*{\n  margin: 0 auto;\n  text-align: center;\n  vertical-align: top;\n}\n\nimg{\n  width: 80%;\n  height: auto;\n  margin-bottom: 3%;\n  display: inline-block;\n}\n\np{\n  margin-top: 25%;\n  display: inline-block;\n}\n\n.right {\n    transform: rotate(-45deg);\n    -webkit-transform: rotate(-45deg);\n}\n\n.left {\n    transform: rotate(135deg);\n    -webkit-transform: rotate(135deg);\n}\n\n.address {\n  margin: auto 0;\n  text-align: center;\n}\n\n/*Desktop*/\n@media only screen and (min-width: 1025px){\n  i {\n    border: solid red;\n    border-width: 0 3px 3px 0;\n    display: inline-block;\n    padding: 25px;\n  }\n}\n\n/*Tablet*/\n@media (min-width: 415px) and (max-width: 1024px){\n  i {\n    border: solid red;\n    border-width: 0 3px 3px 0;\n    display: inline-block;\n    padding: 20px;\n  }\n}\n\n/*Mobile*/\n@media only screen and (max-width: 414px){\n  i {\n    border: solid red;\n    border-width: 0 3px 3px 0;\n    display: inline-block;\n    padding: 8px;\n  }\n\n  h3{\n    font-size: 1em;\n  }\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -3574,7 +3671,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/listing/listing-show/listing-show.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div [@fadeInAnimation]>\r\n  <div *ngIf=\"imageSources.length > 0\">\r\n    <p (click)=\"previousImage()\"><i class=\"left\"></i></p>\r\n    <img (click)=\"nextImage()\" src=\"{{ image }}\">\r\n    <p (click)=\"nextImage()\"><i class=\"right\"></i></p>\r\n  </div>\r\n  <div *ngIf=\"listing\">\r\n    <h3 class=\"address\" >{{ listing.address }}</h3>\r\n  </div>\r\n</div>\r\n"
+=======
+module.exports = "<div [@fadeInAnimation]>\n  <div *ngIf=\"imageSources.length > 0\">\n    <p (click)=\"previousImage()\"><i class=\"left\"></i></p>\n    <img (click)=\"nextImage()\" src=\"{{ image }}\">\n    <p (click)=\"nextImage()\"><i class=\"right\"></i></p>\n  </div>\n  <div *ngIf=\"listing\">\n    <h3 class=\"address\" >{{ listing.address }}</h3>\n  </div>\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -3670,7 +3771,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "*{\r\n  font-family: 'Arial';\r\n  text-align: center;\r\n}\r\n\r\n.wrapper{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\n.moreinfo{\r\n  display: block;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.listings a{\r\n  text-decoration: none;\r\n}\r\n\r\n/*Mobile*/\r\n@media only screen and (max-width: 414px) {\r\n  img{\r\n    max-width: 85%;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: block;\r\n    color: white;\r\n    font-size: 0.9em;\r\n    width: 20%;\r\n    margin: -13% auto 23%;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n/* Mid Size Desktop */\r\n@media (min-width: 415px) and (max-width: 767px){\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  button{\r\n    font-size: 2em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -8%;\r\n  }\r\n\r\n  .moreinfo{\r\n    font-size: 1.75em;\r\n    width: 12%;\r\n    margin: 0 auto 8%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n@media (min-width: 768px) and (max-width: 1024px){\r\n  .search{\r\n    font-size: 2em;\r\n  }\r\n\r\n  img{\r\n    max-width: 85%;\r\n  }\r\n\r\n  button{\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  h1{\r\n    font-size: 4em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -10%;\r\n  }\r\n\r\n  .moreinfo{\r\n    font-size: 1.75em;\r\n    width: 12%;\r\n    margin: 0 auto 4%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 1025px){\r\n\r\n  button{\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  img:hover {\r\n    border: 5px solid red;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: none;\r\n  }\r\n\r\n  .listings img:hover{\r\n    opacity: 0.5;\r\n  }\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "*{\n  font-family: 'Arial';\n  text-align: center;\n}\n\n.wrapper{\n  margin: 0 auto;\n  text-align: center;\n}\n\n.moreinfo{\n  display: block;\n  text-transform: uppercase;\n}\n\n.listings a{\n  text-decoration: none;\n}\n\n/*Mobile*/\n@media only screen and (max-width: 414px) {\n  img{\n    max-width: 85%;\n  }\n\n  .moreinfo{\n    display: block;\n    color: white;\n    font-size: 0.9em;\n    width: 20%;\n    margin: -13% auto 23%;\n    outline: 2px solid white;\n  }\n}\n\n/* Mid Size Desktop */\n@media (min-width: 415px) and (max-width: 767px){\n  img{\n    max-width: 55%;\n  }\n\n  button{\n    font-size: 2em;\n  }\n\n  .listings img{\n    margin-bottom: -8%;\n  }\n\n  .moreinfo{\n    font-size: 1.75em;\n    width: 12%;\n    margin: 0 auto 8%;\n    color: white;\n    outline: 2px solid white;\n  }\n}\n\n/*Tablet*/\n@media (min-width: 768px) and (max-width: 1024px){\n  .search{\n    font-size: 2em;\n  }\n\n  img{\n    max-width: 85%;\n  }\n\n  button{\n    font-size: 1.5em;\n  }\n\n  h1{\n    font-size: 4em;\n  }\n\n  .listings img{\n    margin-bottom: -10%;\n  }\n\n  .moreinfo{\n    font-size: 1.75em;\n    width: 12%;\n    margin: 0 auto 4%;\n    color: white;\n    outline: 2px solid white;\n  }\n}\n\n@media only screen and (min-width: 1025px){\n\n  button{\n    font-size: 1.5em;\n  }\n\n  img{\n    max-width: 55%;\n  }\n\n  img:hover {\n    border: 5px solid red;\n  }\n\n  .moreinfo{\n    display: none;\n  }\n\n  .listings img:hover{\n    opacity: 0.5;\n  }\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -3683,7 +3788,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/listing/listing.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n  <section class=\"search\">\r\n    <h3>Search By:</h3>\r\n    <button (click)=\"getActive()\">Active</button>\r\n    <button (click)=\"getSold()\">Sold</button>\r\n  </section>\r\n\r\n  <section>\r\n    <h1 *ngIf=\"active\">Active Properties</h1>\r\n    <h1 *ngIf=\"!active\">Sold Properties</h1>\r\n\r\n    <div *ngFor=\"let listing of listings\" class=\"listings\">\r\n      <a routerLink=\"/show/{{ listing._id }}\"><img src=\"{{ listing.paths[0] }}\"></a>\r\n      <a href=\"#\" class=\"moreinfo\">More info</a>\r\n    </div>\r\n  </section>\r\n</div>\r\n"
+=======
+module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\n  <section class=\"search\">\n    <h3>Search By:</h3>\n    <button (click)=\"getActive()\">Active</button>\n    <button (click)=\"getSold()\">Sold</button>\n  </section>\n\n  <section>\n    <h1 *ngIf=\"active\">Active Properties</h1>\n    <h1 *ngIf=\"!active\">Sold Properties</h1>\n\n    <div *ngFor=\"let listing of listings\" class=\"listings\">\n      <a routerLink=\"/show/{{ listing._id }}\"><img src=\"{{ listing.paths[0] }}\"></a>\n      <a href=\"#\" class=\"moreinfo\">More info</a>\n    </div>\n  </section>\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -3864,7 +3973,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/login/login.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<form (submit)=\"login(formData)\" #formData=\"ngForm\">\r\n  <h2>Login</h2>\r\n  <label>Username: <input type=\"text\" name=\"username\" ngModel></label>\r\n  <label>Password: <input type=\"password\" name=\"password\" ngModel></label>\r\n  <button>Login</button>\r\n</form>\r\n"
+=======
+module.exports = "<form (submit)=\"login(formData)\" #formData=\"ngForm\">\n  <h2>Login</h2>\n  <label>Username: <input type=\"text\" name=\"username\" ngModel></label>\n  <label>Password: <input type=\"password\" name=\"password\" ngModel></label>\n  <button>Login</button>\n</form>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -3987,7 +4100,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "* {\r\n  font-family: 'Ropa Sans', sans-serif;\r\n  font-weight: 600;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n  width: 85%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.logo img {\r\n  margin: 14px 0;\r\n  width: 50%;\r\n}\r\n\r\n.topnav {\r\n  text-transform: uppercase;\r\n}\r\n\r\n.topnav a {\r\n  display: block;\r\n  padding: 14px 16px;\r\n  text-decoration: none;\r\n  font-size: 17px;\r\n  color: #080a58\r\n}\r\n\r\n.topnav a:visited {\r\n  color: #080a58;\r\n}\r\n\r\n.topnav a:hover {\r\n  color: #f28109;\r\n}\r\n\r\n.active {\r\n    background-color: #4CAF50;\r\n    color: white;\r\n}\r\n\r\n.topnav .icon {\r\n    display: none;\r\n}\r\n\r\n/* mobile device */\r\n@media screen and (max-width: 414px) {\r\n\r\n  .logo img {\r\n    display: block;\r\n  }\r\n\r\n  .topnav {\r\n    display: inline-block;\r\n  }\r\n\r\n  .topnav a {\r\n    display: none;\r\n    padding: 10px 12px;\r\n  }\r\n\r\n  .topnav a.icon {\r\n    position: absolute;\r\n    right: 5%;\r\n    top: 9%;\r\n    display: block;\r\n  }\r\n\r\n  .topnav.responsive a.icon {\r\n    position: absolute;\r\n    right: 5%;\r\n    top: 8%;\r\n  }\r\n\r\n  .responsive {\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    text-align: center;\r\n  }\r\n\r\n  .topnav.responsive a {\r\n    display: inline-block;\r\n  }\r\n\r\n  .topnav-cont a {\r\n    border: 0.5px solid #080a58b0;\r\n    margin-bottom: 10px;\r\n  }\r\n}\r\n\r\n/* tablet/desktop */\r\n@media screen and (min-width: 415px) {\r\n\r\n  .logo img {\r\n    width: 25%;\r\n    margin: -15px 0 0;\r\n  }\r\n\r\n  .topnav, .topnav a {\r\n    display: inline-block;\r\n    font-size: 1.1em;\r\n  }\r\n\r\n  .topnav {\r\n    width: 74.5%;\r\n    text-align: right;\r\n    vertical-align: middle;\r\n  }\r\n\r\n  .topnav a:last-child {\r\n    padding-right: 0;\r\n  }\r\n}\r\n", ""]);
+=======
+exports.push([module.i, "* {\n  font-family: 'Ropa Sans', sans-serif;\n  font-weight: 600;\n}\n\n.container {\n  width: 85%;\n  margin: 0 auto;\n}\n\n.logo img {\n  margin: 12px 0;\n  width: 50%;\n}\n\n/* Style the links inside the navigation bar */\n.topnav a {\n    display: block;\n    padding: 14px 16px;\n    text-decoration: none;\n    font-size: 17px;\n    color: #080a58\n}\n\n/* Change the color of links on hover */\n.topnav a:hover {\n    /* color: #f28109; */\n}\n\n.topnav a:visited {\n  color: #080a58;\n}\n\n/* Add an active class to highlight the current page */\n.active {\n    background-color: #4CAF50;\n    color: white;\n}\n\n/* Hide the link that should open and close the topnav on small screens */\n.topnav .icon {\n    display: none;\n}\n\n/* When the screen is less than 600 pixels wide, hide all links, except for the first one (\"Home\"). Show the link that contains should open and close the topnav (.icon) */\n@media screen and (max-width: 600px) {\n  .logo img {display: block;}\n  .topnav {display: inline-block;}\n  .topnav a {display: none;}\n  .topnav a.icon {\n    position: absolute;\n    right: 5%;\n    top: 8%;\n    display: block;\n  }\n}\n\n/* The \"responsive\" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */\n@media screen and (max-width: 600px) {\n  .topnav.responsive a.icon {\n    position: absolute;\n    right: 5%;\n    top: 8%;\n  }\n\n  .responsive {\n    width: 100%;\n    margin: 0 auto;\n    text-align: center;\n  }\n  .topnav.responsive a {\n    display: inline-block;\n  }\n  .topnav-cont a {\n    border: 0.5px solid #080a58b0;\n    margin-bottom: 10px;\n  }\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -4000,7 +4117,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"container\">\r\n\r\n  <a routerLink=\"/\" class=\"logo\" (click)=\"close()\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tmhouse.png\"></a>\r\n\r\n  <div class=\"topnav\" id=\"Nav\">\r\n    <a href=\"javascript:void(0);\" class=\"icon\" id=\"icon\" (click)=\"changeResponsive()\">&#9776;</a>\r\n\r\n      <div class=\"topnav-cont\" (click)=\"closeMenu()\">\r\n        <a routerLink=\"/properties\">Properties</a>\r\n        <a routerLink=\"/about\">About</a>\r\n        <a routerLink=\"/contact\">Contact</a>\r\n      </div>\r\n\r\n  </div>\r\n\r\n</div>\r\n"
+=======
+module.exports = "<div class=\"container\">\n  <a routerLink=\"/\" class=\"logo\" (click)=\"close()\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tmhouse.png\"></a>\n  <div class=\"topnav\" id=\"myTopnav\">\n      <a href=\"javascript:void(0);\" class=\"icon\" id=\"icon\" (click)=\"myFunction()\">&#9776;</a>\n      <div class=\"topnav-cont\" (click)=\"close()\">\n      <a routerLink=\"/properties\">Properties</a>\n      <a routerLink=\"/about\">About</a>\n      <a routerLink=\"/contact\">Contact</a>\n    </div>\n  </div>\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -4025,8 +4146,13 @@ var NavbarComponent = (function () {
     }
     NavbarComponent.prototype.ngOnInit = function () {
     };
+<<<<<<< HEAD
     NavbarComponent.prototype.changeResponsive = function () {
         var x = document.getElementById("Nav");
+=======
+    NavbarComponent.prototype.myFunction = function () {
+        var x = document.getElementById("myTopnav");
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
         var y = document.getElementById("icon");
         if (x.className === "topnav") {
             x.className += " responsive";
@@ -4037,8 +4163,13 @@ var NavbarComponent = (function () {
             y.innerHTML = "&#9776";
         }
     };
+<<<<<<< HEAD
     NavbarComponent.prototype.closeMenu = function () {
         var x = document.getElementById("Nav");
+=======
+    NavbarComponent.prototype.close = function () {
+        var x = document.getElementById("myTopnav");
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
         var y = document.getElementById("icon");
         x.className = "topnav";
         y.innerHTML = "&#9776";
@@ -4066,7 +4197,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "* {\r\n  font-family: 'Ropa Sans', sans-serif;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n\r\n.nav {\r\n  text-align: right;\r\n  width: 100%;\r\n  height: 35px;\r\n  background: #080a58;\r\n  text-transform: uppercase;\r\n  color: white;\r\n}\r\n\r\n.nav-content {\r\n  width: 85%;\r\n  margin: 0 auto;\r\n  -webkit-transform: translate(0, 50%);\r\n          transform: translate(0, 50%);\r\n}\r\n\r\n.nav:not(first-child) {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.nav-content div {\r\n  display: inline-block;\r\n}\r\n\r\n@media (min-width: 1025px) {\r\n  .nav {\r\n    height: 45px;\r\n  }\r\n\r\n  .nav-content {\r\n    -webkit-transform: translate(0, 40%);\r\n            transform: translate(0, 40%);\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n\r\n@media (max-width: 414px) {\r\n  .nav-content {\r\n    text-align: center;\r\n  }\r\n}\r\n\r\n/* Smaller mobiles */\r\n@media only screen and (max-width: 375px) {\r\n  .nav-content {\r\n    font-size: 0.9em;\r\n  }\r\n}\r\n", ""]);
+=======
+exports.push([module.i, ".nav {\n  text-align: right;\n  width: 100%;\n  height: 35px;\n  background: #080a58;\n  text-transform: uppercase;\n  font-family: 'Ropa Sans', sans-serif;\n  color: white;\n}\n\n.nav-content {\n  width: 85%;\n  margin: 0 auto;\n  -webkit-transform: translate(0, 50%);\n          transform: translate(0, 50%);\n}\n\n.nav:not(first-child) {\n  margin-bottom: 20px;\n}\n\na {\n  text-decoration: none;\n  color: white;\n}\n\n.nav-content div {\n  display: inline-block;\n}\n\n@media (max-width: 1024px) {\n  .nav-content {\n    text-align: center;\n  }\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -4079,7 +4214,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/top-navbar/top-navbar.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"nav\">\r\n\r\n  <div class=\"nav-content\">\r\n    <a href=\"tel:1-626-759-4812\">(626) 759-4812</a> |\r\n    <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> |\r\n    <div *ngIf=\"!loggedIn\">\r\n      <a routerLink=\"/login\">Log In</a>\r\n    </div>\r\n    <div *ngIf=\"loggedIn\">\r\n      <a (click)=\"logout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"nav\" *ngIf=\"loggedIn\">\r\n    <div class=\"nav-content\">\r\n      <a routerLink=\"/upload\">Add Listing</a> |\r\n      <a routerLink=\"/editlisting\">Edit Listing</a>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n"
+=======
+module.exports = "<div class=\"nav\">\n  <div class=\"nav-content\">\n    <a href=\"tel:1-626-759-4812\">(626) 759-4812</a> |\n    <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> |\n    <div *ngIf=\"!loggedIn\">\n      <a routerLink=\"/login\">Log In</a>\n    </div>\n    <div *ngIf=\"loggedIn\">\n      <a (click)=\"logout()\">Logout</a>\n    </div>\n  </div>\n  <div class=\"nav\" *ngIf=\"loggedIn\">\n    <div class=\"nav-content\">\n      <a routerLink=\"/upload\">Add Listing</a> |\n      <a routerLink=\"/editlisting\">Edit Listing</a> |\n    </div>\n  </div>\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
@@ -4105,6 +4244,7 @@ var TopNavbarComponent = (function () {
     function TopNavbarComponent(_loginService) {
         var _this = this;
         this._loginService = _loginService;
+<<<<<<< HEAD
         this.subscription = this._loginService.isLoggedIn()
             .subscribe(function (loggedin) {
             _this.loggedIn = loggedin;
@@ -4112,6 +4252,13 @@ var TopNavbarComponent = (function () {
     }
     TopNavbarComponent.prototype.ngOnInit = function () {
         this.getLoggedIn();
+=======
+        this.subscription = this._loginService.isLoggedIn().subscribe(function (loggedin) { _this.loggedIn = loggedin; });
+    }
+    TopNavbarComponent.prototype.ngOnInit = function () {
+        this.getLoggedIn();
+        console.log(this.loggedIn);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
     };
     TopNavbarComponent.prototype.getLoggedIn = function () {
         if (localStorage.getItem('token')) {
@@ -4149,7 +4296,11 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, ".wrapper{\r\n  padding: 2%;\r\n  text-align: center;\r\n}\r\n\r\n/*.buttons{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}*/\r\n\r\n.dontadd, .addit{\r\n  display: inline-block;\r\n}\r\n\r\n.info{\r\n  outline: 2px solid red;\r\n  padding: 3%;\r\n}\r\n\r\n.dropzone{\r\n  outline: 2px dotted red;\r\n  padding: 10% 0;\r\n}\r\n\r\n.uploadfile, .showqueue, .uploadedalready, .showqueue, .info, .dropzonearea{\r\n  outline: 2px solid red;\r\n  width: 50%;\r\n  padding: 3%;\r\n  margin: 2% auto;\r\n}\r\n\r\n.addit, .dontadd{\r\n  padding: 3%;\r\n}\r\n", ""]);
+=======
+exports.push([module.i, ".wrapper{\n  padding: 2%;\n  text-align: center;\n}\n\n/*.buttons{\n  margin: 0 auto;\n  text-align: center;\n}*/\n\n.dontadd, .addit{\n  display: inline-block;\n}\n\n.info{\n  outline: 2px solid red;\n  padding: 3%;\n}\n\n.dropzone{\n  outline: 2px dotted red;\n  padding: 10% 0;\n}\n\n.uploadfile, .showqueue, .uploadedalready, .showqueue, .info, .dropzonearea{\n  outline: 2px solid red;\n  width: 50%;\n  padding: 3%;\n  margin: 2% auto;\n}\n\n.addit, .dontadd{\n  padding: 3%;\n}\n", ""]);
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 // exports
 
@@ -4162,7 +4313,11 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/upload/upload.component.html":
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div *ngIf = \"error\">\r\n  {{error}}\r\n</div>\r\n<div class=\"wrapper\">\r\n  <form (submit)=\"addListing(formData)\" #formData=\"ngForm\">\r\n    <div class=\"buttons\">\r\n    <button (click)='cancel(ngForm)' type=\"button\">Cancel</button>\r\n    <div *ngIf='showButton && this.files.length' class=\"addit\">\r\n      <button>Add</button>\r\n    </div>\r\n    <div *ngIf='!showButton || !this.files.length' class=\"dontadd\">\r\n      <button disabled='disabled'>Add</button>\r\n    </div>\r\n  </div>\r\n\r\n    <div class=\"info\">\r\n      <p>\r\n        Address: <input type=\"text\" name=\"address\" ngModel>\r\n      </p>\r\n      <p>\r\n        Sold? <input type=\"checkbox\" name=\"sold\" ngModel>\r\n      </p>\r\n    </div>\r\n  </form>\r\n\r\n  <div class=\"uploadfile\">\r\n    <h3>Select files</h3>\r\n      <div class=\"dropzonearea\">\r\n        <div ng2FileDrop\r\n        [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\"\r\n        (fileOver)=\"fileOverBase($event)\"\r\n        [uploader]=\"uploader\"\r\n        class=\"dropzone\">\r\n        > Drop Images Here <\r\n      </div>\r\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple  /><br/>\r\n    </div>\r\n    <div class=\"showqueue\">\r\n      <h3>Upload queue</h3>\r\n      <p>Queue length: {{ uploader?.queue?.length }}</p>\r\n      <table>\r\n        <thead>\r\n          <tr>\r\n            <th>Name</th>\r\n            <th>Actions</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr *ngFor=\"let item of uploader.queue\">\r\n            <td><strong>{{ item?.file?.name }}</strong></td>\r\n            <td>\r\n              <button (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">Upload</button>\r\n              <button (click)=\"item.remove()\">Remove</button>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n      <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload all</button>\r\n      <button type=\"button\" (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">Cancel all</button>\r\n      <button type=\"button\" (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">Clear Queue</button>\r\n    </div>\r\n\r\n    <div class=\"uploadedalready\">\r\n      <table>\r\n        <th (click)='print()'>Name</th>\r\n        <th>Image</th>\r\n        <th>Action</th>\r\n        <div *ngIf = \"files\">\r\n          <div *ngFor = \"let file of files\" class=\"showuploaded\">\r\n            <td>{{ file.originalname }}</td>\r\n            <td><img src=\"{{ file.location }}\" width=\"25%\"></td>\r\n            <button type=\"button\" (click)=\"deleteListingImage(file.originalname, file.size, file.key)\">Delete</button>\r\n          </div>\r\n        </div>\r\n      </table>\r\n    </div>\r\n</div>\r\n"
+=======
+module.exports = "<div *ngIf = \"error\">\n  {{error}}\n</div>\n<div class=\"wrapper\">\n  <form (submit)=\"addListing(formData)\" #formData=\"ngForm\">\n    <div class=\"buttons\">\n    <button (click)='cancel(ngForm)' type=\"button\">Cancel</button>\n    <div *ngIf='showButton && this.files.length' class=\"addit\">\n      <button>Add</button>\n    </div>\n    <div *ngIf='!showButton || !this.files.length' class=\"dontadd\">\n      <button disabled='disabled'>Add</button>\n    </div>\n  </div>\n\n    <div class=\"info\">\n      <p>\n        Address: <input type=\"text\" name=\"address\" ngModel>\n      </p>\n      <p>\n        Sold? <input type=\"checkbox\" name=\"sold\" ngModel>\n      </p>\n    </div>\n  </form>\n\n  <div class=\"uploadfile\">\n    <h3>Select files</h3>\n      <div class=\"dropzonearea\">\n        <div ng2FileDrop\n        [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\"\n        (fileOver)=\"fileOverBase($event)\"\n        [uploader]=\"uploader\"\n        class=\"dropzone\">\n        > Drop Images Here <\n      </div>\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple  /><br/>\n    </div>\n    <div class=\"showqueue\">\n      <h3>Upload queue</h3>\n      <p>Queue length: {{ uploader?.queue?.length }}</p>\n      <table>\n        <thead>\n          <tr>\n            <th>Name</th>\n            <th>Actions</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let item of uploader.queue\">\n            <td><strong>{{ item?.file?.name }}</strong></td>\n            <td>\n              <button (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">Upload</button>\n              <button (click)=\"item.remove()\">Remove</button>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n      <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload all</button>\n      <button type=\"button\" (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">Cancel all</button>\n      <button type=\"button\" (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">Clear Queue</button>\n    </div>\n\n    <div class=\"uploadedalready\">\n      <table>\n        <th (click)='print()'>Name</th>\n        <th>Image</th>\n        <th>Action</th>\n        <div *ngIf = \"files\">\n          <div *ngFor = \"let file of files\" class=\"showuploaded\">\n            <td>{{ file.originalname }}</td>\n            <td><img src=\"{{ file.location }}\" width=\"25%\"></td>\n            <button type=\"button\" (click)=\"deleteListingImage(file.originalname, file.size, file.key)\">Delete</button>\n          </div>\n        </div>\n      </table>\n    </div>\n</div>\n"
+>>>>>>> fb205719b1c6cb2a2597235e6494b6837ec31936
 
 /***/ }),
 
