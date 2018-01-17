@@ -3,14 +3,11 @@ var User = mongoose.model('User');
 
 module.exports = {
   login: (req, res)=>{
-    console.log('cont');
     User.findOne({username:req.body.username}, (err, user) => {
       if(err){
-        console.log('went wrong');
         return res.status(500).send("Something went wrong.");
       }
       if(!user){
-        console.log('no user');
         return res.status(404).send("Username or Password does not match.");
       }
       if(req.body.password == user.password){
