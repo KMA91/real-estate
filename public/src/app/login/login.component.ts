@@ -21,8 +21,13 @@ export class LoginComponent implements OnInit {
 
   login(info){
     this._loginService.login(info.value)
-    .then((success) => {this._loginService.setLoggedIn(); this._router.navigate(['/upload'])})
-    .catch((err) => {info.resetForm();})
+    .then((success) => {
+      this._loginService.setLoggedIn();
+      this._router.navigate(['/upload'])
+    })
+    .catch((err) => {
+      info.resetForm();
+    })
   }
 
 }
