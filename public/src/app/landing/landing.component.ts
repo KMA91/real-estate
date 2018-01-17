@@ -2,6 +2,8 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { ListingService } from './../listing/listing.service';
 import { fadeInAnimation } from '../_animations/index';
 import { NgxCarousel } from 'ngx-carousel';
+import { Ng2DeviceService } from 'ng2-device-detector';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-landing',
@@ -10,21 +12,26 @@ import { NgxCarousel } from 'ngx-carousel';
   animations: [fadeInAnimation],
   host: { '[@fadeInAnimation]': '' }
 })
+
 export class LandingComponent implements OnInit {
 
+  public deviceInfo: String = null;
   public carouselTileItems: Array<any> = [];
   public carouselTile: NgxCarousel;
 
   constructor(
-    private _listingService: ListingService
-  ) { }
+    private _listingService: ListingService,
+    private http: Http, private deviceService: Ng2DeviceService
+  ) {
+    this.checkDevice();
+  }
 
   ngOnInit() {
 
-    this.getActive();
+    this.getPropCarouselImgs();
 
     this.carouselTile = {
-      grid: { xs: 2, sm: 2, md: 2, lg: 2, all: 0 },
+      grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
       speed: 600,
       interval: 3000,
       point: {
@@ -57,9 +64,13 @@ export class LandingComponent implements OnInit {
       load: 1,
       touch: true
     };
+
+    if(this.deviceInfo == "unknown"){
+      this.carouselTile.grid = { xs: 2, sm: 2, md: 2, lg: 2, all: 0 }
+    };
   }
 
-  getActive() {
+  getPropCarouselImgs() {
     this._listingService.getAllActiveListings()
     .then((listings) => {
       for(var i = 0; i < listings.length; i++){
@@ -68,4 +79,10 @@ export class LandingComponent implements OnInit {
     })
     .catch()
   }
+
+  checkDevice() {
+    this.deviceInfo = this.deviceService.getDeviceInfo().device;
+    console.log(this.deviceInfo);
+  }
+
 }

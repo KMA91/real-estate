@@ -50,7 +50,8 @@ import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    NgxCarouselModule
+    NgxCarouselModule,
+    Ng2DeviceDetectorModule.forRoot()
   ],
   providers: [UploadService, ListingService, LoginService, AuthGuard],
   bootstrap: [AppComponent]

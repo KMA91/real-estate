@@ -1,16 +1,39 @@
-p{
+p {
   text-align: center;
   font-family: 'Arial Black';
+  background: blue;
 }
 
-img{
+img {
   max-width: 4%;
   margin: 0 0.3%;
 }
 
-a{
+.social a {
   width: 25%;
   max-width: 1%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  text-align: right;
+  width: 100%;
+  height: 35px;
+  background: #090a4c;
+  text-transform: uppercase;
+  font-family: 'Ropa Sans', sans-serif;
+  color: white;
+  font-size: 0.85em;
+}
+
+.nav-content {
+  width: 85%;
+  margin: 0 auto;
+  transform: translate(0, 60%);
 }
 
 .trulia{
@@ -31,10 +54,20 @@ a{
   text-align: center;
 }
 
+/* DESKTOP */
+
+@media only screen and (min-width: 1025px) {
+  .nav-content {
+    font-size: 1.5em;
+    transform: translate(0, 30%);
+  }
+}
+
 /* MOBILE */
 @media only screen and (max-width: 414px) {
-  *{
-    font-size: 0.75em;
+
+  .nav-content {
+    text-align: center;
   }
 
   img{
@@ -45,5 +78,12 @@ a{
   .remax{
     margin: 1%;
     max-width: 9%;
+  }
+}
+
+/* Smaller mobiles */
+@media only screen and (max-width: 375px) {
+  .nav-content {
+    font-size: 0.9em;
   }
 }

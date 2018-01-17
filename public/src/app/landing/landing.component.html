@@ -1,45 +1,63 @@
-<section class="top" [@fadeInAnimation]>
-<div class="slider">
-  <div class="slide1"><h3>FOR ALL YOUR REAL ESTATE NEEDS</h3></div>
-  <div class="slide2"></div>
-  <div class="slide3"></div>
-</div>
-<div class="description">
-  <h3>Tony is</h3>
-  <div>
-    <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonyknowledge.png">
-    <h5>knowledgeable</h5>
-  </div>
-  <div>
-    <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonyfriendly.png">
-    <h5>friendly</h5>
-  </div>
-  <div>
-    <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrust.png">
-    <h5>trustworthy</h5>
-  </div>
-</div>
-<div class="testimonials">
-  <h3>Testimonials</h3>
-  <p>"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate..." - Sally Zhen</p>
-  <p>"...As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home..." - Cassie Curtin"</p>
-  <h4>See what others are saying about Tony</h4>
-  <a href="https://www.zillow.com/profile/brokertonyma/#reviews"><img src="https://s3-us-west-1.amazonaws.com/mean-realestate/zillowoj.png"></a>
-  <a href="https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview"><img src="https://s3-us-west-1.amazonaws.com/mean-realestate/truliaoj.png"></a>
-  <a href="https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1"><img src="https://s3-us-west-1.amazonaws.com/mean-realestate/googleoj.png"></a>
-</div>
-<div class="properties">
-  <h3>Properties</h3>
+<div class="container" [@fadeInAnimation]>
 
-  <ngx-carousel [inputs]="carouselTile">
-      <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems; let i = index;">
-          <div class="tile" [style.background]="'url(' + tile + ')'">
-          </div>
-      </ngx-tile>
-      <button NgxCarouselPrev class="leftRs">&lt;</button>
-      <button NgxCarouselNext class="rightRs">&gt;</button>
-  </ngx-carousel>
+    <div class="slider">
+
+      <div class="slide1"><h3>FOR ALL YOUR REAL ESTATE NEEDS</h3></div>
+      <div class="slide2"></div>
+      <div class="slide3"></div>
+
+    </div>
+
+    <div class="values">
 
 
+      <h3>Core Values</h3>
+      <div>
+        <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonyknowledge.png">
+        <h5>knowledge</h5>
+        <p>Strives with years of constant research, growth and understanding of the market </p>
+      </div>
+
+      <div>
+        <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonyfriendly.png">
+        <h5>empathy</h5>
+        <p>Understands that every individual has different wants, needs, and expectations  </p>
+      </div>
+
+      <div>
+        <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrust.png">
+        <h5>trust</h5>
+        <p>Promotes a lifestyle and workflow with strong moral with an emphasis on ethics and zeal</p>
+      </div>
+
+    </div>
+
+    <div class="testimonials">
+
+      <h3>Testimonials</h3>
+      <p>"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate..." - Sally Zhen</p>
+      <p>"...As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home..." - Cassie Curtin"</p>
+      <h4>See what others are saying about Tony</h4>
+      <a href="https://www.zillow.com/profile/brokertonyma/#reviews"><img src="https://s3-us-west-1.amazonaws.com/mean-realestate/zillowoj.png"></a>
+      <a href="https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview"><img class="trulia" src="https://s3-us-west-1.amazonaws.com/mean-realestate/truliaoj.png"></a>
+      <a href="https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1"><img src="https://s3-us-west-1.amazonaws.com/mean-realestate/googleoj.png"></a>
+
+    </div>
+
+    <div class="properties">
+
+      <h3>Properties</h3>
+      <ngx-carousel [inputs]="carouselTile">
+          <ngx-tile NgxCarouselItem *ngFor="let tile of carouselTileItems; let i = index;">
+              <div class="tile" [style.background]="'url(' + tile + ')'">
+              </div>
+          </ngx-tile>
+          <button NgxCarouselPrev class="leftRs">&lt;</button>
+          <button NgxCarouselNext class="rightRs">&gt;</button>
+      </ngx-carousel>
+
+      <button class="browse" routerLink="/properties">Browse More</button>
+
+    </div>
+
 </div>
-</section>
