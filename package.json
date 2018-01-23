@@ -1,7 +1,7 @@
 {
   "name": "realestate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This version includes a fully functional website and very simple designs w/ very minimal CSS on mostly the landing page. 2.0 will incorporate Bootstrap grid system for display",
   "main": "server.js",
   "proxy": {
     "/": {
