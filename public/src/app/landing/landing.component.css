@@ -1,3 +1,15 @@
+/*
+LAYOUT // LAYOUT // LAYOUT // LAYOUT // LAYOUT // LAYOUT // LAYOUT // LAYOUT // LAYOUT //
+    1) SLIDESHOW
+    2) VALUES
+    3) TESTIMONIALS
+    4) PROPERTIES
+
+    MEDIA QUERY BREAKPOINT <1024(TABLET/PHONE) 1025>(DESKTOP/LARGER SCREENS)
+
+ */
+
+
 * {
   margin : 0;
   padding: 0;
@@ -11,6 +23,15 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 1024px){
+  .container {
+    text-align: center;
+  }
+}
+
+/* 1) SLIDESHOW // 1) SLIDESHOW //  */
+/* 1) SLIDESHOW // 1) SLIDESHOW //  */
+
 .slide1, .slide2, .slide3 {
   position: absolute;
   width: 100%;
@@ -18,18 +39,96 @@
   letter-spacing: 5px;
 }
 
-.values, .testimonials, .properties {
-  padding: 9%;
-  width: 100%;
+@media only screen and (min-width: 1025px) {
+  .slider {
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+  }
+  .slide1 {
+    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade 16s infinite;
+    -webkit-animation:fade 12s infinite;
+  }
+  .slide2 {
+    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house3.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade2 16s infinite;
+    -webkit-animation:fade2 12s infinite;
+  }
+  .slide3 {
+    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house1.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 16s infinite;
+    -webkit-animation:fade3 12s infinite;
+  }
+  @keyframes fade
+  {
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+  }
+  @keyframes fade2
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+  }
+  @keyframes fade3
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+  }
+
+  .slide1, .slide2, .slide3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide1 h3 {
+    color: transparent;
+  }
 }
+
+@media only screen and (max-width: 1024px) {
+  .slide1, .slide2, .slide3 {
+    width: 100%;
+  }
+
+  .slider {
+    max-width: 100%;
+    height: 450px;
+    position: relative;
+  }
+  .slide1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .slide1 h3 {
+    font-size: 1.75em;
+    color: white;
+    position: relative;
+    top: 40%;
+    line-height: 1.1;
+  }
+}
+
+/* 2) VALUES / 2) VALUES / 2) VALUES /  */
+/* 2) VALUES / 2) VALUES / 2) VALUES /  */
 
 .values {
   height: 700px;
-}
-
-
-.values div {
-  height: 33%;
+  padding: 5%;
   text-transform: uppercase;
 }
 
@@ -47,6 +146,8 @@
   color: #080a58;
   font-size: 18px;
   font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .values p {
@@ -61,8 +162,63 @@
   max-width: 13%;
 }
 
+@media only screen and (min-width: 1025px) {
+
+  .values {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+
+  .values h3 {
+    width: 55%;
+    margin-bottom: 10%;
+    font-size: 2em;
+  }
+
+  .values div {
+    position: relative;
+    top: 5%;
+  }
+
+  .values div {
+    display: inline-block;
+    width: 33%;
+  }
+
+  .values p {
+    width: 90%;
+    text-align: center;
+    margin: 13px auto;
+    font-size: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .values {
+    height: 800px;
+  }
+
+  .values div {
+    margin: 15px 0;
+    height: 25%;
+  }
+
+  .values p {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+  }
+}
+
+/* 3) TESTIMONIALS / TESTIMONIALS / TESTIMONIALS /  */
+/* 3) TESTIMONIALS / TESTIMONIALS / TESTIMONIALS /  */
+
 .testimonials {
-  height: 700px;
+  height: 815px;
+  padding: 5%;
   background: #ffebd5;
   color: #080a58;
 }
@@ -76,10 +232,10 @@
 
 .testimonials h3 {
   font-size: 25px;
+  margin-bottom: 5%;
 }
 
 .testimonials p {
-  margin: 40px 0;
   line-height: 1.2;
   letter-spacing: 1px;
   border: 4px solid white;
@@ -95,6 +251,46 @@
 
 .testimonials h4 {
   margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .testimonials h3 {
+    font-size: 2em;
+  }
+
+  .testimonials p {
+    display: inline-block !important;
+    margin: 40px 40px 83px;
+    letter-spacing: 2px;
+    border: 6px solid white;
+    font-size: 20px;
+  }
+
+  .testimonials h4 {
+    font-size: 1.5em;
+  }
+
+  .testimonials img {
+    max-width: 8%;
+    margin: 10px 40px;
+  }
+}
+
+.properties {
+  padding: 5%;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .testimonials {
+    height: 650px;
+  }
+
+  .testimonials p {
+    margin: 20px;
+  }
+
 }
 
 .properties {
@@ -157,125 +353,12 @@
   border: #ce6e00;
 }
 
-/*DESKTOP*/
+
 
 @media only screen and (min-width: 1025px) {
-  .slider {
-    max-width: 100%;
-    height: 600px;
-    position: relative;
-  }
-  .slide1 {
-    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg)no-repeat center;
-    background-size: cover;
-    animation:fade 16s infinite;
-    -webkit-animation:fade 12s infinite;
-  }
-  .slide2 {
-    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house3.jpeg)no-repeat center;
-    background-size: cover;
-    animation:fade2 16s infinite;
-    -webkit-animation:fade2 12s infinite;
-  }
-  .slide3 {
-    background: url(https://s3-us-west-1.amazonaws.com/mean-realestate/house1.jpeg)no-repeat center;
-    background-size: cover;
-    animation:fade3 16s infinite;
-    -webkit-animation:fade3 12s infinite;
-  }
-  @keyframes fade
-  {
-    0%   {opacity:1}
-    33.333% { opacity: 0}
-    66.666% { opacity: 0}
-    100% { opacity: 1}
-  }
-  @keyframes fade2
-  {
-    0%   {opacity:0}
-    33.333% { opacity: 1}
-    66.666% { opacity: 0 }
-    100% { opacity: 0}
-  }
-  @keyframes fade3
-  {
-    0%   {opacity:0}
-    33.333% { opacity: 0}
-    66.666% { opacity: 1}
-    100% { opacity: 0}
-  }
-
-  .slide1, .slide2, .slide3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .slide1 h3 {
-    color: transparent;
-  }
-
-  .values {
-    padding: 5%;
-  }
-
-  .values h3 {
-    width: 55%;
-    margin-bottom: 10%;
-    font-size: 2em;
-  }
-
-  .values div {
-    display: inline-block;
-    width: 33%;
-  }
-
-  .values p {
-    width: 90%;
-    text-align: center;
-    margin: 13px auto;
-    font-size: 1em;
-  }
-
-  .testimonials {
-    height: 900px;
-    padding: 5%;
-  }
-
-  .testimonials h3 {
-    margin-bottom: 5%;
-    font-size: 2em;
-  }
-
-  .testimonials p {
-    display: inline-block !important;
-    width: 45%;
-    margin: 40px 10px 83px;
-    line-height: 1.2;
-    letter-spacing: 2px;
-    border: 6px solid white;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 20px;
-  }
-
-  .testimonials h4 {
-    margin-bottom: 40px;
-    font-size: 1.5em;
-  }
-
-  .testimonials img {
-    max-width: 8%;
-    margin: 10px 40px;
-  }
-
-  .trulia {
-    margin-top: 0px !important;
-  }
 
   .properties {
-    height: 1000px;
+    height: 800px;
   }
 
   .properties h3 {
@@ -290,43 +373,11 @@
 
 }
 
-/* MOBILE/TABLET */
+
 @media only screen and (max-width: 1024px) {
-
-  .container {
-    text-align: center;
-  }
-
-  .slide1, .slide2, .slide3{
-    width: 100%;
-  }
-
-  .slider {
-    max-width: 100%;
-    height: 450px;
-    position: relative;
-  }
-  .slide1 {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-1.amazonaws.com/mean-realestate/house4.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-  }
-
-  .slide1 h3 {
-    font-size: 1.75em;
-    color: white;
-    position: relative;
-    top: 40%;
-    line-height: 1.1;
-  }
 
   .tile {
     min-height: 200px;
-  }
-
-  .values {
-    height: 750px;
   }
 
   .properties h3 {

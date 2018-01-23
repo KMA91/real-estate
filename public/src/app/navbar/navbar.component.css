@@ -44,7 +44,7 @@
 }
 
 /* mobile device */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 660px) {
 
   .logo img {
     display: block;
@@ -66,12 +66,6 @@
     display: block;
   }
 
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 5%;
-    top: 8%;
-  }
-
   .responsive {
     width: 100%;
     margin: 0 auto;
@@ -89,7 +83,12 @@
 }
 
 /* tablet/desktop */
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 661px) {
+
+  .container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
   .logo img {
     width: 25%;

@@ -27,13 +27,12 @@ a {
   text-transform: uppercase;
   font-family: 'Ropa Sans', sans-serif;
   color: white;
-  font-size: 0.85em;
+  font-size: 1em;
 }
 
 .nav-content {
-  width: 85%;
   margin: 0 auto;
-  transform: translate(0, 60%);
+  width: 95%;
 }
 
 .trulia{
@@ -59,7 +58,6 @@ a {
 @media only screen and (min-width: 1025px) {
   .nav-content {
     font-size: 1.5em;
-    transform: translate(0, 30%);
   }
 }
 
@@ -68,6 +66,7 @@ a {
 
   .nav-content {
     text-align: center;
+    font-size: 0.9em;
   }
 
   img{
