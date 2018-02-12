@@ -25,12 +25,11 @@ MongoDB, Express.js, Node.js, Angular, AWS (Deployment), AWS(SDK), Custom CSS, F
 - [nodemon](https://github.com/remy/nodemon)
 
 ## Progress Log
-- 10/12/17 - Started project
 1. Integration of all front-end, back-end, npm libraries, and database frameworks
 2. Integrate simple layout/CSS to display front end look
 3. Add media queries to show responsive layout
 4. Incorporate color scheme and different font for a more pleasing look/feel
-- 1/23/2018 - Start Version 2.0
+
 ## Contributors
 [Kevin Ma](https://github.com/KMA91)
 </br>
