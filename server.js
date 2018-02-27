@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+// allows file path usage
 const bodyParser = require('body-parser');
+// allows rec.body usage
 const COConfig = require('./server/config/crossOriginConfig');
 const session = require('express-session');
 const sessionInfomation = {
@@ -15,12 +17,15 @@ const sessionInfomation = {
   maxAge: 36000000
   }
 }
+// usage of session to session
 const AWS = require('aws-sdk');
 AWS.config.loadFromPath('./server/config/config.json');
 app.use(COConfig);
 app.use(session(sessionInfomation));
 app.use(bodyParser.urlencoded({extended: true}));
+// Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option. This parser accepts only UTF-8 encoding of the body and supports automatic inflation of gzip and deflate encodings.
 app.use(bodyParser.json());
+// same as top, just for json
 app.use(express.static(path.join(__dirname, 'public', "dist")));
 require('./server/config/mongoose.js');
 

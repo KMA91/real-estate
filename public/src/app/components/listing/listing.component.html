@@ -1,0 +1,24 @@
+<div class="container-fluid" [@fadeInAnimation]>
+  <div class="search">
+    <h3>Search By:</h3>
+    <button (click)="getActive()" class="btn btn-lg">Active</button>
+    <button (click)="getSold()" class="btn btn-lg">Sold</button>
+  </div>
+
+  <h1 *ngIf="active">Active Properties</h1>
+  <h1 *ngIf="!active">Sold Properties</h1>
+
+<div class="row">
+
+  <div *ngFor="let listing of listings" class="listings">
+    <div class="col-xs-12 col-md-3 image-container">
+      <a routerLink="/show/{{ listing._id }}" class="image"><img src="{{ listing.paths[0] }}" class="image"></a>
+      <div class="middle">
+        <button class="moreinfo btn btn-md">More Images</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
