@@ -1,9 +1,5 @@
 * {
-  padding: 0;
-  margin: 0;
+  font-family: 'Oswald', sans-serif;
   box-sizing: border-box;
-}
 
-.row {
-  min-height: 400px;
 }

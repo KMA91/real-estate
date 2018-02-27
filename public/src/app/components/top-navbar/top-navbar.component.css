@@ -1,0 +1,55 @@
+* {
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  text-align: right;
+  width: 100%;
+  height: 35px;
+  background: #080a58;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav-content {
+  width: 85%;
+  margin: 0 auto;
+  transform: translate(0, 50%);
+}
+
+/* .nav:not(first-child) {
+  margin-bottom: 20px;
+} */
+
+.nav-content div {
+  display: inline-block;
+}
+
+@media (min-width: 1025px) {
+  .nav {
+    height: 45px;
+  }
+
+  .nav-content {
+    transform: translate(0, 40%);
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav-content {
+    text-align: center;
+  }
+}
+
+/* Smaller mobiles */
+@media only screen and (max-width: 375px) {
+  .nav-content {
+    font-size: 0.9em;
+  }
+}
