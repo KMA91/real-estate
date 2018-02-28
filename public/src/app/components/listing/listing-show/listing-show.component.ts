@@ -6,7 +6,7 @@ import { fadeInAnimation } from '../../../_animations/index';
 @Component({
   selector: 'app-listing-show',
   templateUrl: './listing-show.component.html',
-  styleUrls: ['./listing-show.component.css'],
+  styleUrls: ['./listing-show.component.scss'],
   animations: [fadeInAnimation],
   host: { '[@fadeInAnimation]': '' }
 

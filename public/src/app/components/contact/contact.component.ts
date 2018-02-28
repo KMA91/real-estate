@@ -4,7 +4,7 @@ import { fadeInAnimation } from '../../_animations/index';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
+  styleUrls: ['./contact.component.scss'],
   animations: [fadeInAnimation],
   host: { '[@fadeInAnimation]': '' }
 })
