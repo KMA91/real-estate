@@ -4,7 +4,7 @@ import { ListingService } from '../../../services/listing.service';
 @Component({
   selector: 'app-listing-edit',
   templateUrl: './listing-edit.component.html',
-  styleUrls: ['./listing-edit.component.css']
+  styleUrls: ['./listing-edit.component.scss']
 })
 export class ListingEditComponent implements OnInit {
 

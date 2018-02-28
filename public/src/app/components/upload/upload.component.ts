@@ -8,7 +8,7 @@ const URL = '/api/upload';
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.component.html',
-  styleUrls: ['./upload.component.css']
+  styleUrls: ['./upload.component.scss']
 })
 export class UploadComponent implements OnInit {
   public uploader:FileUploader = new FileUploader({url: URL});
