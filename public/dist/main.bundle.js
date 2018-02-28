@@ -104,7 +104,14 @@ exports.AppRoutingModule = AppRoutingModule;
 
 /***/ }),
 
-/***/ "../../../../../src/app/app.component.css":
+/***/ "../../../../../src/app/app.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-navbar></app-navbar>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -112,20 +119,13 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "* {\r\n  font-family: 'Oswald', sans-serif;\r\n}\r\n", ""]);
+exports.push([module.i, "* {\n  font-family: 'Oswald', sans-serif; }\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/app.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<app-navbar></app-navbar>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>\r\n"
 
 /***/ }),
 
@@ -152,7 +152,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/app.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/app.component.scss")]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
@@ -242,7 +242,14 @@ exports.AppModule = AppModule;
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/about/about.component.css":
+/***/ "../../../../../src/app/components/about/about.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n\r\n  <section>\r\n    <div class=\"top\">\r\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\r\n      <h3>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</h3>\r\n    </div>\r\n  </section>\r\n\r\n  <section>\r\n    <div class=\"testimonials\">\r\n      <h2>Testimonials</h2>\r\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\r\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\r\n    </div>\r\n  </section>\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/about/about.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -250,20 +257,13 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: 'Arial';\r\n}\r\n\r\n/* Tablet/Desktop */\r\n\r\n@media only screen and (min-width: 415px) {\r\n  .wrapper{\r\n    width: 90%;\r\n    margin: 0 auto;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top{\r\n    display: inline-block;\r\n    position: relative;\r\n  }\r\n\r\n  .top img{\r\n    width: 25%;\r\n    display: inline-block;\r\n  }\r\n\r\n  .top h3{\r\n    width: 60%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    vertical-align: top;\r\n    position: relative;\r\n    padding: 3%;\r\n  }\r\n\r\n  .testimonials{\r\n    text-align: center;\r\n    margin: 2%;\r\n  }\r\n\r\n  .testimonials h3, p{\r\n    padding: 2%;\r\n  }\r\n\r\n  p{\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n\r\n/* MOBILE */\r\n\r\n@media only screen and (max-width: 414px) {\r\n  .wrapper{\r\n    margin: 0 auto;\r\n    text-align: center;\r\n    max-width: 90%;\r\n  }\r\n\r\n  section{\r\n    padding: 3%;\r\n  }\r\n\r\n  .top h3{\r\n    margin-top: 9%;\r\n    font-size: 1.33em;\r\n  }\r\n\r\n  h2, p, button{\r\n    margin: 5% 0;\r\n  }\r\n\r\n  .test{\r\n    font-size: 1.33em;\r\n    -webkit-text-decoration: red underline;\r\n            text-decoration: red underline;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Arial'; }\n\n/* Tablet/Desktop */\n\n@media only screen and (min-width: 415px) {\n  .wrapper {\n    width: 90%;\n    margin: 0 auto; }\n  section {\n    padding: 3%; }\n  .top {\n    display: inline-block;\n    position: relative; }\n  .top img {\n    width: 25%;\n    display: inline-block; }\n  .top h3 {\n    width: 60%;\n    display: inline-block;\n    text-align: center;\n    vertical-align: top;\n    position: relative;\n    padding: 3%; }\n  .testimonials {\n    text-align: center;\n    margin: 2%; }\n  .testimonials h3, p {\n    padding: 2%; }\n  p {\n    font-size: 1.5em; } }\n\n/* MOBILE */\n\n@media only screen and (max-width: 414px) {\n  .wrapper {\n    margin: 0 auto;\n    text-align: center;\n    max-width: 90%; }\n  section {\n    padding: 3%; }\n  .top h3 {\n    margin-top: 9%;\n    font-size: 1.33em; }\n  h2, p, button {\n    margin: 5% 0; }\n  .test {\n    font-size: 1.33em;\n    -webkit-text-decoration: red underline;\n            text-decoration: red underline; } }\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/components/about/about.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n\r\n  <section>\r\n    <div class=\"top\">\r\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\r\n      <h3>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</h3>\r\n    </div>\r\n  </section>\r\n\r\n  <section>\r\n    <div class=\"testimonials\">\r\n      <h2>Testimonials</h2>\r\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\r\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\r\n    </div>\r\n  </section>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -295,7 +295,7 @@ AboutComponent = __decorate([
     core_1.Component({
         selector: 'app-about',
         template: __webpack_require__("../../../../../src/app/components/about/about.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/components/about/about.component.css")],
+        styles: [__webpack_require__("../../../../../src/app/components/about/about.component.scss")],
         animations: [index_1.fadeInAnimation],
         host: { '[@fadeInAnimation]': '' }
     }),
@@ -306,7 +306,14 @@ exports.AboutComponent = AboutComponent;
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/contact/contact.component.css":
+/***/ "../../../../../src/app/components/contact/contact.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container h-100\" [@fadeInAnimation]>\r\n  <div class=\"row\">\r\n\r\n    <h2>Let's get in touch</h2>\r\n    <div class=\"contact\">\r\n      <p>E-mail : <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a></p>\r\n      <p>Phone # : <a href=\"tel:1-626-759-4812\">(626) 759-4812</a></p>\r\n      <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/contact/contact.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -314,20 +321,13 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "* {\r\n  margin : 0;\r\n  padding: 0;\r\n  font-family: 'Fjalla One', sans-serif;\r\n  -webkit-box-sizing: border-box;\r\n          box-sizing: border-box;\r\n}\r\n\r\n.container {\r\n  height: 100%;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}\r\n\r\n.row {\r\n  height: 100%;\r\n  background: brown;\r\n}\r\n\r\n.contact {\r\n\r\n}\r\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Fjalla One', sans-serif;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.container {\n  height: 100%;\n  margin: 0 auto;\n  text-align: center; }\n\n.row {\n  height: 100%;\n  background: brown; }\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/components/contact/contact.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container h-100\" [@fadeInAnimation]>\r\n  <div class=\"row\">\r\n\r\n    <h2>Let's get in touch</h2>\r\n    <div class=\"contact\">\r\n      <p>E-mail : <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a></p>\r\n      <p>Phone # : <a href=\"tel:1-626-759-4812\">(626) 759-4812</a></p>\r\n      <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -359,7 +359,7 @@ ContactComponent = __decorate([
     core_1.Component({
         selector: 'app-contact',
         template: __webpack_require__("../../../../../src/app/components/contact/contact.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/components/contact/contact.component.css")],
+        styles: [__webpack_require__("../../../../../src/app/components/contact/contact.component.scss")],
         animations: [index_1.fadeInAnimation],
         host: { '[@fadeInAnimation]': '' }
     }),
@@ -682,7 +682,14 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/listing/listing-edit/listing-edit.component.css":
+/***/ "../../../../../src/app/components/listing/listing-edit/listing-edit.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\" *ngIf=\"!showAdd\">\r\n  <div *ngIf='listings' class='listings'>\r\n    <h3 *ngIf='listings.length == 0'>Add Listings to get started</h3>\r\n    <table *ngIf='listings.length > 0'>\r\n      <tr>\r\n        <th>Address</th>\r\n        <th>Sold</th>\r\n        <th>Images</th>\r\n        <th>Add Image</th>\r\n        <th>Action</th>\r\n      </tr>\r\n      <tr *ngFor='let listing of listings'>\r\n        <td (click)=\"showAddressForm()\" *ngIf='!showAddress'>{{ listing.address }}</td>\r\n        <td *ngIf='showAddress'>\r\n          <form (submit)='changeAddress(formData, listing._id)' #formData=\"ngForm\">\r\n            <textarea name=\"address\" rows=\"3\" cols=\"20\" value='listing.address' ngModel>asdfg</textarea>\r\n            <button>Apply</button>\r\n          </form>\r\n          <button (click)='showAddressForm()'>Cancel</button>\r\n        </td>\r\n        <td (click)=\"changeSoldStatus(listing._id)\"><button>{{ listing.sold }}</button></td>\r\n        <td *ngFor='let path of listing.paths'><a (click)=\"deleteImage(listing._id, path)\"><img src=\"{{ path }}\"></a></td>\r\n        <td><button (click)='toggleShow(listing._id)'>Add Image</button></td>\r\n        <td><button (click)=\"deleteListing(listing._id)\">Delete</button></td>\r\n      </tr>\r\n    </table>\r\n  </div>\r\n</div>\r\n\r\n<app-listing-edit-add-images *ngIf=\"showAdd\" (showAdd)='toggleShow($event)' [showAddID]='showAddID'></app-listing-edit-add-images>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/listing/listing-edit/listing-edit.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -690,20 +697,13 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".listings{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  width: 50%;\r\n}\r\n\r\nimg{\r\n  max-width: 100%;\r\n}\r\n", ""]);
+exports.push([module.i, ".listings {\n  margin: 0 auto;\n  text-align: center;\n  width: 50%; }\n\nimg {\n  max-width: 100%; }\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/components/listing/listing-edit/listing-edit.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"wrapper\" *ngIf=\"!showAdd\">\r\n  <div *ngIf='listings' class='listings'>\r\n    <h3 *ngIf='listings.length == 0'>Add Listings to get started</h3>\r\n    <table *ngIf='listings.length > 0'>\r\n      <tr>\r\n        <th>Address</th>\r\n        <th>Sold</th>\r\n        <th>Images</th>\r\n        <th>Add Image</th>\r\n        <th>Action</th>\r\n      </tr>\r\n      <tr *ngFor='let listing of listings'>\r\n        <td (click)=\"showAddressForm()\" *ngIf='!showAddress'>{{ listing.address }}</td>\r\n        <td *ngIf='showAddress'>\r\n          <form (submit)='changeAddress(formData, listing._id)' #formData=\"ngForm\">\r\n            <textarea name=\"address\" rows=\"3\" cols=\"20\" value='listing.address' ngModel>asdfg</textarea>\r\n            <button>Apply</button>\r\n          </form>\r\n          <button (click)='showAddressForm()'>Cancel</button>\r\n        </td>\r\n        <td (click)=\"changeSoldStatus(listing._id)\"><button>{{ listing.sold }}</button></td>\r\n        <td *ngFor='let path of listing.paths'><a (click)=\"deleteImage(listing._id, path)\"><img src=\"{{ path }}\"></a></td>\r\n        <td><button (click)='toggleShow(listing._id)'>Add Image</button></td>\r\n        <td><button (click)=\"deleteListing(listing._id)\">Delete</button></td>\r\n      </tr>\r\n    </table>\r\n  </div>\r\n</div>\r\n\r\n<app-listing-edit-add-images *ngIf=\"showAdd\" (showAdd)='toggleShow($event)' [showAddID]='showAddID'></app-listing-edit-add-images>\r\n"
 
 /***/ }),
 
@@ -798,7 +798,7 @@ ListingEditComponent = __decorate([
     core_1.Component({
         selector: 'app-listing-edit',
         template: __webpack_require__("../../../../../src/app/components/listing/listing-edit/listing-edit.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/components/listing/listing-edit/listing-edit.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/components/listing/listing-edit/listing-edit.component.scss")]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof listing_service_1.ListingService !== "undefined" && listing_service_1.ListingService) === "function" && _a || Object])
 ], ListingEditComponent);
@@ -808,7 +808,14 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/listing/listing-show/listing-show.component.css":
+/***/ "../../../../../src/app/components/listing/listing-show/listing-show.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div [@fadeInAnimation]>\r\n  <div *ngIf=\"imageSources.length > 0\">\r\n    <p (click)=\"previousImage()\"><i class=\"left\"></i></p>\r\n    <img (click)=\"nextImage()\" src=\"{{ image }}\">\r\n    <p (click)=\"nextImage()\"><i class=\"right\"></i></p>\r\n  </div>\r\n  <div *ngIf=\"listing\">\r\n    <h3 class=\"address\" >{{ listing.address }}</h3>\r\n  </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/listing/listing-show/listing-show.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -816,20 +823,13 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  vertical-align: top;\r\n}\r\n\r\nimg{\r\n  width: 80%;\r\n  height: auto;\r\n  margin-bottom: 3%;\r\n  display: inline-block;\r\n}\r\n\r\np{\r\n  margin-top: 25%;\r\n  display: inline-block;\r\n}\r\n\r\n.right {\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg);\r\n}\r\n\r\n.left {\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg);\r\n}\r\n\r\n.address {\r\n  margin: auto 0;\r\n  text-align: center;\r\n}\r\n\r\n/*Desktop*/\r\n\r\n@media only screen and (min-width: 1025px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 25px;\r\n  }\r\n}\r\n\r\n/*Tablet*/\r\n\r\n@media (min-width: 415px) and (max-width: 1024px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 20px;\r\n  }\r\n}\r\n\r\n/*Mobile*/\r\n\r\n@media only screen and (max-width: 414px){\r\n  i {\r\n    border: solid red;\r\n    border-width: 0 3px 3px 0;\r\n    display: inline-block;\r\n    padding: 8px;\r\n  }\r\n\r\n  h3{\r\n    font-size: 1em;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "* {\n  margin: 0 auto;\n  text-align: center;\n  vertical-align: top; }\n\nimg {\n  width: 80%;\n  height: auto;\n  margin-bottom: 3%;\n  display: inline-block; }\n\np {\n  margin-top: 25%;\n  display: inline-block; }\n\n.right {\n  transform: rotate(-45deg);\n  -webkit-transform: rotate(-45deg); }\n\n.left {\n  transform: rotate(135deg);\n  -webkit-transform: rotate(135deg); }\n\n.address {\n  margin: auto 0;\n  text-align: center; }\n\n/*Desktop*/\n\n@media only screen and (min-width: 1025px) {\n  i {\n    border: solid red;\n    border-width: 0 3px 3px 0;\n    display: inline-block;\n    padding: 25px; } }\n\n/*Tablet*/\n\n@media (min-width: 415px) and (max-width: 1024px) {\n  i {\n    border: solid red;\n    border-width: 0 3px 3px 0;\n    display: inline-block;\n    padding: 20px; } }\n\n/*Mobile*/\n\n@media only screen and (max-width: 414px) {\n  i {\n    border: solid red;\n    border-width: 0 3px 3px 0;\n    display: inline-block;\n    padding: 8px; }\n  h3 {\n    font-size: 1em; } }\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/components/listing/listing-show/listing-show.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div [@fadeInAnimation]>\r\n  <div *ngIf=\"imageSources.length > 0\">\r\n    <p (click)=\"previousImage()\"><i class=\"left\"></i></p>\r\n    <img (click)=\"nextImage()\" src=\"{{ image }}\">\r\n    <p (click)=\"nextImage()\"><i class=\"right\"></i></p>\r\n  </div>\r\n  <div *ngIf=\"listing\">\r\n    <h3 class=\"address\" >{{ listing.address }}</h3>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -902,7 +902,7 @@ ListingShowComponent = __decorate([
     core_1.Component({
         selector: 'app-listing-show',
         template: __webpack_require__("../../../../../src/app/components/listing/listing-show/listing-show.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/components/listing/listing-show/listing-show.component.css")],
+        styles: [__webpack_require__("../../../../../src/app/components/listing/listing-show/listing-show.component.scss")],
         animations: [index_1.fadeInAnimation],
         host: { '[@fadeInAnimation]': '' }
     }),
@@ -914,7 +914,14 @@ var _a, _b;
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/listing/listing.component.css":
+/***/ "../../../../../src/app/components/listing/listing.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"jumbo\"></div>\r\n\r\n<div class=\"container\" [@fadeInAnimation]>\r\n  <!-- <div class=\"search\">\r\n    <h3>Search By:</h3>\r\n    <button (click)=\"getActive()\" class=\"btn btn-lg\">Active</button>\r\n    <button (click)=\"getSold()\" class=\"btn btn-lg\">Sold</button>\r\n  </div> -->\r\n\r\n<div class=\"\">\r\n\r\n  <div class=\"\">\r\n    <button (click)=\"leftClick()\" class=\"btn btn-md\"><</button>\r\n    <button (click)=\"rightClick()\" class=\"btn btn-md\">></button>\r\n  </div>\r\n\r\n  <h1 *ngIf=\"active\">Active Properties</h1>\r\n  <h1 *ngIf=\"!active\">Sold Properties</h1>\r\n\r\n  <div class=\"row\">\r\n\r\n    <div *ngFor=\"let listing of listings\" class=\"listings\">\r\n\r\n      <div class=\"col-xs-12 col-md-6\">\r\n\r\n        <div class=\"image-container\">\r\n\r\n          <a routerLink=\"/show/{{ listing._id }}\" class=\"image\"><img src=\"{{ listing.paths[0] }}\" class=\"img-responsive\"></a>\r\n          <div class=\"middle\">\r\n            <button class=\"moreinfo btn btn-md\">More Images</button>\r\n          </div>\r\n\r\n        </div>\r\n\r\n\r\n      </div>\r\n\r\n    </div>\r\n\r\n  </div>\r\n\r\n</div>\r\n\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/listing/listing.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -922,20 +929,13 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "*{\r\n  font-family: 'Arial';\r\n  text-align: center;\r\n}\r\n\r\n.container-fluid {\r\n}\r\n\r\n.row {\r\n  padding: 0 125px;\r\n}\r\n\r\nimg {\r\n  max-width: 100%;\r\n  min-width: 100%;\r\n  max-height: 220px;\r\n  border-radius: 10px;\r\n  opacity: 1;\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n  -webkit-transition: .5s ease;\r\n  transition: .5s ease;\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\r\n}\r\n\r\n.middle {\r\n  -webkit-transition: .5s ease;\r\n  transition: .5s ease;\r\n  opacity: 0;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  -webkit-transform: translate(-50%, -50%);\r\n          transform: translate(-50%, -50%);\r\n  -ms-transform: translate(-50%, -50%);\r\n  text-align: center;\r\n}\r\n\r\n.listings .btn {\r\n  color: white;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.image-container:hover .image {\r\n  opacity: 0.3;\r\n}\r\n\r\n.image-container:hover .middle {\r\n  opacity: 1;\r\n}\r\n\r\n/*\r\n.moreinfo{\r\n  display: block;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.listings a{\r\n  text-decoration: none;\r\n}\r\n\r\n@media only screen and (max-width: 414px) {\r\n  img{\r\n    max-width: 85%;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: block;\r\n    color: white;\r\n    font-size: 0.9em;\r\n    width: 20%;\r\n    margin: -13% auto 23%;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n@media (min-width: 415px) and (max-width: 767px){\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  button{\r\n    font-size: 2em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -8%;\r\n  }\r\n\r\n  .moreinfo{\r\n    font-size: 1.75em;\r\n    width: 12%;\r\n    margin: 0 auto 8%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) and (max-width: 1024px){\r\n  .search{\r\n    font-size: 2em;\r\n  }\r\n\r\n  img{\r\n    max-width: 85%;\r\n  }\r\n\r\n  button{\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  h1{\r\n    font-size: 4em;\r\n  }\r\n\r\n  .listings img{\r\n    margin-bottom: -10%;\r\n  }\r\n\r\n  .moreinfo{\r\n    font-size: 1.75em;\r\n    width: 12%;\r\n    margin: 0 auto 4%;\r\n    color: white;\r\n    outline: 2px solid white;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 1025px){\r\n\r\n  button{\r\n    font-size: 1.5em;\r\n  }\r\n\r\n  img{\r\n    max-width: 55%;\r\n  }\r\n\r\n  img:hover {\r\n    border: 5px solid red;\r\n  }\r\n\r\n  .moreinfo{\r\n    display: none;\r\n  }\r\n\r\n  .listings img:hover{\r\n    opacity: 0.5;\r\n  }\r\n} */\r\n", ""]);
+exports.push([module.i, "* {\n  font-family: Oswald, sans-serif;\n  text-align: center; }\n\n.btn {\n  background: #f28109;\n  color: white; }\n\n.jumbo {\n  height: 200px;\n  background-image: url(https://s3-us-west-1.amazonaws.com/mean-realestate/pexels-photo-286744.jpeg);\n  background-position: top; }\n\n.row {\n  padding: 0 125px; }\n\nimg {\n  max-height: 300px;\n  border-radius: 10px;\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden; }\n\n.middle {\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center; }\n\n.listings .btn {\n  color: white;\n  text-transform: uppercase; }\n\n.image-container {\n  padding: 10px 0; }\n\n.image-container:hover .img-responsive {\n  opacity: 0.3; }\n\n.image-container:hover .middle {\n  opacity: 1; }\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/components/listing/listing.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container-fluid\" [@fadeInAnimation]>\r\n  <div class=\"search\">\r\n    <h3>Search By:</h3>\r\n    <button (click)=\"getActive()\" class=\"btn btn-lg\">Active</button>\r\n    <button (click)=\"getSold()\" class=\"btn btn-lg\">Sold</button>\r\n  </div>\r\n\r\n  <h1 *ngIf=\"active\">Active Properties</h1>\r\n  <h1 *ngIf=\"!active\">Sold Properties</h1>\r\n\r\n<div class=\"row\">\r\n\r\n  <div *ngFor=\"let listing of listings\" class=\"listings\">\r\n    <div class=\"col-xs-12 col-md-3 image-container\">\r\n      <a routerLink=\"/show/{{ listing._id }}\" class=\"image\"><img src=\"{{ listing.paths[0] }}\" class=\"image\"></a>\r\n      <div class=\"middle\">\r\n        <button class=\"moreinfo btn btn-md\">More Images</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -958,30 +958,86 @@ var core_1 = __webpack_require__("../../../core/@angular/core.es5.js");
 var listing_service_1 = __webpack_require__("../../../../../src/app/services/listing.service.ts");
 var index_1 = __webpack_require__("../../../../../src/app/_animations/index.ts");
 var ListingComponent = (function () {
+    // COUNTER FOR LENGTH FOR COLOR CHANGE
     function ListingComponent(_listingService) {
         this._listingService = _listingService;
+        // LISTINGS ARRAY AFTER API AND BEING SEPARATED
+        this.listingsArray = [];
+        // CHANGE SHOWN BETWEEN ACTIVE/SOLD
         this.active = true;
+        // COUNTER FOR LENGTH OF PAGES
+        this.page = 0;
     }
     ListingComponent.prototype.ngOnInit = function () {
-        this.getActive();
+        this.getAllListings();
+        // this.getActive();
     };
-    ListingComponent.prototype.getActive = function () {
+    ListingComponent.prototype.ngOnChanges = function () {
+        console.log('HELLO');
+    };
+    ListingComponent.prototype.getAllListings = function () {
         var _this = this;
-        this._listingService.getAllActiveListings()
+        // GET ALL LISTINGS FROM API
+        this._listingService.getAllListings()
             .then(function (listings) {
-            _this.listings = listings;
-            _this.active = true;
+            // LISTINGS FROM API IS NOW SAVED
+            // console.log(listings);
+            _this.allListings = listings;
+            // USED TO PLACE LISTINGS FOR BOTTOM ALGO
+            var tempArr = [];
+            // every 4 listings push tempArray into listingsArray
+            // console.log(this.allListings.length);
+            for (var i = 0; i < _this.allListings.length + 1; i++) {
+                if (tempArr.length < 4) {
+                    // console.log(tempArr);
+                    tempArr.push(_this.allListings[i]);
+                    // console.log(i + "is being pushed")
+                    // console.log(this.allListings.length);
+                }
+                else {
+                    // console.log("4 was found");
+                    _this.listingsArray.push(tempArr);
+                    tempArr = [];
+                }
+                if (_this.allListings.length - i == 3) {
+                    _this.listingsArray.push(tempArr);
+                    tempArr = [];
+                    for (i; i < _this.allListings.length + 1; i++) {
+                        tempArr.push(_this.allListings[i]);
+                        console.log(i);
+                    }
+                    _this.listingsArray.push(tempArr);
+                    break;
+                }
+            }
+            console.log(_this.listingsArray);
+            // console.log(tempArr);
+            // PUSH IN REMAINDER
+            // if(tempArr.length > 0){
+            //   this.listingsArray.push(tempArr);
+            //   tempArr = [];
+            // }
+            // LET'S US KNOW HOW MANY PAGES THERE WILL BE
+            _this.page = _this.listingsArray.length;
+            // console.log(this.listingsArray);
+            // SHOW THE FIRST 4 LISTINGS ON LOAD
+            _this.listings = _this.listingsArray[0];
         })
             .catch();
     };
-    ListingComponent.prototype.getSold = function () {
+    ListingComponent.prototype.leftClick = function () {
         var _this = this;
-        this._listingService.getAllSoldListings()
-            .then(function (listings) {
-            _this.listings = listings;
-            _this.active = false;
+        this.listings = this.listingsArray[this.listingsArray.findIndex(function (listing) {
+            return listing === _this.listings;
         })
-            .catch();
+            - 1];
+    };
+    ListingComponent.prototype.rightClick = function () {
+        var _this = this;
+        this.listings = this.listingsArray[this.listingsArray.findIndex(function (listing) {
+            return listing === _this.listings;
+        })
+            + 1];
     };
     return ListingComponent;
 }());
@@ -989,7 +1045,7 @@ ListingComponent = __decorate([
     core_1.Component({
         selector: 'app-listing',
         template: __webpack_require__("../../../../../src/app/components/listing/listing.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/components/listing/listing.component.css")],
+        styles: [__webpack_require__("../../../../../src/app/components/listing/listing.component.scss")],
         animations: [index_1.fadeInAnimation],
         host: { '[@fadeInAnimation]': '' }
     }),
@@ -1001,7 +1057,14 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/login/login.component.css":
+/***/ "../../../../../src/app/components/login/login.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Login</h2>\r\n<form (submit)=\"login(formData)\" #formData=\"ngForm\">\r\n  <label>Username: <input type=\"text\" name=\"username\" ngModel></label>\r\n  <label>Password: <input type=\"password\" name=\"password\" ngModel></label>\r\n  <button>Login</button>\r\n</form>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/login/login.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -1016,13 +1079,6 @@ exports.push([module.i, "", ""]);
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/components/login/login.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>Login</h2>\r\n<form (submit)=\"login(formData)\" #formData=\"ngForm\">\r\n  <label>Username: <input type=\"text\" name=\"username\" ngModel></label>\r\n  <label>Password: <input type=\"password\" name=\"password\" ngModel></label>\r\n  <button>Login</button>\r\n</form>\r\n"
 
 /***/ }),
 
@@ -1068,7 +1124,7 @@ LoginComponent = __decorate([
     core_1.Component({
         selector: 'app-login',
         template: __webpack_require__("../../../../../src/app/components/login/login.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/components/login/login.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/components/login/login.component.scss")]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof login_service_1.LoginService !== "undefined" && login_service_1.LoginService) === "function" && _a || Object, typeof (_b = typeof router_1.Router !== "undefined" && router_1.Router) === "function" && _b || Object])
 ], LoginComponent);
@@ -1157,7 +1213,14 @@ exports.NavbarComponent = NavbarComponent;
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/top-navbar/top-navbar.component.css":
+/***/ "../../../../../src/app/components/top-navbar/top-navbar.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"nav\">\r\n\r\n  <div class=\"nav-content\">\r\n    <a href=\"tel:1-626-759-4812\">(626) 759-4812</a> |\r\n    <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> |\r\n    <div *ngIf=\"!loggedIn\">\r\n      <a routerLink=\"/login\">Log In</a>\r\n    </div>\r\n    <div *ngIf=\"loggedIn\">\r\n      <a (click)=\"logout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"nav\" *ngIf=\"loggedIn\">\r\n    <div class=\"nav-content\">\r\n      <a routerLink=\"/upload\">Add Listing</a> |\r\n      <a routerLink=\"/editlisting\">Edit Listing</a>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/top-navbar/top-navbar.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -1165,20 +1228,13 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "* {\r\n  font-family: 'Ropa Sans', sans-serif;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n\r\n.nav {\r\n  text-align: right;\r\n  width: 100%;\r\n  height: 35px;\r\n  background: #080a58;\r\n  text-transform: uppercase;\r\n  color: white;\r\n}\r\n\r\n.nav-content {\r\n  width: 85%;\r\n  margin: 0 auto;\r\n  -webkit-transform: translate(0, 50%);\r\n          transform: translate(0, 50%);\r\n}\r\n\r\n/* .nav:not(first-child) {\r\n  margin-bottom: 20px;\r\n} */\r\n\r\n.nav-content div {\r\n  display: inline-block;\r\n}\r\n\r\n@media (min-width: 1025px) {\r\n  .nav {\r\n    height: 45px;\r\n  }\r\n\r\n  .nav-content {\r\n    -webkit-transform: translate(0, 40%);\r\n            transform: translate(0, 40%);\r\n    font-size: 1.5em;\r\n  }\r\n}\r\n\r\n@media (max-width: 414px) {\r\n  .nav-content {\r\n    text-align: center;\r\n  }\r\n}\r\n\r\n/* Smaller mobiles */\r\n\r\n@media only screen and (max-width: 375px) {\r\n  .nav-content {\r\n    font-size: 0.9em;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "* {\n  font-family: 'Ropa Sans', sans-serif; }\n\na {\n  text-decoration: none;\n  color: white; }\n\n.nav {\n  text-align: right;\n  width: 100%;\n  height: 35px;\n  background: #080a58;\n  text-transform: uppercase;\n  color: white; }\n\n.nav-content {\n  width: 85%;\n  margin: 0 auto;\n  -webkit-transform: translate(0, 50%);\n          transform: translate(0, 50%); }\n\n/* .nav:not(first-child) {\r\n  margin-bottom: 20px;\r\n} */\n\n.nav-content div {\n  display: inline-block; }\n\n@media (min-width: 1025px) {\n  .nav {\n    height: 45px; }\n  .nav-content {\n    -webkit-transform: translate(0, 40%);\n            transform: translate(0, 40%);\n    font-size: 1.5em; } }\n\n@media (max-width: 414px) {\n  .nav-content {\n    text-align: center; } }\n\n/* Smaller mobiles */\n\n@media only screen and (max-width: 375px) {\n  .nav-content {\n    font-size: 0.9em; } }\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/components/top-navbar/top-navbar.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"nav\">\r\n\r\n  <div class=\"nav-content\">\r\n    <a href=\"tel:1-626-759-4812\">(626) 759-4812</a> |\r\n    <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> |\r\n    <div *ngIf=\"!loggedIn\">\r\n      <a routerLink=\"/login\">Log In</a>\r\n    </div>\r\n    <div *ngIf=\"loggedIn\">\r\n      <a (click)=\"logout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"nav\" *ngIf=\"loggedIn\">\r\n    <div class=\"nav-content\">\r\n      <a routerLink=\"/upload\">Add Listing</a> |\r\n      <a routerLink=\"/editlisting\">Edit Listing</a>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1229,7 +1285,7 @@ TopNavbarComponent = __decorate([
     core_1.Component({
         selector: 'app-top-navbar',
         template: __webpack_require__("../../../../../src/app/components/top-navbar/top-navbar.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/components/top-navbar/top-navbar.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/components/top-navbar/top-navbar.component.scss")]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof login_service_1.LoginService !== "undefined" && login_service_1.LoginService) === "function" && _a || Object])
 ], TopNavbarComponent);
@@ -1239,7 +1295,14 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/upload/upload.component.css":
+/***/ "../../../../../src/app/components/upload/upload.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngIf = \"error\">\r\n  {{error}}\r\n</div>\r\n<div class=\"wrapper\">\r\n  <form (submit)=\"addListing(formData)\" #formData=\"ngForm\">\r\n    <div class=\"buttons\">\r\n    <button (click)='cancel(ngForm)' type=\"button\">Cancel</button>\r\n    <div *ngIf='showButton && this.files.length' class=\"addit\">\r\n      <button>Add</button>\r\n    </div>\r\n    <div *ngIf='!showButton || !this.files.length' class=\"dontadd\">\r\n      <button disabled='disabled'>Add</button>\r\n    </div>\r\n  </div>\r\n\r\n    <div class=\"info\">\r\n      <p>\r\n        Address: <input type=\"text\" name=\"address\" ngModel>\r\n      </p>\r\n      <p>\r\n        Sold? <input type=\"checkbox\" name=\"sold\" ngModel>\r\n      </p>\r\n    </div>\r\n  </form>\r\n\r\n  <div class=\"uploadfile\">\r\n    <h3>Select files</h3>\r\n      <div class=\"dropzonearea\">\r\n        <div ng2FileDrop\r\n        [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\"\r\n        (fileOver)=\"fileOverBase($event)\"\r\n        [uploader]=\"uploader\"\r\n        class=\"dropzone\">\r\n        > Drop Images Here <\r\n      </div>\r\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple  /><br/>\r\n    </div>\r\n    <div class=\"showqueue\">\r\n      <h3>Upload queue</h3>\r\n      <p>Queue length: {{ uploader?.queue?.length }}</p>\r\n      <table>\r\n        <thead>\r\n          <tr>\r\n            <th>Name</th>\r\n            <th>Actions</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr *ngFor=\"let item of uploader.queue\">\r\n            <td><strong>{{ item?.file?.name }}</strong></td>\r\n            <td>\r\n              <button (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">Upload</button>\r\n              <button (click)=\"item.remove()\">Remove</button>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n      <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload all</button>\r\n      <button type=\"button\" (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">Cancel all</button>\r\n      <button type=\"button\" (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">Clear Queue</button>\r\n    </div>\r\n\r\n    <div class=\"uploadedalready\">\r\n      <table>\r\n        <th (click)='print()'>Name</th>\r\n        <th>Image</th>\r\n        <th>Action</th>\r\n        <div *ngIf = \"files\">\r\n          <div *ngFor = \"let file of files\" class=\"showuploaded\">\r\n            <td>{{ file.originalname }}</td>\r\n            <td><img src=\"{{ file.location }}\" width=\"25%\"></td>\r\n            <button type=\"button\" (click)=\"deleteListingImage(file.originalname, file.size, file.key)\">Delete</button>\r\n          </div>\r\n        </div>\r\n      </table>\r\n    </div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/upload/upload.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -1247,20 +1310,13 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".wrapper{\r\n  padding: 2%;\r\n  text-align: center;\r\n}\r\n\r\n/*.buttons{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}*/\r\n\r\n.dontadd, .addit{\r\n  display: inline-block;\r\n}\r\n\r\n.info{\r\n  outline: 2px solid red;\r\n  padding: 3%;\r\n}\r\n\r\n.dropzone{\r\n  outline: 2px dotted red;\r\n  padding: 10% 0;\r\n}\r\n\r\n.uploadfile, .showqueue, .uploadedalready, .showqueue, .info, .dropzonearea{\r\n  outline: 2px solid red;\r\n  width: 50%;\r\n  padding: 3%;\r\n  margin: 2% auto;\r\n}\r\n\r\n.addit, .dontadd{\r\n  padding: 3%;\r\n}\r\n", ""]);
+exports.push([module.i, ".wrapper {\n  padding: 2%;\n  text-align: center; }\n\n/*.buttons{\r\n  margin: 0 auto;\r\n  text-align: center;\r\n}*/\n\n.dontadd, .addit {\n  display: inline-block; }\n\n.info {\n  outline: 2px solid red;\n  padding: 3%; }\n\n.dropzone {\n  outline: 2px dotted red;\n  padding: 10% 0; }\n\n.uploadfile, .showqueue, .uploadedalready, .showqueue, .info, .dropzonearea {\n  outline: 2px solid red;\n  width: 50%;\n  padding: 3%;\n  margin: 2% auto; }\n\n.addit, .dontadd {\n  padding: 3%; }\n", ""]);
 
 // exports
 
 
 /*** EXPORTS FROM exports-loader ***/
 module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/components/upload/upload.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div *ngIf = \"error\">\r\n  {{error}}\r\n</div>\r\n<div class=\"wrapper\">\r\n  <form (submit)=\"addListing(formData)\" #formData=\"ngForm\">\r\n    <div class=\"buttons\">\r\n    <button (click)='cancel(ngForm)' type=\"button\">Cancel</button>\r\n    <div *ngIf='showButton && this.files.length' class=\"addit\">\r\n      <button>Add</button>\r\n    </div>\r\n    <div *ngIf='!showButton || !this.files.length' class=\"dontadd\">\r\n      <button disabled='disabled'>Add</button>\r\n    </div>\r\n  </div>\r\n\r\n    <div class=\"info\">\r\n      <p>\r\n        Address: <input type=\"text\" name=\"address\" ngModel>\r\n      </p>\r\n      <p>\r\n        Sold? <input type=\"checkbox\" name=\"sold\" ngModel>\r\n      </p>\r\n    </div>\r\n  </form>\r\n\r\n  <div class=\"uploadfile\">\r\n    <h3>Select files</h3>\r\n      <div class=\"dropzonearea\">\r\n        <div ng2FileDrop\r\n        [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\"\r\n        (fileOver)=\"fileOverBase($event)\"\r\n        [uploader]=\"uploader\"\r\n        class=\"dropzone\">\r\n        > Drop Images Here <\r\n      </div>\r\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple  /><br/>\r\n    </div>\r\n    <div class=\"showqueue\">\r\n      <h3>Upload queue</h3>\r\n      <p>Queue length: {{ uploader?.queue?.length }}</p>\r\n      <table>\r\n        <thead>\r\n          <tr>\r\n            <th>Name</th>\r\n            <th>Actions</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr *ngFor=\"let item of uploader.queue\">\r\n            <td><strong>{{ item?.file?.name }}</strong></td>\r\n            <td>\r\n              <button (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">Upload</button>\r\n              <button (click)=\"item.remove()\">Remove</button>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n      <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload all</button>\r\n      <button type=\"button\" (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">Cancel all</button>\r\n      <button type=\"button\" (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">Clear Queue</button>\r\n    </div>\r\n\r\n    <div class=\"uploadedalready\">\r\n      <table>\r\n        <th (click)='print()'>Name</th>\r\n        <th>Image</th>\r\n        <th>Action</th>\r\n        <div *ngIf = \"files\">\r\n          <div *ngFor = \"let file of files\" class=\"showuploaded\">\r\n            <td>{{ file.originalname }}</td>\r\n            <td><img src=\"{{ file.location }}\" width=\"25%\"></td>\r\n            <button type=\"button\" (click)=\"deleteListingImage(file.originalname, file.size, file.key)\">Delete</button>\r\n          </div>\r\n        </div>\r\n      </table>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1397,7 +1453,7 @@ UploadComponent = __decorate([
     core_1.Component({
         selector: 'app-upload',
         template: __webpack_require__("../../../../../src/app/components/upload/upload.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/components/upload/upload.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/components/upload/upload.component.scss")]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof upload_service_1.UploadService !== "undefined" && upload_service_1.UploadService) === "function" && _a || Object, typeof (_b = typeof listing_service_1.ListingService !== "undefined" && listing_service_1.ListingService) === "function" && _b || Object])
 ], UploadComponent);
