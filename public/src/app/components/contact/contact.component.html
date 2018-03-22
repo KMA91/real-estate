@@ -1,12 +1,34 @@
-<div class="container h-100" [@fadeInAnimation]>
+<div class="container" [@fadeInAnimation]>
+
   <div class="row">
-
-    <h2>Let's get in touch</h2>
-    <div class="contact">
-      <p>E-mail : <a href="mailto:brokertonyma@gmail.com">brokertonyma@gmail.com</a></p>
-      <p>Phone # : <a href="tel:1-626-759-4812">(626) 759-4812</a></p>
-      <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>
+    <div class="col-xs-12 col-md-3 tonyContainer">
+      <div class="tonyBox">
+        <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrans.png" class="img-responsive">
+      </div>
+        <a href="#">(626)759-4812</a>
+        <a href="#">brokertonyma@gmail.com</a>
+        <button routerLink="/contact" class='btn btn-md'>Contact Now</button>
+        <button routerLink="/about" class='btn btn-md'>See Testimonials</button>
     </div>
-
+    <div class="col-xs-12 col-md-9 contactForm">
+      <form>
+        <p>Name</p>
+        <input type="text" name="">
+        <p>Contact Number</p>
+        <input type="text" name="">
+        <p>Email Address</p>
+        <input type="text" name="">
+        <p>Message</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <button>Send</button>
+      </form>
+    </div>
   </div>
+
 </div>
+<!--
+<div class="contact">
+  <p>E-mail : <a href="mailto:brokertonyma@gmail.com">brokertonyma@gmail.com</a></p>
+  <p>Phone # : <a href="tel:1-626-759-4812">(626) 759-4812</a></p>
+  <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>
+</div> -->
