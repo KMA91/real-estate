@@ -35,6 +35,7 @@
     "express-session": "^1.15.6",
     "fs": "0.0.1-security",
     "google-geocoding": "^0.1.7",
+    "gulp": "^3.9.1",
     "hammerjs": "^2.0.8",
     "mongoose": "^4.12.1",
     "multer": "^1.3.0",
