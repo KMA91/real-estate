@@ -1,45 +1,78 @@
-<div class="jumbo"></div>
+<div class="jumbo" [@fadeInAnimation]></div>
 
 <div class="container" [@fadeInAnimation]>
-  <!-- <div class="search">
-    <h3>Search By:</h3>
-    <button (click)="getActive()" class="btn btn-lg">Active</button>
-    <button (click)="getSold()" class="btn btn-lg">Sold</button>
-  </div> -->
-
-<div class="">
-
-  <div class="">
-    <button (click)="leftClick()" class="btn btn-md"><</button>
-    <button (click)="rightClick()" class="btn btn-md">></button>
-  </div>
-
-  <h1 *ngIf="active">Active Properties</h1>
-  <h1 *ngIf="!active">Sold Properties</h1>
 
   <div class="row">
+    <div class="col-xs-12 col-md-3 tonyContainer">
+      <div class="tonyBox">
+        <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrans.png" class="img-responsive">
+      </div>
+        <a href="#">(626)759-4812</a>
+        <a href="#">brokertonyma@gmail.com</a>
+        <button routerLink="/contact" class='btn btn-md'>Contact Now</button>
+        <button routerLink="/about" class='btn btn-md'>See Testimonials</button>
+        <agm-map
+          [latitude]="latitude"
+          [longitude]="longitude"
+          [zoom]="zoom">
+          <agm-marker
+              [latitude]="latitude"
+              [longitude]="longitude">
+            <agm-info-window>
+              <strong>InfoWindow content</strong>
+            </agm-info-window>
 
-    <div *ngFor="let listing of listings" class="listings">
+          </agm-marker>
+        </agm-map>
+    </div>
 
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-9 listingContainer">
+        <div class="listingWrapper">
 
-        <div class="image-container">
+          <div class="arrowContainer">
+            <h1>Browse Properties</h1>
+              <!-- <button (click)="leftClick()" class="btn btn-md" id="leftArrow"><</button>
+              <button (click)="rightClick()" class="btn btn-md" id="rightArrow">></button> -->
+              <div class="break"></div>
+          </div>
 
-          <a routerLink="/show/{{ listing._id }}" class="image"><img src="{{ listing.paths[0] }}" class="img-responsive"></a>
-          <div class="middle">
-            <button class="moreinfo btn btn-md">More Images</button>
+          <div class="row">
+
+            <div *ngFor="let listing of listings" class="listings">
+              <div class="col-xs-12" (mouseenter)="getLatLan( listing.address )">
+
+                <div class="row">
+
+                  <div class="image-container col-xs-6">
+
+                    <a routerLink="/show/{{ listing._id }}" class="image"><img src="{{ listing.paths[0] }}" class="img-responsive listingimg"></a>
+                    <div class="middle">
+                      <button class="moreinfo btn btn-md">More Images</button>
+                    </div>
+
+                  </div>
+
+                  <div class="col-xs-6 address">
+                    <p>{{ listing.address }}</p>
+                    <button class="btn btn-md">Browse Images</button>
+                  </div>
+
+                </div>
+                <div class="break"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrowContainer">
+              <button (click)="leftClick()" class="btn btn-md" id="leftArrow"><</button>
+              <button (click)="rightClick()" class="btn btn-md" id="rightArrow">></button>
           </div>
 
         </div>
-
-
       </div>
 
-    </div>
-
   </div>
-
 </div>
 
-
+<div class="prefooter">
 </div>

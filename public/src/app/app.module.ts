@@ -25,6 +25,7 @@ import { TopNavbarComponent } from './components/top-navbar/top-navbar.component
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
+import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -51,10 +52,15 @@ import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
     HttpModule,
     BrowserAnimationsModule,
     NgxCarouselModule,
-    Ng2DeviceDetectorModule.forRoot()
+    Ng2DeviceDetectorModule.forRoot(),
+    AgmCoreModule.forRoot({
+      // please get your own API key here:
+      // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+      apiKey: 'AIzaSyAyGRgKEeUMHzVkwwZ0JZ7y03NaZ1_RG0o'
+    })
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-  providers: [UploadService, ListingService, LoginService, AuthGuard],
+  providers: [UploadService, ListingService, LoginService, AuthGuard, GoogleMapsAPIWrapper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

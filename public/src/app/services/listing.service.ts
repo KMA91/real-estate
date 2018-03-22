@@ -1,13 +1,42 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgZone } from '@angular/core';
 import { Http } from '@angular/http';
+import { GoogleMapsAPIWrapper, MapsAPILoader } from '@agm/core';
+import { Observable, Observer } from 'rxjs';
 import 'rxjs'
+
+declare var google: any;
 
 @Injectable()
 export class ListingService {
 
   constructor(
-    private _http: Http
+    private _http: Http,
+    private _loader: MapsAPILoader,
+    private _zone: NgZone
   ) { }
+
+  getLatLan(address: string){
+    // SET OBSERVABLE
+    return Observable.create(observer => {
+      // LET GOOGLE SCRIPT LOAD BEFORE GEOCODER
+      this._loader.load().then(() => {
+      let geocoder = new google.maps.Geocoder();
+      // GEOCODE ADDRESS
+        geocoder.geocode( { 'address': address}, function(results, status) {
+          // IF NO ERROR => return results
+          if (status == google.maps.GeocoderStatus.OK) {
+            observer.next(results[0].geometry.location);
+            observer.complete();
+            // IF ERROR => LOG err
+          } else {
+            console.log('Error - ', results, ' & Status - ', status);
+            observer.next({});
+            observer.complete();
+          }
+        });
+      });
+    })
+  }
 
   getThreeListings(){
     return this._http.get("/api/getThreeListings")

@@ -199,6 +199,7 @@ var top_navbar_component_1 = __webpack_require__("../../../../../src/app/compone
 var ngx_carousel_1 = __webpack_require__("../../../../ngx-carousel/index.js");
 __webpack_require__("../../../../hammerjs/hammer.js");
 var ng2_device_detector_1 = __webpack_require__("../../../../ng2-device-detector/index.js");
+var core_2 = __webpack_require__("../../../../@agm/core/index.js");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -230,10 +231,15 @@ AppModule = __decorate([
             http_1.HttpModule,
             animations_1.BrowserAnimationsModule,
             ngx_carousel_1.NgxCarouselModule,
-            ng2_device_detector_1.Ng2DeviceDetectorModule.forRoot()
+            ng2_device_detector_1.Ng2DeviceDetectorModule.forRoot(),
+            core_2.AgmCoreModule.forRoot({
+                // please get your own API key here:
+                // https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en
+                apiKey: 'AIzaSyAyGRgKEeUMHzVkwwZ0JZ7y03NaZ1_RG0o'
+            })
         ],
         schemas: [core_1.CUSTOM_ELEMENTS_SCHEMA],
-        providers: [upload_service_1.UploadService, listing_service_1.ListingService, login_service_1.LoginService, auth_guard_1.AuthGuard],
+        providers: [upload_service_1.UploadService, listing_service_1.ListingService, login_service_1.LoginService, auth_guard_1.AuthGuard, core_2.GoogleMapsAPIWrapper],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
@@ -245,7 +251,7 @@ exports.AppModule = AppModule;
 /***/ "../../../../../src/app/components/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\" [@fadeInAnimation]>\r\n\r\n  <section>\r\n    <div class=\"top\">\r\n      <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonyprofile.jpg\">\r\n      <h3>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</h3>\r\n    </div>\r\n  </section>\r\n\r\n  <section>\r\n    <div class=\"testimonials\">\r\n      <h2>Testimonials</h2>\r\n      <p>\"Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!\" - Sally Zhen</p>\r\n      <p>\"Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..\" - Cassie Curtin</p>\r\n    </div>\r\n  </section>\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"jumbo\" [@fadeInAnimation]></div>\r\n\r\n<div class=\"container\" [@fadeInAnimation]>\r\n\r\n  <div class=\"row\">\r\n\r\n    <div class=\"col-xs-12 col-md-3 tonyContainer\">\r\n      <div class=\"tonyBox\">\r\n        <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrans.png\" class=\"img-responsive\">\r\n      </div>\r\n      <a href=\"#\">(626)759-4812</a>\r\n      <a href=\"#\">brokertonyma@gmail.com</a>\r\n      <button routerLink=\"/contact\" class='btn btn-md'>Contact Now</button>\r\n      <button routerLink=\"/properties\" class='btn btn-md'>See Listings</button>\r\n    </div>\r\n\r\n    <div class=\"col-xs-12 col-md-9 messageContainer\">\r\n\r\n      <div class=\"messageWrapper\">\r\n\r\n        <div class=\"row\">\r\n\r\n          <div class=\"mission col-xs-12\">\r\n            <h2>Mission Statement <i class=\"fas fa-chess-knight bounce\"></i></h2>\r\n            <div class=\"break\"></div>\r\n            <p>\"My mission is to guide my current and prospective clients through the process of any of their real estate needs. I know that there's a lot of ambiguity when dealing with real estate. With my years of experience and knowledge, I can help answer any questions and guide you through the process, step by step. Whether you're buying or selling, I invite you to contact me, so that I may show you why my past clients have trusted and continuously trust me with their ventures.\"</p>\r\n            <!-- <div class=\"break\"></div> -->\r\n          </div>\r\n\r\n          <div class=\"testimonials col-xs-12\">\r\n            <h2>Testimonials\r\n              <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/Comment.png\">\r\n              <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/comment1.png\">\r\n              <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/comment2.png\">\r\n              <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/comment3.png\">\r\n            </h2>\r\n            <div class=\"break\"></div>\r\n            <p><span class=\"quotes\">\"</span>Selling our home with Tony was a positive and smooth experience. From the initial listing, to open houses, to closing, it was evident that Tony was extremely knowledgeable and passionate about real estate. I appreciate his great attention to detail and how he always makes time for his clients. I   highly recommend Tony Ma for any of your real estate needs!<span class=\"quotes end-quote\">\"</span> - Sally Zhen</p>\r\n            <p><span class=\"quotes\">\"</span>Tony is THE BEST! As a first time homebuyer, I was nervous to begin my search but Tony helped me learn more about what I wanted (and more importantly, what I didn't!) and helped me find the perfect home. Throughout the process, Tony explained everything clearly to make sure I was up to speed and on the same page..<span class=\"quotes end-quote\">\"</span> - Cassie Curtin</p>\r\n            <div class=\"break\"></div>\r\n          </div>\r\n\r\n          <div class=\"reviews col-xs-12\">\r\n            <h2>See Why Partners are rating Tony</h2>\r\n            <h2>\r\n              <span class=\"fa fa-star onestar\"></span>\r\n              <span class=\"fa fa-star twostar\"></span>\r\n              <span class=\"fa fa-star threestar\"></span>\r\n              <span class=\"fa fa-star fourstar\"></span>\r\n              <span class=\"fa fa-star fivestar\"></span>\r\n            </h2>\r\n            <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\" target=\"_blank\">\r\n              <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"img-responsive\">\r\n            </a>\r\n            <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\" target=\"_blank\">\r\n              <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"img-responsive\">\r\n            </a>\r\n            <a href=\"https://www.zillow.com/profile/brokertonyma/\" target=\"_blank\">\r\n              <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"img-responsive\">\r\n            </a>\r\n          </div>\r\n\r\n        </div>\r\n\r\n      </div>\r\n\r\n\r\n    </div>\r\n\r\n  </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -257,7 +263,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Arial'; }\n\n/* Tablet/Desktop */\n\n@media only screen and (min-width: 415px) {\n  .wrapper {\n    width: 90%;\n    margin: 0 auto; }\n  section {\n    padding: 3%; }\n  .top {\n    display: inline-block;\n    position: relative; }\n  .top img {\n    width: 25%;\n    display: inline-block; }\n  .top h3 {\n    width: 60%;\n    display: inline-block;\n    text-align: center;\n    vertical-align: top;\n    position: relative;\n    padding: 3%; }\n  .testimonials {\n    text-align: center;\n    margin: 2%; }\n  .testimonials h3, p {\n    padding: 2%; }\n  p {\n    font-size: 1.5em; } }\n\n/* MOBILE */\n\n@media only screen and (max-width: 414px) {\n  .wrapper {\n    margin: 0 auto;\n    text-align: center;\n    max-width: 90%; }\n  section {\n    padding: 3%; }\n  .top h3 {\n    margin-top: 9%;\n    font-size: 1.33em; }\n  h2, p, button {\n    margin: 5% 0; }\n  .test {\n    font-size: 1.33em;\n    -webkit-text-decoration: red underline;\n            text-decoration: red underline; } }\n", ""]);
+exports.push([module.i, "* {\n  font-family: Oswald, sans-serif;\n  text-align: center; }\n\n.jumbo {\n  height: 200px;\n  background-image: url(https://s3-us-west-1.amazonaws.com/mean-realestate/pexels-photo-286744.jpeg);\n  background-position: top; }\n\n.container {\n  padding: 15px; }\n\n.btn {\n  color: white;\n  background: #f28109; }\n\n.break {\n  background: #e0e0e0;\n  height: 2px; }\n\n.tonyContainer {\n  border: 2px solid #e6e4ff;\n  border-radius: 10px;\n  -webkit-box-shadow: 2px 2px #e6e4ff;\n          box-shadow: 2px 2px #e6e4ff;\n  padding: 47px 10px !important; }\n\n.tonyContainer a {\n    letter-spacing: 1px;\n    text-transform: uppercase;\n    color: #080a58; }\n\n.tonyContainer button {\n    display: block;\n    margin: 3px auto; }\n\n.tonyContainer .btn {\n    letter-spacing: 2px;\n    text-transform: uppercase; }\n\n.tonyContainer .btn:nth-child(odd) {\n    background: #068aff; }\n\n.tonyContainer .tonyBox {\n    background: white;\n    border: 1px solid #e0e0e0;\n    width: 100%;\n    margin: 0 auto; }\n\n.messageWrapper {\n  border: 2px solid #e6e4ff;\n  border-radius: 10px;\n  -webkit-box-shadow: 2px 2px #e6e4ff;\n          box-shadow: 2px 2px #e6e4ff;\n  padding: 15px; }\n\n.mission {\n  padding: 0 50px; }\n\n.mission:hover p {\n    color: #f28109;\n    -webkit-transition: color 1s;\n    transition: color 1s; }\n\n.mission h2 {\n    color: #080a58;\n    text-transform: uppercase; }\n\n.mission .fa-chess-knight {\n    color: #f28109 !important; }\n\n.mission p {\n    -webkit-transition: color 1s;\n    transition: color 1s;\n    font-size: 20px;\n    color: #2f3294;\n    letter-spacing: 2.5px;\n    line-height: 1.4; }\n\n.testimonials {\n  padding: 0 50px;\n  position: relative; }\n\n.testimonials:hover p {\n    color: #f28109;\n    -webkit-transition: color 1s;\n    transition: color 1s; }\n\n.testimonials h2 {\n    color: #080a58;\n    text-transform: uppercase;\n    position: relative; }\n\n.testimonials h2 img {\n      width: 4%;\n      position: absolute; }\n\n.testimonials h2 img:nth-child(2) {\n      -webkit-animation: fade2 4s infinite; }\n\n.testimonials h2 img:nth-child(3) {\n      -webkit-animation: fade3 4s infinite; }\n\n.testimonials h2 img:nth-child(4) {\n      -webkit-animation: fade3 4s infinite; }\n\n.testimonials p {\n    font-size: 20px;\n    letter-spacing: 2px;\n    line-height: 1.4;\n    color: #2f3294;\n    -webkit-transition: color 1s;\n    transition: color 1s; }\n\n.bounce {\n  -webkit-animation: checkmate 2s infinite; }\n\n@-webkit-keyframes checkmate {\n  0%, 20%, 50%, 80%, 100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  40% {\n    -webkit-transform: translateY(-20px);\n    transform: translateY(-20px); }\n  60% {\n    -webkit-transform: translateY(-15px);\n    transform: translateY(-15px); } }\n\n@keyframes checkmate {\n  0%, 20%, 50%, 80%, 100% {\n    -webkit-transform: translateY(0);\n    transform: translateY(0); }\n  40% {\n    -webkit-transform: translateY(-20px);\n    transform: translateY(-20px); }\n  60% {\n    -webkit-transform: translateY(-15px);\n    transform: translateY(-15px); } }\n\n.stars {\n  min-height: 33.75px; }\n\n.onestar {\n  color: white;\n  -webkit-animation: fadein 1.5s 1s;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards; }\n\n.twostar {\n  color: white;\n  -webkit-animation: fadein 2s 1s;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards; }\n\n.threestar {\n  color: white;\n  -webkit-animation: fadein 2.5s 1s;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards; }\n\n.fourstar {\n  color: white;\n  -webkit-animation: fadein 3s 1s;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards; }\n\n.fivestar {\n  color: white;\n  -webkit-animation: fadein 3.5s 1s;\n  -webkit-animation-fill-mode: forwards;\n          animation-fill-mode: forwards; }\n\n@-webkit-keyframes fadein {\n  0% {\n    opacity: 0;\n    color: #f28109; }\n  50% {\n    opacity: 0.5;\n    color: #f28109; }\n  100% {\n    opacity: 1;\n    color: #f28109; } }\n\n@-webkit-keyframes fade2 {\n  0% {\n    opacity: 0.5; }\n  33.33% {\n    opacity: 0; }\n  66.66% {\n    opacity: 0; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade2 {\n  0% {\n    opacity: 1; }\n  33.33% {\n    opacity: 0; }\n  66.66% {\n    opacity: 0; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade3 {\n  0% {\n    opacity: 0; }\n  33.33% {\n    opacity: 1; }\n  66.66% {\n    opacity: 0; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes fade4 {\n  0% {\n    opacity: 0; }\n  33.33% {\n    opacity: 0; }\n  66.66% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.reviews h2:nth-of-type(even) {\n  min-height: 33.75px;\n  margin: 20px 0; }\n\n.reviews a {\n  display: inline-block;\n  max-width: 10%;\n  margin: 0 5px;\n  opacity: 0.5;\n  -webkit-transition: opacity 1s;\n  transition: opacity 1s; }\n\n.reviews a:hover {\n  -webkit-transition: opacity 1s;\n  transition: opacity 1s;\n  opacity: 1; }\n", ""]);
 
 // exports
 
@@ -309,7 +315,7 @@ exports.AboutComponent = AboutComponent;
 /***/ "../../../../../src/app/components/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container h-100\" [@fadeInAnimation]>\r\n  <div class=\"row\">\r\n\r\n    <h2>Let's get in touch</h2>\r\n    <div class=\"contact\">\r\n      <p>E-mail : <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a></p>\r\n      <p>Phone # : <a href=\"tel:1-626-759-4812\">(626) 759-4812</a></p>\r\n      <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"container\" [@fadeInAnimation]>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-xs-12 col-md-3 tonyContainer\">\r\n      <div class=\"tonyBox\">\r\n        <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrans.png\" class=\"img-responsive\">\r\n      </div>\r\n        <a href=\"#\">(626)759-4812</a>\r\n        <a href=\"#\">brokertonyma@gmail.com</a>\r\n        <button routerLink=\"/contact\" class='btn btn-md'>Contact Now</button>\r\n        <button routerLink=\"/about\" class='btn btn-md'>See Testimonials</button>\r\n    </div>\r\n    <div class=\"col-xs-12 col-md-9 contactForm\">\r\n      <form>\r\n        <p>Name</p>\r\n        <input type=\"text\" name=\"\">\r\n        <p>Contact Number</p>\r\n        <input type=\"text\" name=\"\">\r\n        <p>Email Address</p>\r\n        <input type=\"text\" name=\"\">\r\n        <p>Message</p>\r\n        <textarea name=\"name\" rows=\"8\" cols=\"80\"></textarea>\r\n        <button>Send</button>\r\n      </form>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n<!--\r\n<div class=\"contact\">\r\n  <p>E-mail : <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a></p>\r\n  <p>Phone # : <a href=\"tel:1-626-759-4812\">(626) 759-4812</a></p>\r\n  <p>Address: 842 E Valley Blvd, Alhambra, CA 91801</p>\r\n</div> -->\r\n"
 
 /***/ }),
 
@@ -321,7 +327,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Fjalla One', sans-serif;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.container {\n  height: 100%;\n  margin: 0 auto;\n  text-align: center; }\n\n.row {\n  height: 100%;\n  background: brown; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -373,7 +379,7 @@ exports.ContactComponent = ContactComponent;
 /***/ "../../../../../src/app/components/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"footContainer\">\r\n\r\n  <div class=\"container\">\r\n    <div class=\"row\">\r\n\r\n      <div class=\"footHeader col-xs-12 col-md-4\">\r\n        <a routerLink=\"/\">\r\n          <h1>Tony Ma</h1>\r\n          <p>Real Estate</p>\r\n        </a>\r\n      </div>\r\n\r\n      <div class=\"social-media col-xs-12 col-md-4\">\r\n        <a href=\"#\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"img-responsive\">\r\n        </a>\r\n        <a href=\"#\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"img-responsive\">\r\n        </a>\r\n        <a href=\"#\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.png\" class=\"img-responsive\">\r\n        </a>\r\n        <a href=\"#\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.png\" class=\"img-responsive\">\r\n        </a>\r\n        <a href=\"#\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"img-responsive\">\r\n        </a>\r\n      </div>\r\n\r\n      <div class=\"col-xs-12 col-md-4 remax\">\r\n        <a href=\"#\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax-logo.png\" class=\"img-responsive\">\r\n        </a>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n<div class=\"footContainer\">\r\n\r\n  <div class=\"container\">\r\n    <div class=\"row\">\r\n\r\n      <div class=\"links col-xs-12\">\r\n        <a routerLink=\"/properties\">Properties</a>\r\n        <a routerLink=\"/about\">About</a>\r\n        <a routerLink=\"/contact\">Contact</a>\r\n      </div>\r\n      <div class=\"copyright col-xs-12\">\r\n        <p>&copy; 2018 Tony Ma. | Website built by <a href=\"#\">Kevin Ma</a></p>\r\n      </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n</div>\r\n\r\n\r\n<!-- <div class=\"social\">\r\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\r\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\r\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\r\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\r\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\r\n</div>\r\n<p><a href=\"tel:1-626-759-4812\">(626) 759-4812</a> | <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> | CalBRE #01931357</p>\r\n\r\n<div class=\"nav\">\r\n  <div class=\"nav-content\">\r\n    <a href=\"tel:1-626-759-4812\">(626) 759-4812</a> |\r\n    <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> |\r\n    <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\">CalBRE #01931357</a>\r\n  </div>\r\n</div> -->\r\n"
+module.exports = "<div class=\"footContainer\">\r\n\r\n  <div class=\"container\">\r\n    <div class=\"row\">\r\n\r\n      <div class=\"footHeader col-xs-12 col-md-4\">\r\n        <a routerLink=\"/\">\r\n          <h1>Tony Ma</h1>\r\n          <p>Real Estate</p>\r\n        </a>\r\n      </div>\r\n\r\n      <div class=\"social-media col-xs-12 col-md-4\">\r\n        <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\" target=\"_blank\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"img-responsive\">\r\n        </a>\r\n        <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\" target=\"_blank\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"img-responsive\">\r\n        </a>\r\n        <a href=\"https://www.remax.com/realestateagentoffice/alhambra-ca-91801-tonyma-id29848707.html\" target=\"_blank\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.png\" class=\"img-responsive\">\r\n        </a>\r\n        <a href=\"https://www.linkedin.com/in/tonyma01/\" target=\"_blank\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.png\" class=\"img-responsive\">\r\n        </a>\r\n        <a href=\"https://www.zillow.com/profile/brokertonyma/\" target=\"_blank\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"img-responsive\">\r\n        </a>\r\n      </div>\r\n\r\n      <div class=\"col-xs-12 col-md-4 remax\">\r\n        <!-- <a href=\"https://www.remax.com/realestateagentoffice/alhambra-ca-91801-tonyma-id29848707.html\"> -->\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax-logo.png\" class=\"img-responsive\">\r\n        <!-- </a> -->\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n<div class=\"footContainer\">\r\n\r\n  <div class=\"container\">\r\n    <div class=\"row\">\r\n\r\n      <div class=\"links col-xs-12\">\r\n        <a routerLink=\"/properties\">Properties</a>\r\n        <a routerLink=\"/about\">About</a>\r\n        <a routerLink=\"/contact\">Contact</a>\r\n      </div>\r\n      <div class=\"copyright col-xs-12\">\r\n        <p>&copy; 2018 Tony Ma. | Website built by <a href=\"#\">Kevin Ma</a></p>\r\n      </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n</div>\r\n\r\n\r\n<!-- <div class=\"social\">\r\n  <a href=\"https://www.zillow.com/profile/brokertonyma/#reviews\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/zillow.png\" class=\"zillow\"></a>\r\n  <a href=\"https://www.trulia.com/profile/tony-ma-agent-alhambra-ca-zgw5pj7v/overview\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/trulia.png\" class=\"trulia\"></a>\r\n  <a href=\"https://www.google.com/search?q=Tony%20Ma%20Real%20Estate%20Agent&ludocid=3951818538487366440#lrd=0x0:0x36d7ae05eb57c328,1\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/google.png\" class=\"google\"></a>\r\n  <a href=\"https://www.linkedin.com/in/tonyma01/\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/linkedin.jpg\" class=\"linkedin\"></a>\r\n  <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\"><img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/remax.jpg\" class=\"remax\"></a>\r\n</div>\r\n<p><a href=\"tel:1-626-759-4812\">(626) 759-4812</a> | <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> | CalBRE #01931357</p>\r\n\r\n<div class=\"nav\">\r\n  <div class=\"nav-content\">\r\n    <a href=\"tel:1-626-759-4812\">(626) 759-4812</a> |\r\n    <a href=\"mailto:brokertonyma@gmail.com\">brokertonyma@gmail.com</a> |\r\n    <a href=\"http://global.remax.com/AgentProfile.aspx?AgentID=1005440052\">CalBRE #01931357</a>\r\n  </div>\r\n</div> -->\r\n"
 
 /***/ }),
 
@@ -434,7 +440,7 @@ exports.FooterComponent = FooterComponent;
 /***/ "../../../../../src/app/components/landing/landing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [@fadeInAnimation]>\r\n\r\n  <div class=\"slideContainer\">\r\n\r\n    <div class=\"slider\">\r\n\r\n      <div class=\"slide1\"><h3>FOR ALL YOUR REAL ESTATE NEEDS</h3></div>\r\n      <div class=\"slide2\"></div>\r\n      <div class=\"slide3\"></div>\r\n\r\n    </div>\r\n\r\n  </div>\r\n\r\n  <div class=\"container\">\r\n\r\n    <div class=\"row\">\r\n\r\n      <div class=\"col-xs-12 col-md-5\">\r\n        <div class=\"tonyContainer\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrans.png\" class=\"img-responsive tonybox\">\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"col-xs-12 col-md-6 welcomeMessage\">\r\n        <h4>Welcome to</h4>\r\n        <h1>Tony Ma Real Estate</h1>\r\n        <p>It is with great pleasure that Tony welcomes you to his website. He is individual that strives for satisfaction with those he partners with and has been awarded multiple times for his excellency in the field.</p>\r\n        <p>Finding the right home can be rough. The logitics can be intiminidating, confusing and filled with paperwork. With his years of experience and knowledge of the market, Tony excels at walking those he partners with, every step of the way.</p>\r\n        <button class=\"btn btn-lg\">Contact Tony Today</button>\r\n      </div>\r\n\r\n    </div>\r\n\r\n\r\n  </div>\r\n\r\n  <div class=\"valuesContainer\">\r\n\r\n    <div class=\"container\">\r\n\r\n      <div class=\"row values\">\r\n\r\n        <div class=\"valuesHeader\">\r\n          <h3>Core Values</h3>\r\n        </div>\r\n\r\n        <div class=\"col-xs-12 col-md-4\">\r\n          <div class=\"contentContainer\">\r\n            <i class=\"fa fa-book fa-5x shake\"></i>\r\n            <h4>knowledge</h4>\r\n            <p>Strives with years of constant research, growth and understanding of the market </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col-xs-12 col-md-4\">\r\n          <div class=\"contentContainer\">\r\n            <i class=\"fa fa-comments fa-5x beat\"></i>\r\n            <h4>empathy</h4>\r\n            <p>Understands that every individual has different wants, needs, and expectations  </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col-xs-12 col-md-4\">\r\n          <div class=\"contentContainer\">\r\n            <i class=\"fa fa-handshake fa-5x bounce\"></i>\r\n            <h4>trust</h4>\r\n            <p>Promotes a workflow with strong moral with an emphasis on ethics and zeal</p>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n\r\n    </div>\r\n\r\n  </div>\r\n\r\n</div>\r\n"
+module.exports = "<div [@fadeInAnimation]>\r\n\r\n  <div class=\"slideContainer\">\r\n\r\n    <div class=\"slider\">\r\n\r\n      <div class=\"slide1\"><h3>FOR ALL YOUR REAL ESTATE NEEDS</h3></div>\r\n      <div class=\"slide2\"></div>\r\n      <div class=\"slide3\"></div>\r\n\r\n    </div>\r\n\r\n  </div>\r\n\r\n  <div class=\"container\">\r\n\r\n    <div class=\"row\">\r\n\r\n      <div class=\"col-xs-12 col-md-5\">\r\n        <div class=\"tonyContainer\">\r\n          <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrans.png\" class=\"img-responsive tonybox\">\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"col-xs-12 col-md-6 welcomeMessage\">\r\n        <h4>Welcome to</h4>\r\n        <h1>Tony Ma Real Estate</h1>\r\n        <p>It is with great pleasure that Tony welcomes you to his website. He is individual that strives for satisfaction with those he partners with and has been awarded multiple times for his excellency in the field.</p>\r\n        <p>Finding the right home can be rough. The logitics can be intiminidating, confusing and filled with paperwork. With his years of experience and knowledge of the market, Tony excels at walking those he partners with, every step of the way.</p>\r\n        <button class=\"btn btn-lg\">Contact Tony Today</button>\r\n        <button class=\"btn btn-lg\">Learn More</button>\r\n      </div>\r\n\r\n    </div>\r\n\r\n\r\n  </div>\r\n\r\n  <div class=\"valuesContainer\">\r\n\r\n    <div class=\"container\">\r\n\r\n      <div class=\"row values\">\r\n\r\n        <div class=\"valuesHeader\">\r\n          <h3>Core Values</h3>\r\n        </div>\r\n\r\n        <div class=\"col-xs-12 col-md-4\">\r\n          <div class=\"contentContainer\">\r\n            <i class=\"fa fa-book fa-5x shake\"></i>\r\n            <h4>knowledge</h4>\r\n            <p>Strives with years of constant research, growth and understanding of the market </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col-xs-12 col-md-4\">\r\n          <div class=\"contentContainer\">\r\n            <i class=\"fa fa-comments fa-5x beat\"></i>\r\n            <h4>empathy</h4>\r\n            <p>Understands that every individual has different wants, needs, and expectations  </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col-xs-12 col-md-4\">\r\n          <div class=\"contentContainer\">\r\n            <i class=\"fa fa-handshake fa-5x bounce\"></i>\r\n            <h4>trust</h4>\r\n            <p>Promotes a workflow with strong moral with an emphasis on ethics and zeal</p>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n\r\n    </div>\r\n\r\n  </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -917,7 +923,7 @@ var _a, _b;
 /***/ "../../../../../src/app/components/listing/listing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbo\"></div>\r\n\r\n<div class=\"container\" [@fadeInAnimation]>\r\n  <!-- <div class=\"search\">\r\n    <h3>Search By:</h3>\r\n    <button (click)=\"getActive()\" class=\"btn btn-lg\">Active</button>\r\n    <button (click)=\"getSold()\" class=\"btn btn-lg\">Sold</button>\r\n  </div> -->\r\n\r\n<div class=\"\">\r\n\r\n  <div class=\"\">\r\n    <button (click)=\"leftClick()\" class=\"btn btn-md\"><</button>\r\n    <button (click)=\"rightClick()\" class=\"btn btn-md\">></button>\r\n  </div>\r\n\r\n  <h1 *ngIf=\"active\">Active Properties</h1>\r\n  <h1 *ngIf=\"!active\">Sold Properties</h1>\r\n\r\n  <div class=\"row\">\r\n\r\n    <div *ngFor=\"let listing of listings\" class=\"listings\">\r\n\r\n      <div class=\"col-xs-12 col-md-6\">\r\n\r\n        <div class=\"image-container\">\r\n\r\n          <a routerLink=\"/show/{{ listing._id }}\" class=\"image\"><img src=\"{{ listing.paths[0] }}\" class=\"img-responsive\"></a>\r\n          <div class=\"middle\">\r\n            <button class=\"moreinfo btn btn-md\">More Images</button>\r\n          </div>\r\n\r\n        </div>\r\n\r\n\r\n      </div>\r\n\r\n    </div>\r\n\r\n  </div>\r\n\r\n</div>\r\n\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"jumbo\" [@fadeInAnimation]></div>\r\n\r\n<div class=\"container\" [@fadeInAnimation]>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-xs-12 col-md-3 tonyContainer\">\r\n      <div class=\"tonyBox\">\r\n        <img src=\"https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrans.png\" class=\"img-responsive\">\r\n      </div>\r\n        <a href=\"#\">(626)759-4812</a>\r\n        <a href=\"#\">brokertonyma@gmail.com</a>\r\n        <button routerLink=\"/contact\" class='btn btn-md'>Contact Now</button>\r\n        <button routerLink=\"/about\" class='btn btn-md'>See Testimonials</button>\r\n        <agm-map\r\n          [latitude]=\"latitude\"\r\n          [longitude]=\"longitude\"\r\n          [zoom]=\"zoom\">\r\n          <agm-marker\r\n              [latitude]=\"latitude\"\r\n              [longitude]=\"longitude\">\r\n            <agm-info-window>\r\n              <strong>InfoWindow content</strong>\r\n            </agm-info-window>\r\n\r\n          </agm-marker>\r\n        </agm-map>\r\n    </div>\r\n\r\n      <div class=\"col-xs-12 col-md-9 listingContainer\">\r\n        <div class=\"listingWrapper\">\r\n\r\n          <div class=\"arrowContainer\">\r\n            <h1>Browse Properties</h1>\r\n              <!-- <button (click)=\"leftClick()\" class=\"btn btn-md\" id=\"leftArrow\"><</button>\r\n              <button (click)=\"rightClick()\" class=\"btn btn-md\" id=\"rightArrow\">></button> -->\r\n              <div class=\"break\"></div>\r\n          </div>\r\n\r\n          <div class=\"row\">\r\n\r\n            <div *ngFor=\"let listing of listings\" class=\"listings\">\r\n              <div class=\"col-xs-12\" (mouseenter)=\"getLatLan( listing.address )\">\r\n\r\n                <div class=\"row\">\r\n\r\n                  <div class=\"image-container col-xs-6\">\r\n\r\n                    <a routerLink=\"/show/{{ listing._id }}\" class=\"image\"><img src=\"{{ listing.paths[0] }}\" class=\"img-responsive listingimg\"></a>\r\n                    <div class=\"middle\">\r\n                      <button class=\"moreinfo btn btn-md\">More Images</button>\r\n                    </div>\r\n\r\n                  </div>\r\n\r\n                  <div class=\"col-xs-6 address\">\r\n                    <p>{{ listing.address }}</p>\r\n                    <button class=\"btn btn-md\">Browse Images</button>\r\n                  </div>\r\n\r\n                </div>\r\n                <div class=\"break\"></div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n          <div class=\"arrowContainer\">\r\n              <button (click)=\"leftClick()\" class=\"btn btn-md\" id=\"leftArrow\"><</button>\r\n              <button (click)=\"rightClick()\" class=\"btn btn-md\" id=\"rightArrow\">></button>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n  </div>\r\n</div>\r\n\r\n<div class=\"prefooter\">\r\n</div>\r\n"
 
 /***/ }),
 
@@ -929,7 +935,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "* {\n  font-family: Oswald, sans-serif;\n  text-align: center; }\n\n.btn {\n  background: #f28109;\n  color: white; }\n\n.jumbo {\n  height: 200px;\n  background-image: url(https://s3-us-west-1.amazonaws.com/mean-realestate/pexels-photo-286744.jpeg);\n  background-position: top; }\n\n.row {\n  padding: 0 125px; }\n\nimg {\n  max-height: 300px;\n  border-radius: 10px;\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden; }\n\n.middle {\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center; }\n\n.listings .btn {\n  color: white;\n  text-transform: uppercase; }\n\n.image-container {\n  padding: 10px 0; }\n\n.image-container:hover .img-responsive {\n  opacity: 0.3; }\n\n.image-container:hover .middle {\n  opacity: 1; }\n", ""]);
+exports.push([module.i, "* {\n  font-family: Oswald, sans-serif;\n  color: #080a58;\n  text-align: center; }\n\n.container {\n  min-height: 940px;\n  padding: 15px; }\n\n.btn {\n  color: white;\n  background: #f28109; }\n\n.jumbo {\n  height: 200px;\n  background-image: url(https://s3-us-west-1.amazonaws.com/mean-realestate/pexels-photo-286744.jpeg);\n  background-position: top; }\n\n.tonyContainer {\n  border: 2px solid #e6e4ff;\n  border-radius: 10px;\n  -webkit-box-shadow: 2px 2px #e6e4ff;\n          box-shadow: 2px 2px #e6e4ff; }\n\n.tonyContainer a {\n    letter-spacing: 1px;\n    text-transform: uppercase;\n    color: #080a58; }\n\n.tonyContainer .btn {\n    letter-spacing: 2px;\n    text-transform: uppercase; }\n\n.tonyContainer .btn:nth-child(odd) {\n    background: #068aff; }\n\n.listingWrapper {\n  padding: 15px;\n  border: 2px solid #e6e4ff;\n  border-radius: 10px;\n  -webkit-box-shadow: 2px 2px #e6e4ff;\n          box-shadow: 2px 2px #e6e4ff; }\n\n.listingWrapper h1 {\n    text-transform: uppercase; }\n\n.listingWrapper .listings {\n    padding: 15px; }\n\n.listingWrapper .listings .btn {\n      color: white;\n      text-transform: uppercase; }\n\n.listingimg {\n  max-height: 300px;\n  border-radius: 10px;\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden; }\n\n.middle {\n  -webkit-transition: .5s ease;\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center; }\n\n.image-container {\n  padding: 10px 0; }\n\n.image-container:hover .img-responsive {\n  opacity: 0.3; }\n\n.image-container:hover .middle {\n  opacity: 1; }\n\n.tonyContainer {\n  height: 100%;\n  border-radius: 10px; }\n\n.tonyContainer .tonyBox {\n    background: white;\n    border: 1px solid #e0e0e0;\n    width: 100%;\n    margin: 0 auto; }\n\n.tonyContainer a {\n    display: block; }\n\n.tonyContainer p {\n    margin: 0; }\n\n.tonyContainer button {\n    display: block;\n    margin: 3px auto; }\n\n.prefooter {\n  background-image: url(\"https://s3-us-west-1.amazonaws.com/mean-realestate/cityblue.jpg\");\n  height: 200px; }\n\n.break {\n  background: #e0e0e0;\n  height: 2px; }\n\n@media only screen and (max-width: 414px) {\n  .jumbo {\n    height: 125px; }\n  .tonyContainer {\n    border: none;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n    padding: 100px 0; }\n    .tonyContainer .tonyBox {\n      width: 50%; }\n  .image-container {\n    padding: 30px 0; }\n  .address {\n    padding: 57px 0; } }\n\n@media only screen and (min-width: 415px) {\n  .tonyContainer {\n    padding: 47px 10px !important; }\n  .listingWrapper {\n    min-height: 1039.5px; }\n  .listingWrapper {\n    padding: 10px; }\n  .address {\n    margin: 0;\n    padding: 120px 0; }\n    .address p {\n      margin: 0;\n      font-size: 1.25em; } }\n\n@media only screen and (min-width: 768px) {\n  agm-map {\n    height: 500px; } }\n", ""]);
 
 // exports
 
@@ -944,6 +950,16 @@ module.exports = module.exports.toString();
 
 "use strict";
 
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -957,23 +973,47 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("../../../core/@angular/core.es5.js");
 var listing_service_1 = __webpack_require__("../../../../../src/app/services/listing.service.ts");
 var index_1 = __webpack_require__("../../../../../src/app/_animations/index.ts");
-var ListingComponent = (function () {
-    // COUNTER FOR LENGTH FOR COLOR CHANGE
-    function ListingComponent(_listingService) {
-        this._listingService = _listingService;
+var core_2 = __webpack_require__("../../../../@agm/core/index.js");
+var ListingComponent = (function (_super) {
+    __extends(ListingComponent, _super);
+    function ListingComponent(_listingService, __loader, gmaps, __zone) {
+        var _this = _super.call(this, __loader, __zone) || this;
+        _this._listingService = _listingService;
+        _this.__loader = __loader;
+        _this.gmaps = gmaps;
+        _this.__zone = __zone;
+        // SHOWN LISTINGS
+        _this.listings = [];
         // LISTINGS ARRAY AFTER API AND BEING SEPARATED
-        this.listingsArray = [];
+        _this.listingsArray = [];
         // CHANGE SHOWN BETWEEN ACTIVE/SOLD
-        this.active = true;
+        // public active:boolean = true;
         // COUNTER FOR LENGTH OF PAGES
-        this.page = 0;
+        _this.leftArrow = false;
+        // COUNTER FOR LENGTH FOR COLOR CHANGE
+        _this.rightArrow = false;
+        // public geo: google_geocoding = new google_geocoding();
+        _this.latitude = 34.078052;
+        _this.longitude = -118.113003;
+        _this.zoom = 8;
+        return _this;
     }
     ListingComponent.prototype.ngOnInit = function () {
         this.getAllListings();
-        // this.getActive();
     };
-    ListingComponent.prototype.ngOnChanges = function () {
-        console.log('HELLO');
+    // GET LAT & LONG FROM SERVICES
+    ListingComponent.prototype.getLatLan = function (address) {
+        var _this = this;
+        this._listingService.getLatLan(address).subscribe(function (value) {
+            // needs to run inside zone to update the map
+            _this.__zone.run(function () {
+                _this.latitude = value.lat();
+                _this.longitude = value.lng();
+                // console.log(value.lat());
+                // console.log(value.lng());
+            });
+            _this.gmaps.setCenter({ lat: _this.latitude, lng: _this.longitude });
+        });
     };
     ListingComponent.prototype.getAllListings = function () {
         var _this = this;
@@ -981,66 +1021,65 @@ var ListingComponent = (function () {
         this._listingService.getAllListings()
             .then(function (listings) {
             // LISTINGS FROM API IS NOW SAVED
-            // console.log(listings);
-            _this.allListings = listings;
+            var allListings = listings;
             // USED TO PLACE LISTINGS FOR BOTTOM ALGO
             var tempArr = [];
             // every 4 listings push tempArray into listingsArray
-            // console.log(this.allListings.length);
-            for (var i = 0; i < _this.allListings.length + 1; i++) {
-                if (tempArr.length < 4) {
-                    // console.log(tempArr);
-                    tempArr.push(_this.allListings[i]);
-                    // console.log(i + "is being pushed")
-                    // console.log(this.allListings.length);
+            for (var i = 0; i < allListings.length; i++) {
+                if (tempArr.length < 3) {
+                    tempArr.push(allListings[i]);
                 }
                 else {
-                    // console.log("4 was found");
                     _this.listingsArray.push(tempArr);
                     tempArr = [];
-                }
-                if (_this.allListings.length - i == 3) {
-                    _this.listingsArray.push(tempArr);
-                    tempArr = [];
-                    for (i; i < _this.allListings.length + 1; i++) {
-                        tempArr.push(_this.allListings[i]);
-                        console.log(i);
-                    }
-                    _this.listingsArray.push(tempArr);
-                    break;
+                    tempArr.push(allListings[i]);
                 }
             }
-            console.log(_this.listingsArray);
-            // console.log(tempArr);
-            // PUSH IN REMAINDER
-            // if(tempArr.length > 0){
-            //   this.listingsArray.push(tempArr);
-            //   tempArr = [];
-            // }
-            // LET'S US KNOW HOW MANY PAGES THERE WILL BE
-            _this.page = _this.listingsArray.length;
-            // console.log(this.listingsArray);
-            // SHOW THE FIRST 4 LISTINGS ON LOAD
+            // if there are any remainding listings not pushed in, push it in
+            if (tempArr.length) {
+                _this.listingsArray.push(tempArr);
+                tempArr = [];
+            }
+            // show first index of listings on load
             _this.listings = _this.listingsArray[0];
         })
             .catch();
     };
     ListingComponent.prototype.leftClick = function () {
-        var _this = this;
-        this.listings = this.listingsArray[this.listingsArray.findIndex(function (listing) {
-            return listing === _this.listings;
-        })
-            - 1];
+        var prev = this.flipPage(-1, "prev");
+        // let pageBeforePrev = this.flipPage(-2);
+        if (prev) {
+            this.listings = prev;
+        }
     };
     ListingComponent.prototype.rightClick = function () {
+        var next = this.flipPage(1, "after");
+        // let pageAfterNext = this.flipPage(2);
+        if (next) {
+            this.listings = next;
+        }
+    };
+    // flip page method
+    // if clicking right on end of listings, return the first array of listings
+    // if clicking left at beginning of listings, return the last array of listings
+    ListingComponent.prototype.flipPage = function (number, position) {
         var _this = this;
-        this.listings = this.listingsArray[this.listingsArray.findIndex(function (listing) {
+        var nextPage = this.listingsArray[this.listingsArray.findIndex(function (listing) {
             return listing === _this.listings;
         })
-            + 1];
+            + number];
+        if (nextPage) {
+            return nextPage;
+        }
+        else if (position == "after") {
+            return this.listingsArray[0];
+        }
+        else if (position == "prev") {
+            return this.listingsArray[this.listingsArray.length - 1];
+        }
     };
     return ListingComponent;
-}());
+}(core_2.GoogleMapsAPIWrapper));
 ListingComponent = __decorate([
     core_1.Component({
         selector: 'app-listing',
@@ -1049,10 +1088,11 @@ ListingComponent = __decorate([
         animations: [index_1.fadeInAnimation],
         host: { '[@fadeInAnimation]': '' }
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof listing_service_1.ListingService !== "undefined" && listing_service_1.ListingService) === "function" && _a || Object])
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [typeof (_a = typeof listing_service_1.ListingService !== "undefined" && listing_service_1.ListingService) === "function" && _a || Object, typeof (_b = typeof core_2.MapsAPILoader !== "undefined" && core_2.MapsAPILoader) === "function" && _b || Object, typeof (_c = typeof core_2.GoogleMapsAPIWrapper !== "undefined" && core_2.GoogleMapsAPIWrapper) === "function" && _c || Object, typeof (_d = typeof core_1.NgZone !== "undefined" && core_1.NgZone) === "function" && _d || Object])
 ], ListingComponent);
 exports.ListingComponent = ListingComponent;
-var _a;
+var _a, _b, _c, _d;
 //# sourceMappingURL=listing.component.js.map
 
 /***/ }),
@@ -1398,6 +1438,7 @@ var UploadComponent = (function () {
             _this.files.push(response);
             _this.files_path.push(response.location);
         };
+        console.log(ng2_file_upload_1.FileUploader);
     };
     UploadComponent.prototype.addListing = function (address) {
         var _this = this;
@@ -1530,11 +1571,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("../../../core/@angular/core.es5.js");
 var http_1 = __webpack_require__("../../../http/@angular/http.es5.js");
+var core_2 = __webpack_require__("../../../../@agm/core/index.js");
+var rxjs_1 = __webpack_require__("../../../../rxjs/Rx.js");
 __webpack_require__("../../../../rxjs/Rx.js");
 var ListingService = (function () {
-    function ListingService(_http) {
+    function ListingService(_http, _loader, _zone) {
         this._http = _http;
+        this._loader = _loader;
+        this._zone = _zone;
     }
+    ListingService.prototype.getLatLan = function (address) {
+        var _this = this;
+        // SET OBSERVABLE
+        return rxjs_1.Observable.create(function (observer) {
+            // LET GOOGLE SCRIPT LOAD BEFORE GEOCODER
+            _this._loader.load().then(function () {
+                var geocoder = new google.maps.Geocoder();
+                // GEOCODE ADDRESS
+                geocoder.geocode({ 'address': address }, function (results, status) {
+                    // IF NO ERROR => return results
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        observer.next(results[0].geometry.location);
+                        observer.complete();
+                        // IF ERROR => LOG err
+                    }
+                    else {
+                        console.log('Error - ', results, ' & Status - ', status);
+                        observer.next({});
+                        observer.complete();
+                    }
+                });
+            });
+        });
+    };
     ListingService.prototype.getThreeListings = function () {
         return this._http.get("/api/getThreeListings")
             .map(function (data) { return data.json(); })
@@ -1594,10 +1663,10 @@ var ListingService = (function () {
 }());
 ListingService = __decorate([
     core_1.Injectable(),
-    __metadata("design:paramtypes", [typeof (_a = typeof http_1.Http !== "undefined" && http_1.Http) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof http_1.Http !== "undefined" && http_1.Http) === "function" && _a || Object, typeof (_b = typeof core_2.MapsAPILoader !== "undefined" && core_2.MapsAPILoader) === "function" && _b || Object, typeof (_c = typeof core_1.NgZone !== "undefined" && core_1.NgZone) === "function" && _c || Object])
 ], ListingService);
 exports.ListingService = ListingService;
-var _a;
+var _a, _b, _c;
 //# sourceMappingURL=listing.service.js.map
 
 /***/ }),

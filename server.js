@@ -27,9 +27,13 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 // same as top, just for json
 app.use(express.static(path.join(__dirname, 'public', "dist")));
-require('./server/config/mongoose.js');
 
-// //////////////////////////////////////////
+if (process.env.NODE_ENV === 'production'){
+  const keys = require('./server/config/keys.js')
+  mongoose.connect(keys.mongoURI);
+}else{
+  require('./server/config/mongoose.js');
+}
 
 var route = require('./server/config/routes.js')(app)
 
@@ -37,4 +41,5 @@ app.get('*', (req,res)=>{
   res.sendFile(path.resolve('public/dist/index.html'))
 })
 
-app.listen(6789,()=>console.log("Listening on port 6789"));
+const PORT = process.env.PORT || 6789;
+app.listen(PORT,()=>console.log("Listening on port "+ PORT));

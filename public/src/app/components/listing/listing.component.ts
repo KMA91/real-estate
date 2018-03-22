@@ -1,6 +1,12 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, Injectable, NgZone } from '@angular/core';
 import { ListingService } from '../../services/listing.service';
 import { fadeInAnimation } from '../../_animations/index';
+import { GoogleMapsAPIWrapper, MapsAPILoader, AgmMap } from '@agm/core';
+import { Observable, Observer } from 'rxjs';
+
+declare var google: any;
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-listing',
@@ -9,102 +15,115 @@ import { fadeInAnimation } from '../../_animations/index';
   animations: [fadeInAnimation],
   host: { '[@fadeInAnimation]': '' }
 })
-export class ListingComponent implements OnInit, OnChanges {
+
+@Injectable()
+export class ListingComponent extends GoogleMapsAPIWrapper implements OnInit{
 
   // SHOWN LISTINGS
-  public listings;
-  // LISTINGS FROM API
-  public allListings;
+  public listings = [];
   // LISTINGS ARRAY AFTER API AND BEING SEPARATED
   public listingsArray = [];
   // CHANGE SHOWN BETWEEN ACTIVE/SOLD
-  public active:boolean = true;
+  // public active:boolean = true;
   // COUNTER FOR LENGTH OF PAGES
-  public page:number = 0;
+  public leftArrow: boolean = false;
   // COUNTER FOR LENGTH FOR COLOR CHANGE
+  public rightArrow: boolean = false;
+  // public geo: google_geocoding = new google_geocoding();
+  public latitude: number = 34.078052;
+  public longitude: number = -118.113003;
+  public zoom: number = 8;
 
   constructor(
-    private _listingService: ListingService
-  ) { }
+    private _listingService: ListingService,
+    private __loader: MapsAPILoader,
+    private gmaps: GoogleMapsAPIWrapper,
+    private __zone: NgZone
+  ) {
+    super(__loader, __zone);
+  }
 
   ngOnInit() {
     this.getAllListings();
-    // this.getActive();
   }
 
-  ngOnChanges(){
-    console.log('HELLO');
+  // GET LAT & LONG FROM SERVICES
+  getLatLan(address: string) {
+    this._listingService.getLatLan(address).subscribe(value => {
+      // needs to run inside zone to update the map
+      this.__zone.run(() => {
+        this.latitude = value.lat();
+        this.longitude = value.lng();
+        // console.log(value.lat());
+        // console.log(value.lng());
+      });
+      this.gmaps.setCenter({ lat: this.latitude, lng: this.longitude });
+    })
   }
-
-
 
   getAllListings(){
     // GET ALL LISTINGS FROM API
     this._listingService.getAllListings()
     .then(listings => {
       // LISTINGS FROM API IS NOW SAVED
-      // console.log(listings);
-      this.allListings = listings;
+      let allListings = listings;
       // USED TO PLACE LISTINGS FOR BOTTOM ALGO
       let tempArr = [];
       // every 4 listings push tempArray into listingsArray
-      // console.log(this.allListings.length);
-      for(var i = 0 ; i < this.allListings.length+1; i++){
-        if(tempArr.length < 4){
-          // console.log(tempArr);
-          tempArr.push(this.allListings[i]);
-          // console.log(i + "is being pushed")
-          // console.log(this.allListings.length);
+      for(var i = 0 ; i < allListings.length; i++){
+
+        if(tempArr.length < 3){
+          tempArr.push(allListings[i]);
         }else{
-          // console.log("4 was found");
           this.listingsArray.push(tempArr);
           tempArr = [];
-        }
-        if(this.allListings.length - i == 3){
-          this.listingsArray.push(tempArr);
-          tempArr = [];
-          for(i; i < this.allListings.length + 1 ; i++){
-            tempArr.push(this.allListings[i]);
-            console.log(i);
-          }
-          this.listingsArray.push(tempArr);
-          break;
+          tempArr.push(allListings[i]);
         }
       }
-      console.log(this.listingsArray);
-      // console.log(tempArr);
-      // PUSH IN REMAINDER
-      // if(tempArr.length > 0){
-      //   this.listingsArray.push(tempArr);
-      //   tempArr = [];
-      // }
-      // LET'S US KNOW HOW MANY PAGES THERE WILL BE
-      this.page = this.listingsArray.length;
-      // console.log(this.listingsArray);
-      // SHOW THE FIRST 4 LISTINGS ON LOAD
+      // if there are any remainding listings not pushed in, push it in
+      if(tempArr.length){
+        this.listingsArray.push(tempArr);
+        tempArr = [];
+      }
+      // show first index of listings on load
       this.listings = this.listingsArray[0];
     })
     .catch();
   }
 
   leftClick(){
-    this.listings = this.listingsArray[
-        this.listingsArray.findIndex(
-        listing =>
-        listing === this.listings
-      )
-      - 1
-    ]
+    let prev = this.flipPage(-1, "prev");
+    // let pageBeforePrev = this.flipPage(-2);
+    if(prev){
+      this.listings = prev;
+    }
   }
 
   rightClick(){
-    this.listings = this.listingsArray[
+    let next = this.flipPage(1, "after");
+    // let pageAfterNext = this.flipPage(2);
+    if(next){
+      this.listings = next;
+    }
+  }
+
+  // flip page method
+  // if clicking right on end of listings, return the first array of listings
+  // if clicking left at beginning of listings, return the last array of listings
+  flipPage(number, position){
+    var nextPage = this.listingsArray[
         this.listingsArray.findIndex(
         listing =>
         listing === this.listings
       )
-      + 1
+      + number
     ]
+    if(nextPage){
+      return nextPage;
+    }else if(position == "after"){
+      return this.listingsArray[0];
+    }else if(position == "prev"){
+      return this.listingsArray[this.listingsArray.length-1]
+    }
   }
-
 }
