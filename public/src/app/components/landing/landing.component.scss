@@ -2,6 +2,7 @@ $font-stack: "Oswald", sans-serif;
 $font-secondary: Fjalla One, sans-serif;
 $primary-color: #080a58;
 $secondary-color: #f28109;
+$blue-button: #068aff;
 $button-orange: orange;
 
 * {
@@ -15,17 +16,24 @@ $button-orange: orange;
 }
 
 .btn {
+  width: 200px;
+  height: 50px;
   padding: 5px;
   color: white;
   background: orange;
   text-transform: uppercase;
-  box-shadow: 2px 2px #888888;
-  -webkit-transition: box-shadow 1s;
+  transition: filter 1s;
+}
+
+.btn:nth-child(even){
+  background: $blue-button;
+  margin-left: 4px;
 }
 
 .btn:hover {
   -webkit-transition: box-shadow background 1s;
-  box-shadow: 7px 7px #888888;
+  transition: filter 1s;
+  filter: brightness(0.8);
 }
 
 .slideContainer {
@@ -132,7 +140,10 @@ $button-orange: orange;
 
 .tonybox {
   border: 1px solid #e0e0e0;
+  border-radius: 10px;
   margin: 0 auto;
+  opacity: 0.9;
+  filter: brightness(1.1);
 }
 
 .welcomeMessage {
@@ -183,6 +194,12 @@ $button-orange: orange;
   .welcomeMessage h4 {
     font-size: 1.5em;
   }
+
+  button {
+    margin-bottom: 5px;
+  }
+
+
 }
 
 /* 2) VALUES / 2) VALUES / 2) VALUES /  */
@@ -253,6 +270,20 @@ $button-orange: orange;
 
 .fa-book, .fa-comments, .fa-handshake {
   color: $secondary-color;
+}
+
+@media only screen and (max-width: 414px) {
+  .contentContainer {
+    border-radius: 0;
+  }
+  .firstContainer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .lastContainer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

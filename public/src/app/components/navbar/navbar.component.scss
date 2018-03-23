@@ -51,13 +51,17 @@ $button-orange: orange;
   }
 }
 
-// .links-cont a:hover {
-//   color: orange;
-// }
-
 .active {
     background-color: #4CAF50;
     color: white;
+}
+
+@media only screen and (max-width: 414px) {
+  .brand {
+    p {
+      letter-spacing: 11.75px;
+    }
+  }
 }
 
 /* mobile device */

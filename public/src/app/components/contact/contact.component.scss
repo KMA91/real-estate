@@ -1,0 +1,51 @@
+$font-stack: Oswald, sans-serif;
+$primary-color: #080a58;
+$secondary-color: #f28109;
+
+* {
+  font-family: $font-stack;
+  color: $primary-color;
+}
+
+.tonyContainer {
+  border: 2px solid #e6e4ff;
+  border-radius: 10px;
+  box-shadow: 2px 2px #e6e4ff;
+  padding: 47px 10px !important;
+  a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+  button {
+    display: block;
+    margin: 3px auto;
+    height: 50px;
+    width: 200px;
+    transition: filter 1s;
+  }
+  button:hover {
+    filter: brightness(0.9);
+    transition: filter 1s;
+  }
+  .btn {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: $secondary-color;
+    color: white;
+  }
+  .btn:nth-child(odd){
+    background: #068aff;
+  }
+  .tonyBox {
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+    img {
+      margin: 0 auto;
+      border-radius: 10px;
+      filter: brightness(0.9);
+    }
+  }
+}
