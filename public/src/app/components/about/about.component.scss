@@ -33,6 +33,7 @@ $secondary-color: #f28109;
   box-shadow: 2px 2px #e6e4ff;
   padding: 47px 10px !important;
   a {
+    font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $primary-color;
@@ -40,6 +41,13 @@ $secondary-color: #f28109;
   button {
     display: block;
     margin: 3px auto;
+    height: 50px;
+    width: 200px;
+    transition: filter 1s;
+  }
+  button:hover {
+    filter: brightness(0.9);
+    transition: filter 1s;
   }
   .btn {
     letter-spacing: 2px;
@@ -50,9 +58,29 @@ $secondary-color: #f28109;
   }
   .tonyBox {
     background: white;
-    border: 1px solid #e0e0e0;
     width: 100%;
     margin: 0 auto;
+    img {
+      margin: 0 auto;
+      border-radius: 10px;
+      filter: brightness(0.9);
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .tonyContainer {
+    padding: 100px 0 !important;
+    border: none;
+    box-shadow: none;
+    .tonyBox {
+      img {
+        width: 50%;
+      }
+    }
+    a {
+      display: block;
+    }
   }
 }
 
@@ -116,6 +144,19 @@ $secondary-color: #f28109;
     line-height: 1.4;
     color: #2f3294;
     transition: color 1s;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .mission, .testimonials {
+    padding: 0 40px !important;
+  }
+  .testimonials {
+    h2 {
+      img {
+        width: 8%;
+      }
+    }
   }
 }
 
@@ -213,6 +254,10 @@ $secondary-color: #f28109;
 }
 
 .reviews {
+  h2 {
+    text-transform: uppercase;
+    color: $primary-color;
+  }
   h2:nth-of-type(even) {
     min-height: 33.75px;
     margin: 20px 0;
@@ -227,5 +272,14 @@ $secondary-color: #f28109;
   a:hover {
     transition: opacity 1s;
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .reviews {
+    a {
+      max-width: 20%;
+      opacity: 1;
+    }
   }
 }

@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-xs-12 col-md-3 tonyContainer">
       <div class="tonyBox">
-        <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonytrans.png" class="img-responsive">
+        <img src="https://s3-us-west-1.amazonaws.com/mean-realestate/tonybackground.png" class="img-responsive">
       </div>
         <a href="#">(626)759-4812</a>
         <a href="#">brokertonyma@gmail.com</a>
@@ -11,15 +11,15 @@
         <button routerLink="/about" class='btn btn-md'>See Testimonials</button>
     </div>
     <div class="col-xs-12 col-md-9 contactForm">
-      <form>
+      <form (submit)="sendEmail(formData.value)" #formData="ngForm">
         <p>Name</p>
-        <input type="text" name="">
+        <input type="text" name="name" ngModel>
         <p>Contact Number</p>
-        <input type="text" name="">
+        <input type="text" name="phone" ngModel>
         <p>Email Address</p>
-        <input type="text" name="">
+        <input type="text" name="email" ngModel>
         <p>Message</p>
-        <textarea name="name" rows="8" cols="80"></textarea>
+        <textarea name="message" rows="8" cols="80" ngModel></textarea>
         <button>Send</button>
       </form>
     </div>

@@ -31,6 +31,14 @@ $button-orange: orange;
   }
 }
 
+@media only screen and (max-width: 414px) {
+  .footHeader {
+    p {
+      margin-left: 12px;
+    }
+  }
+}
+
 .social-media {
   margin: 0 auto;
   text-align: center;
