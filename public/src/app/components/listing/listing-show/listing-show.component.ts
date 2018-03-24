@@ -3,6 +3,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ListingService } from '../../../services/listing.service';
 import { fadeInAnimation } from '../../../_animations/index';
 
+declare var jquery:any;
+declare var $ :any;
+
 @Component({
   selector: 'app-listing-show',
   templateUrl: './listing-show.component.html',
@@ -43,12 +46,23 @@ export class ListingShowComponent implements OnInit {
 
   nextImage(){
     if(this.listing.paths[this.imageindex + 1]){
+      $('.img'+this.imageindex).removeClass("focusimage");
       this.image = this.listing.paths[this.imageindex + 1];
       this.imageindex ++;
+      $('.img'+this.imageindex).addClass("focusimage");
     }else{
+      $('.img'+this.imageindex).removeClass("focusimage");
       this.image = this.listing.paths[0];
       this.imageindex = 0;
+      $('.img'+this.imageindex).addClass("focusimage");
     }
+  }
+
+  changeImage(index){
+    $('.img'+this.imageindex).removeClass("focusimage");
+    this.image = this.listing.paths[index];
+    this.imageindex = index;
+    $('.img'+this.imageindex).addClass("focusimage");
   }
 
   // previousImage(){

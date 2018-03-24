@@ -94,6 +94,18 @@ $secondary-color: #f28109;
   opacity: 1;
 }
 
+@media only screen and (max-width: 414px) {
+  .desktopBrowse {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 415px) {
+  .mobileBrowse {
+    display: none;
+  }
+}
+
 .tonyContainer {
   height: 100%;
   border-radius: 10px;

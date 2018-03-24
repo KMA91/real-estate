@@ -78,6 +78,10 @@ $secondary-color: #f28109;
   padding: 0;
   img {
     border: 1px solid white;
+    filter: brightness(0.5);
+  }
+  .focusimage {
+    filter: brightness(1);
   }
 }
 
