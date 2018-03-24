@@ -51,13 +51,13 @@ export class ListingShowComponent implements OnInit {
     }
   }
 
-  previousImage(){
-    if(this.listing.paths[this.imageindex - 1]){
-      this.image = this.listing.paths[this.imageindex - 1];
-      this.imageindex --;
-    }else{
-      this.image = this.listing.paths[this.listing.paths.length - 1];
-      this.imageindex = this.listing.paths.length - 1;
-    }
-  }
+  // previousImage(){
+  //   if(this.listing.paths[this.imageindex - 1]){
+  //     this.image = this.listing.paths[this.imageindex - 1];
+  //     this.imageindex --;
+  //   }else{
+  //     this.image = this.listing.paths[this.listing.paths.length - 1];
+  //     this.imageindex = this.listing.paths.length - 1;
+  //   }
+  // }
 }
