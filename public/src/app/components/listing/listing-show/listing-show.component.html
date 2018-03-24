@@ -22,14 +22,23 @@
         <div *ngIf="listing" class="col-xs-12">
           <h3 class="address" >{{ listing.address }}</h3>
         </div>
-        <div *ngIf="imageSources.length > 0" class="col-xs-12 listingContainer">
-          <p (click)="previousImage()"><i class="left"></i></p>
-          <img (click)="nextImage()" src="{{ image }}" class="img-responsive">
-          <p (click)="nextImage()"><i class="right"></i></p>
+
+          <div *ngIf="image" class="col-xs-12 listingContainer">
+            <p (click)="previousImage()"><i class="left"></i></p>
+            <img (click)="nextImage()" src="{{ image }}" class="img-responsive">
+            <p (click)="nextImage()"><i class="right"></i></p>
+          </div>
+
+
+        <div *ngFor="let listing of listing.paths; let i = index " class="col-xs-4 col-md-3 listingCollection" >
+          <div *ngIf="i == 0; else showNotFocused">
+            <img src="{{ listing }}" class="img-responsive focusimage img{{ i }}" (click)="changeImage(i)">
+          </div>
+          <ng-template #showNotFocused>
+            <img src="{{ listing }}" class="img-responsive img{{ i }}" (click)="changeImage(i)">
+          </ng-template>
         </div>
-        <div *ngFor="let listing of listing.paths" class="col-xs-4 col-md-3 listingCollection" >
-          <img src="{{ listing }}" class="img-responsive">
-        </div>
+
 
       </div>
 
