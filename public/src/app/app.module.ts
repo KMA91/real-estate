@@ -19,9 +19,9 @@ import { LoginComponent } from './components/login/login.component';
 import { LoginService } from './services/login.service';
 import { UploadService } from './services/upload.service';
 import { ListingService } from './services/listing.service';
+import { MessageService } from './services/message.service';
 import { AuthGuard } from './guard/auth.guard';
 import { ListingEditAddImagesComponent } from './components/listing/listing-edit/listing-edit-add-images/listing-edit-add-images.component';
-import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
@@ -42,8 +42,7 @@ import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
     ContactComponent,
     LoginComponent,
     ListingEditComponent,
-    ListingEditAddImagesComponent,
-    TopNavbarComponent
+    ListingEditAddImagesComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +59,7 @@ import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
     })
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-  providers: [UploadService, ListingService, LoginService, AuthGuard, GoogleMapsAPIWrapper],
+  providers: [UploadService, ListingService, LoginService, MessageService, AuthGuard, GoogleMapsAPIWrapper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

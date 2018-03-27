@@ -1,6 +1,7 @@
-var upload = require('./../controllers/uploadController.js');
-var user = require('./../controllers/userController.js');
-var listing = require('./../controllers/listingController.js')
+const upload = require('./../controllers/uploadController.js');
+const user = require('./../controllers/userController.js');
+const listing = require('./../controllers/listingController.js');
+const message = require('./../controllers/messageController.js');
 const multerUpload = require('../config/multer');
 
 module.exports = (app) => {
@@ -18,5 +19,6 @@ module.exports = (app) => {
   app.get("/api/getSold", listing.getSold);
   app.get("/api/getListing/:id", listing.getListing);
   app.get("/api/getAllListings", listing.getAllListings);
+  app.post("/api/sendEmail", message.sendEmail);
   app.get("/api/logout", user.logout);
 }

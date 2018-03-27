@@ -8,9 +8,30 @@ $secondary-color: #f28109;
 }
 
 .jumbo {
-  height: 200px;
-  background-image:url(https://s3-us-west-1.amazonaws.com/mean-realestate/pexels-photo-286744.jpeg);
+  background-image:url(https://s3-us-west-1.amazonaws.com/mean-realestate/jumboimage.jpg);
   background-position: top;
+  text-align: center;
+  .center {
+    padding: 65px 0;
+  }
+  .caption {
+    padding: 10px;
+    display: inline-block;
+    background: white;
+    h1 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .jumbo {
+    .center {
+      padding: 40px 0;
+    }
+  }
 }
 
 .container {
@@ -23,6 +44,7 @@ $secondary-color: #f28109;
   box-shadow: 2px 2px #e6e4ff;
   padding: 47px 10px !important;
   color: $primary-color;
+  text-align: center;
   a {
     font-size: 16px;
     letter-spacing: 1px;
@@ -43,6 +65,10 @@ $secondary-color: #f28109;
   .btn {
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: white;
+  }
+  .btn:nth-child(even){
+    background: $secondary-color;
   }
   .btn:nth-child(odd){
     background: #068aff;
@@ -62,8 +88,7 @@ $secondary-color: #f28109;
   }
 }
 
-.listingContainer {
-  padding: 0;
+.imageContainer {
   margin: 15px 0;
 }
 
@@ -72,6 +97,11 @@ $secondary-color: #f28109;
   border: 2px solid #e6e4ff;
   border-radius: 10px;
   box-shadow: 2px 2px #e6e4ff;
+}
+
+.address {
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .listingCollection {
@@ -85,47 +115,13 @@ $secondary-color: #f28109;
   }
 }
 
-// .right {
-//     transform: rotate(-45deg);
-//     -webkit-transform: rotate(-45deg);
-// }
-//
-// .left {
-//     transform: rotate(135deg);
-//     -webkit-transform: rotate(135deg);
-// }
-//
-//
-//
-// @media only screen and (min-width: 1025px){
-//   i {
-//     border: solid red;
-//     border-width: 0 3px 3px 0;
-//     display: inline-block;
-//     padding: 25px;
-//   }
-// }
-//
-//
-// @media (min-width: 415px) and (max-width: 1024px){
-//   i {
-//     border: solid red;
-//     border-width: 0 3px 3px 0;
-//     display: inline-block;
-//     padding: 20px;
-//   }
-// }
-//
-//
-// @media only screen and (max-width: 414px){
-//   i {
-//     border: solid red;
-//     border-width: 0 3px 3px 0;
-//     display: inline-block;
-//     padding: 8px;
-//   }
-//
-//   h3{
-//     font-size: 1em;
-//   }
-// }
+@media only screen and (max-width: 414px) {
+  .tonyContainer {
+    border: none;
+    box-shadow: none;
+    padding: 100px 0;
+    .tonyBox {
+      width: 50%;
+    }
+  }
+}

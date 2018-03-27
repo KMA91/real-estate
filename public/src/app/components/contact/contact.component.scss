@@ -8,9 +8,30 @@ $secondary-color: #f28109;
 }
 
 .jumbo {
-  height: 200px;
-  background-image:url(https://s3-us-west-1.amazonaws.com/mean-realestate/pexels-photo-286744.jpeg);
+  background-image:url(https://s3-us-west-1.amazonaws.com/mean-realestate/jumboimage.jpg);
   background-position: top;
+  text-align: center;
+  .center {
+    padding: 65px 0;
+  }
+  .caption {
+    padding: 10px;
+    display: inline-block;
+    background: white;
+    h1 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .jumbo {
+    .center {
+      padding: 40px 0;
+    }
+  }
 }
 
 .container {
@@ -54,6 +75,7 @@ $secondary-color: #f28109;
     width: 100%;
     margin: 0 auto;
     img {
+      opacity: 0.9;
       margin: 0 auto;
       border-radius: 10px;
       filter: brightness(0.9);
@@ -102,9 +124,20 @@ $secondary-color: #f28109;
       }
     }
   }
+  .sentMessage{
+    h3 {
+      display: inline-block;
+      padding: 5px;
+      color: $primary-color;
+      background: yellow;
+    }
+  }
 }
 
 @media only screen and (max-width: 414px) {
+  * {
+    text-align: center;
+  }
   .tonyContainer {
     padding: 100px 0 !important;
     border: none;
