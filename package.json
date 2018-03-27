@@ -17,7 +17,8 @@
     "start": "node server.js",
     "startdev": "nodemon server.js",
     "build": "npm run build --prefix public",
-    "dev": "concurrently \"npm run startdev\" \"npm run build\""
+    "dev": "concurrently \"npm run startdev\" \"npm run build\"",
+    "postinstall": "ng build --aot -prod"
   },
   "keywords": [],
   "author": "",
