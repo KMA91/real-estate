@@ -26,6 +26,7 @@ import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
 import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
+import { DashboardComponent } from './components/_admin/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
     ContactComponent,
     LoginComponent,
     PropertiesEditComponent,
-    PropertiesEditAddImagesComponent
+    PropertiesEditAddImagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
