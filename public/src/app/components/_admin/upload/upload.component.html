@@ -1,0 +1,96 @@
+<div class="container">
+
+  <div class="wrapper">
+
+    <div *ngIf = "error">
+      {{error}}
+    </div>
+
+    <div class="row">
+
+      <div class="col-xs-12 col-md-6 uploadContainer">
+
+        <div class="selectFiles">
+          <h2 class="numbers">Step 1 - Select files</h2>
+          <div class="selectFilesContainer">
+            <input type="file" ng2FileSelect [uploader]="uploader" class="btn btn-md" multiple  />
+          </div>
+        </div>
+
+        <div class="verifyFiles">
+          <h2 class="numbers">Step 2 - Verify and upload</h2>
+
+          <p>Amount of images: {{ uploader?.queue?.length }}</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <!-- <th>Actions</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of uploader.queue">
+                <td><strong>{{ item?.file?.name }}</strong></td>
+                <td>
+                  <!-- <button (click)="item.upload()" [disabled]="item.isReady || item.isUploading || item.isSuccess">Upload</button> -->
+                  <button (click)="item.remove()">Remove</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">Upload</button>
+          <!-- <button type="button" (click)="uploader.cancelAll()" [disabled]="!uploader.isUploading">Cancel all</button>
+          <button type="button" (click)="uploader.clearQueue()" [disabled]="!uploader.queue.length">Clear Queue</button> -->
+        </div>
+
+        <div class="uploadedalready">
+          <table>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Action</th>
+            <div *ngIf = "files">
+              <div *ngFor = "let file of files" class="showuploaded">
+                <td>{{ file.originalname }}</td>
+                <td><img src="{{ file.location }}"></td>
+                <button type="button" (click)="deleteListingImage(file.originalname, file.size, file.key)">Delete</button>
+              </div>
+            </div>
+          </table>
+        </div>
+
+
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <h2 class="numbers">Step 3 - Add Info To Your Listing</h2>
+
+        <form (submit)="addListing(formData)" #formData="ngForm">
+          <div class="info">
+            <p>
+              Address: <input type="text" name="address" ngModel>
+            </p>
+            <p>
+              Has It Been Sold? <input type="checkbox" name="sold" ngModel>
+            </p>
+          </div>
+          <h2 class="numbers">Step 4 - Add or Reset</h2>
+          <!-- <div class="buttons"> -->
+            <button (click)='cancel(formData)' type="button">Cancel</button>
+            <div *ngIf='showButton && this.files.length' class="addit">
+              <button>Add</button>
+            </div>
+            <div *ngIf='!showButton || !this.files.length' class="dontadd">
+              <button disabled='disabled'>Add</button>
+            </div>
+            <button (click)="removeAllImages()">ASD</button>
+          <!-- </div> -->
+        </form>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</div>

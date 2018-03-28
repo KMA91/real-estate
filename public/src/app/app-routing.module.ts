@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { UploadComponent } from './components/upload/upload.component';
+import { UploadComponent } from './components/_admin/upload/upload.component';
 import { LandingComponent } from './components/landing/landing.component';
-import { ListingComponent } from './components/listing/listing.component';
+import { PropertiesComponent } from './components/properties/properties.component';
 import { AboutComponent } from './components/about/about.component';
-import { ListingShowComponent } from './components/listing//listing-show/listing-show.component';
-import { ListingEditComponent } from './components/listing/listing-edit/listing-edit.component';
+import { PropertiesShowComponent } from './components/properties/properties-show/properties-show.component';
+import { PropertiesEditComponent } from './components/_admin/properties-edit/properties-edit.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './components/_admin/login/login.component';
 import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   {path: '', component: LandingComponent},
   {path: 'upload', canActivate: [AuthGuard], component: UploadComponent},
-  {path: 'properties', component: ListingComponent},
+  {path: 'properties', component: PropertiesComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'show/:id', component: ListingShowComponent},
+  {path: 'show/:id', component: PropertiesShowComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'editlisting', component: ListingEditComponent},
+  {path: 'editlisting', component: PropertiesEditComponent},
   {path: '**', redirectTo: ''}
 ];
 
