@@ -39,7 +39,7 @@ export class UploadComponent implements OnInit {
       this.files.push(response);
       this.files_path.push(response.location);
     }
-    console.log(FileUploader);
+    // console.log(FileUploader);
   }
 
   addListing(address){

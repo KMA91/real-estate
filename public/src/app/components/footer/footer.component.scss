@@ -7,6 +7,7 @@ $button-orange: orange;
 .footContainer {
   border-top: 0.5px solid grey;
   background: $primary-color;
+  padding-bottom: 20px;
 }
 
 .footHeader {
@@ -23,16 +24,30 @@ $button-orange: orange;
     letter-spacing: 3px;
     color: white;
   }
-  p {
+  .copyrightContainer {
     color: $secondary-color;
     letter-spacing: 13.5px;
     font-size: 1.25em;
     margin: 0;
   }
+  p {
+    color: $secondary-color;
+    letter-spacing: 15px;
+  }
+}
+
+.loggedIn {
+  color: #bfbfbf;
+  a {
+    color: #bfbfbf;
+  }
 }
 
 @media only screen and (max-width: 414px) {
   .footHeader {
+    .copyrightContainer {
+      margin-left: 12px;
+    }
     p {
       margin-left: 12px;
     }
@@ -94,11 +109,17 @@ $button-orange: orange;
   color: #bfbfbf;
   padding: 10px;
   a {
+    color: #bfbfbf;
+  }
+  .kevinma {
     color: $secondary-color;
+  }
+  div {
+    display: inline-block;
   }
 }
 
-.links, .copyright {
+.links, .copyright, .loggedIn {
   margin: 0 auto;
   text-align: center;
 }

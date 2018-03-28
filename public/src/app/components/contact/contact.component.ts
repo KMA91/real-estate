@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeInAnimation } from '../../_animations/index';
-
-declare var Email:any;
+import { MessageService } from '../../services/message.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,23 +11,29 @@ declare var Email:any;
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  private message: string;
+  private errors: string;
+
+  constructor(
+    private _messageService: MessageService
+  ) { }
 
   ngOnInit() {
   }
 
   sendEmail(form){
-    var token = "2cf747f6-2983-4eda-b659-67751e0944c5";
-    Email.send(
-        "no-reply@tonyma.com",
-        "kevinma91@yahoo.com",
-        "NEW MESSAGE FROM YOUR WEBSITE",
-        "Name " + form.name + " Phone #: " + form.phone + " Email: " + form.email + " Message: " + form.message,
-        {
-            token: "8fc50aed-121e-4f51-929c-2a4b25214ebb",
-            callback: function done(message) { alert("sent") }
-        }
-    );
+    if(form.value.name.length == 0 || form.value.phone.length == 0 || form.value.email.length == 0 || form.value.message.length == 0){
+      this.errors = "Please ensure all fields are filled out."
+    }else{
+
+      this._messageService.sendEmail(form.value)
+      .then( () => {
+        form.resetForm();
+        this.message = 'Thanks for your message. Tony will get back to you ASAP!';
+      })
+      .catch()
+
+    }
   }
 
 }

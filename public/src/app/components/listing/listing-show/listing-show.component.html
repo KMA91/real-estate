@@ -1,4 +1,10 @@
-<div class="jumbo" [@fadeInAnimation]></div>
+<div class="jumbo" [@fadeInAnimation]>
+  <div class="center">
+    <div class="caption">
+      <h1>Browse Images</h1>
+    </div>
+  </div>
+</div>
 
 <div class="container" [@fadeInAnimation]>
   <div class="row">
@@ -15,28 +21,32 @@
         <button routerLink="/about" class='btn btn-md'>See Testimonials</button>
     </div>
 
-    <div class="col-xs-12 col-md-9">
+    <div class="col-xs-12 col-md-9 listingContainer">
 
-      <div class="listingWrapper row">
+      <div class="listingWrapper">
+        <div class="row">
 
-        <div *ngIf="listing" class="col-xs-12">
-          <h3 class="address" >{{ listing.address }}</h3>
-        </div>
+          <div *ngIf="listing" class="col-xs-12">
+            <h3 class="address" >{{ listing.address }}</h3>
+          </div>
 
-          <div *ngIf="image" class="col-xs-12 listingContainer">
+          <div *ngIf="image" class="col-xs-12 imageContainer">
             <p (click)="previousImage()"><i class="left"></i></p>
             <img (click)="nextImage()" src="{{ image }}" class="img-responsive">
             <p (click)="nextImage()"><i class="right"></i></p>
           </div>
 
 
-        <div *ngFor="let listing of listing.paths; let i = index " class="col-xs-4 col-md-3 listingCollection" >
-          <div *ngIf="i == 0; else showNotFocused">
-            <img src="{{ listing }}" class="img-responsive focusimage img{{ i }}" (click)="changeImage(i)">
+          <div *ngFor="let listing of listing.paths; let i = index " class="col-xs-4 col-md-3 listingCollection" >
+
+              <div *ngIf="i == 0; else showNotFocused">
+                <img src="{{ listing }}" class="img-responsive focusimage img{{ i }}" (click)="changeImage(i)">
+              </div>
+              <ng-template #showNotFocused>
+                <img src="{{ listing }}" class="img-responsive img{{ i }}" (click)="changeImage(i)">
+              </ng-template>
+
           </div>
-          <ng-template #showNotFocused>
-            <img src="{{ listing }}" class="img-responsive img{{ i }}" (click)="changeImage(i)">
-          </ng-template>
         </div>
 
 
