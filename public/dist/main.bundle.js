@@ -200,6 +200,7 @@ var ngx_carousel_1 = __webpack_require__("../../../../ngx-carousel/index.js");
 __webpack_require__("../../../../hammerjs/hammer.js");
 var ng2_device_detector_1 = __webpack_require__("../../../../ng2-device-detector/index.js");
 var core_2 = __webpack_require__("../../../../@agm/core/index.js");
+var dashboard_component_1 = __webpack_require__("../../../../../src/app/components/_admin/dashboard/dashboard.component.ts");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -221,7 +222,8 @@ AppModule = __decorate([
             contact_component_1.ContactComponent,
             login_component_1.LoginComponent,
             properties_edit_component_1.PropertiesEditComponent,
-            properties_edit_add_images_component_1.PropertiesEditAddImagesComponent
+            properties_edit_add_images_component_1.PropertiesEditAddImagesComponent,
+            dashboard_component_1.DashboardComponent
         ],
         imports: [
             platform_browser_1.BrowserModule,
@@ -246,6 +248,67 @@ AppModule = __decorate([
 ], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/_admin/dashboard/dashboard.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>DASHBOARD</h1>\r\n\r\n<h1>UNDER CONSTRUCTION</h1>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/_admin/dashboard/dashboard.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/_admin/dashboard/dashboard.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/@angular/core.es5.js");
+var DashboardComponent = (function () {
+    function DashboardComponent() {
+    }
+    DashboardComponent.prototype.ngOnInit = function () {
+    };
+    return DashboardComponent;
+}());
+DashboardComponent = __decorate([
+    core_1.Component({
+        selector: 'app-dashboard',
+        template: __webpack_require__("../../../../../src/app/components/_admin/dashboard/dashboard.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/_admin/dashboard/dashboard.component.scss")]
+    }),
+    __metadata("design:paramtypes", [])
+], DashboardComponent);
+exports.DashboardComponent = DashboardComponent;
+//# sourceMappingURL=dashboard.component.js.map
 
 /***/ }),
 
@@ -347,7 +410,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/_admin/properties-edit/properties-edit-add-images/properties-edit-add-images.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n  <div class=\"uploadfile\">\n    <h3>Select files</h3>\n      <!-- <div class=\"dropzonearea\">\n        <div ng2FileDrop\n        [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\"\n        (fileOver)=\"fileOverBase($event)\"\n        [uploader]=\"uploader\"\n        class=\"dropzone\">\n        > Drop Images Here <\n      </div> -->\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple/>\n      <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload all</button>\n    </div>\n    <div *ngIf='showButton && this.files.length' class=\"addit\">\n      <button (click)='addMoreImages()'>Add</button>\n    </div>\n    <div *ngIf='!showButton || !this.files.length' class=\"dontadd\">\n      <button disabled='disabled'>Add</button>\n    </div>\n  <button (click)='toggleShow()'>Cancel</button>\n</div>\n"
+module.exports = "<div class=\"wrapper\">\r\n  <div class=\"uploadfile\">\r\n    <h3>Select files</h3>\r\n      <!-- <div class=\"dropzonearea\">\r\n        <div ng2FileDrop\r\n        [ngClass]=\"{'nv-file-over': hasBaseDropZoneOver}\"\r\n        (fileOver)=\"fileOverBase($event)\"\r\n        [uploader]=\"uploader\"\r\n        class=\"dropzone\">\r\n        > Drop Images Here <\r\n      </div> -->\r\n      <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" multiple/>\r\n      <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload all</button>\r\n    </div>\r\n    <div *ngIf='showButton && this.files.length' class=\"addit\">\r\n      <button (click)='addMoreImages()'>Add</button>\r\n    </div>\r\n    <div *ngIf='!showButton || !this.files.length' class=\"dontadd\">\r\n      <button disabled='disabled'>Add</button>\r\n    </div>\r\n  <button (click)='toggleShow()'>Cancel</button>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -603,7 +666,7 @@ var _a;
 /***/ "../../../../../src/app/components/_admin/upload/upload.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n\r\n  <div class=\"wrapper\">\r\n\r\n    <div *ngIf = \"error\">\r\n      {{error}}\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n\r\n      <div class=\"col-xs-12 col-md-6 uploadContainer\">\r\n\r\n        <div class=\"selectFiles\">\r\n          <h2 class=\"numbers\">Step 1 - Select files</h2>\r\n          <div class=\"selectFilesContainer\">\r\n            <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" class=\"btn btn-md\" multiple  />\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"verifyFiles\">\r\n          <h2 class=\"numbers\">Step 2 - Verify and upload</h2>\r\n\r\n          <p>Amount of images: {{ uploader?.queue?.length }}</p>\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Name</th>\r\n                <!-- <th>Actions</th> -->\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr *ngFor=\"let item of uploader.queue\">\r\n                <td><strong>{{ item?.file?.name }}</strong></td>\r\n                <td>\r\n                  <!-- <button (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">Upload</button> -->\r\n                  <button (click)=\"item.remove()\">Remove</button>\r\n                </td>\r\n              </tr>\r\n            </tbody>\r\n          </table>\r\n          <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload</button>\r\n          <!-- <button type=\"button\" (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">Cancel all</button>\r\n          <button type=\"button\" (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">Clear Queue</button> -->\r\n        </div>\r\n\r\n        <div class=\"uploadedalready\">\r\n          <table>\r\n            <th>Name</th>\r\n            <th>Image</th>\r\n            <th>Action</th>\r\n            <div *ngIf = \"files\">\r\n              <div *ngFor = \"let file of files\" class=\"showuploaded\">\r\n                <td>{{ file.originalname }}</td>\r\n                <td><img src=\"{{ file.location }}\"></td>\r\n                <button type=\"button\" (click)=\"deleteListingImage(file.originalname, file.size, file.key)\">Delete</button>\r\n              </div>\r\n            </div>\r\n          </table>\r\n        </div>\r\n\r\n\r\n      </div>\r\n\r\n      <div class=\"col-xs-12 col-md-6\">\r\n        <h2 class=\"numbers\">Step 3 - Add Info To Your Listing</h2>\r\n\r\n        <form (submit)=\"addListing(formData)\" #formData=\"ngForm\">\r\n          <div class=\"info\">\r\n            <p>\r\n              Address: <input type=\"text\" name=\"address\" ngModel>\r\n            </p>\r\n            <p>\r\n              Has It Been Sold? <input type=\"checkbox\" name=\"sold\" ngModel>\r\n            </p>\r\n          </div>\r\n          <h2 class=\"numbers\">Step 4 - Add or Reset</h2>\r\n          <!-- <div class=\"buttons\"> -->\r\n            <button (click)='cancel(formData)' type=\"button\">Cancel</button>\r\n            <div *ngIf='showButton && this.files.length' class=\"addit\">\r\n              <button>Add</button>\r\n            </div>\r\n            <div *ngIf='!showButton || !this.files.length' class=\"dontadd\">\r\n              <button disabled='disabled'>Add</button>\r\n            </div>\r\n            <button (click)=\"removeAllImages()\">ASD</button>\r\n          <!-- </div> -->\r\n        </form>\r\n      </div>\r\n\r\n    </div>\r\n\r\n\r\n\r\n  </div>\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n\r\n  <div class=\"wrapper\">\r\n\r\n    <div *ngIf = \"error\">\r\n      {{error}}\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n\r\n      <div class=\"col-xs-12 col-md-6 uploadContainer\">\r\n\r\n        <div class=\"row\">\r\n\r\n          <div class=\"selectFiles col-xs-12\">\r\n            <h2 class=\"numbers\">Step 1 - Select files</h2>\r\n            <div class=\"selectFilesContainer\">\r\n              <input type=\"file\" ng2FileSelect [uploader]=\"uploader\" class=\"btn btn-md\" multiple  />\r\n            </div>\r\n          </div>\r\n\r\n          <div class=\"verifyFiles col-xs-12\">\r\n            <h2 class=\"numbers\">Step 2 - Upload & Verify</h2>\r\n\r\n            <p>Amount of images: {{ uploader?.queue?.length }}</p>\r\n\r\n            <div *ngIf=\"uploader.queue.length\">\r\n              <table>\r\n                <thead>\r\n                  <tr>\r\n                    <th>Name</th>\r\n                    <!-- <th>Actions</th> -->\r\n                  </tr>\r\n                </thead>\r\n                <tbody>\r\n                  <tr *ngFor=\"let item of uploader.queue\">\r\n                    <td><strong>{{ item?.file?.name }}</strong></td>\r\n                    <td>\r\n                      <!-- <button (click)=\"item.upload()\" [disabled]=\"item.isReady || item.isUploading || item.isSuccess\">Upload</button> -->\r\n                      <button (click)=\"item.remove()\">Remove From Queue</button>\r\n                    </td>\r\n                  </tr>\r\n                </tbody>\r\n              </table>\r\n            </div>\r\n\r\n            <button type=\"button\" (click)=\"uploader.uploadAll()\" [disabled]=\"!uploader.getNotUploadedItems().length\">Upload</button>\r\n            <!-- <button type=\"button\" (click)=\"uploader.cancelAll()\" [disabled]=\"!uploader.isUploading\">Cancel all</button>\r\n            <button type=\"button\" (click)=\"uploader.clearQueue()\" [disabled]=\"!uploader.queue.length\">Clear Queue</button> -->\r\n          </div>\r\n\r\n          <div class=\"uploadedalready col-xs-12\">\r\n            <table>\r\n              <th>Name</th>\r\n              <th>Image</th>\r\n              <th>Action</th>\r\n              <div *ngIf = \"files\" class=\"row\">\r\n                <div *ngFor = \"let file of files\" class=\"col-xs-12\">\r\n                  <td>{{ file.originalname }}</td>\r\n                  <td><img src=\"{{ file.location }}\" class=\"img-responsive\"></td>\r\n                  <button type=\"button\" (click)=\"deleteListingImage(file.originalname, file.size, file.key)\">Delete</button>\r\n                </div>\r\n              </div>\r\n            </table>\r\n          </div>\r\n\r\n        </div>\r\n\r\n\r\n\r\n      </div>\r\n\r\n      <div class=\"col-xs-12 col-md-6\">\r\n        <h2 class=\"numbers\">Step 3 - Add Info To Your Listing</h2>\r\n\r\n        <form (submit)=\"addListing(formData)\" #formData=\"ngForm\">\r\n          <div class=\"info\">\r\n            <p>\r\n              Address: <input type=\"text\" name=\"address\" ngModel>\r\n            </p>\r\n            <p>\r\n              Has It Been Sold? <input type=\"checkbox\" name=\"sold\" ngModel>\r\n            </p>\r\n          </div>\r\n          <h2 class=\"numbers\">Step 4 - Add or Reset</h2>\r\n          <!-- <div class=\"buttons\"> -->\r\n            <button (click)='cancel(formData)' type=\"button\">Cancel</button>\r\n            <div *ngIf='showButton && this.files.length' class=\"addit\">\r\n              <button>Add</button>\r\n            </div>\r\n            <div *ngIf='!showButton || !this.files.length' class=\"dontadd\">\r\n              <button disabled='disabled'>Add</button>\r\n            </div>\r\n            <button (click)=\"removeAllImages()\">ASD</button>\r\n          <!-- </div> -->\r\n        </form>\r\n      </div>\r\n\r\n    </div>\r\n\r\n\r\n\r\n  </div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
