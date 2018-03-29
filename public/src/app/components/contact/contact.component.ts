@@ -11,8 +11,8 @@ import { MessageService } from '../../services/message.service';
 })
 export class ContactComponent implements OnInit {
 
-  private message: string;
-  private errors: string;
+  public message: string;
+  public errors: string;
 
   constructor(
     private _messageService: MessageService

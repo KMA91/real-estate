@@ -16,8 +16,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "startdev": "nodemon server.js",
+    "prodbuild": "npm run prodbuild --prefix public",
     "build": "npm run build --prefix public",
     "dev": "concurrently \"npm run startdev\" \"npm run build\"",
+    "prod": "concurrently \"npm run start\" \"npm run prodbuild\"",
     "postinstall": "ng build --aot -prod"
   },
   "keywords": [],

@@ -1,0 +1,43 @@
+$font-stack: Oswald, sans-serif;
+$primary-color: #080a58;
+$secondary-color: #f28109;
+
+* {
+  font-family: $font-stack;
+  color: $primary-color;
+}
+
+.container {
+  padding: 15px;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 15px;
+  border: 2px solid #e6e4ff;
+  border-radius: 10px;
+  box-shadow: 2px 2px #e6e4ff;
+}
+
+.uploadContainer {
+  border-right: 2px solid #e6e4ff;
+}
+
+.numbers {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #e6e4ff;
+  border-radius: 20px;
+  background: #e6e4ff;
+}
+
+.selectFiles {
+  padding: 15px;
+  .selectFilesContainer {
+    padding: 30px;
+    input {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
